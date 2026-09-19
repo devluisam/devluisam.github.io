@@ -1,1599 +1,1046 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luis Henrique — Desenvolvedor Full Stack e IA</title>
-  <meta name="description" content="Desenvolvedor Full Stack e IA em Manaus, AM. Crio produtos digitais completos com React, Next.js, Node.js, Python e inteligência artificial.">
-  <meta name="keywords" content="desenvolvedor full stack, inteligência artificial, react, next.js, node.js, python, Manaus, Amazonas, software engineer">
-  <meta name="author" content="Luis Henrique Azevedo de Oliveira">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://devluisam.github.io/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Portfólio de Luis Henrique">
-  <meta property="og:locale" content="pt_BR">
-  <meta property="og:title" content="Luis Henrique — Desenvolvedor Full Stack e IA">
-  <meta property="og:description" content="Produtos digitais completos com React, Next.js, Node.js, Python e inteligência artificial.">
-  <meta property="og:url" content="https://devluisam.github.io/">
-  <meta property="og:image" content="https://devluisam.github.io/05f3517e-7d55-457c-beec-7460c57defc2.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Luis Henrique — Desenvolvedor Full Stack e IA">
-  <meta name="twitter:description" content="Produtos digitais completos com React, Next.js, Node.js, Python e inteligência artificial.">
-  <meta name="twitter:image" content="https://devluisam.github.io/05f3517e-7d55-457c-beec-7460c57defc2.jpg">
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Luis Henrique Azevedo de Oliveira",
-      "url": "https://devluisam.github.io/",
-      "jobTitle": "Desenvolvedor Full Stack e IA",
-      "address": { "@type": "PostalAddress", "addressLocality": "Manaus", "addressRegion": "AM", "addressCountry": "BR" },
-      "sameAs": ["https://github.com/devluisam", "https://www.linkedin.com/in/luis-henrique-94a6183b3"]
-    }
-  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luis Henrique Azevedo — Desenvolvedor de Software</title>
+<meta name="description" content="Desenvolvedor de software em Manaus, AM. Construo sistemas web, dashboards e automações com IA — do modelo de dados à interface. Next.js, TypeScript, Node.js e Python.">
+<meta name="author" content="Luis Henrique Azevedo de Oliveira">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://devluisam.github.io/">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Luis Henrique Azevedo">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Luis Henrique Azevedo — Desenvolvedor de Software">
+<meta property="og:description" content="Construo sistemas web, dashboards e automações com IA — do modelo de dados à interface. Veja os projetos e como cada um foi construído.">
+<meta property="og:url" content="https://devluisam.github.io/">
+<meta property="og:image" content="https://devluisam.github.io/05f3517e-7d55-457c-beec-7460c57defc2.jpg">
+<meta property="og:image:alt" content="Luis Henrique Azevedo, desenvolvedor de software">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Luis Henrique Azevedo — Desenvolvedor de Software">
+<meta name="twitter:description" content="Sistemas web, dashboards e automações com IA. Manaus, AM.">
+<meta name="twitter:image" content="https://devluisam.github.io/05f3517e-7d55-457c-beec-7460c57defc2.jpg">
+<meta name="theme-color" content="#08090c">
 
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230d0f13'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='15' font-weight='700' fill='%234ade80' text-anchor='middle'%3Elh%3C/text%3E%3C/svg%3E">
 
-    :root {
-      --bg:            #05050a;
-      --bg2:           #0a0a12;
-      --bg-card:       #0e0e1a;
-      --bg-card2:      #131320;
-      --accent:        #00ff88;
-      --accent-dim:    rgba(0,255,136,.08);
-      --accent-glow:   rgba(0,255,136,.18);
-      --accent-border: rgba(0,255,136,.22);
-      --indigo:        #818cf8;
-      --indigo-dim:    rgba(129,140,248,.08);
-      --text:          #e2e8f0;
-      --text-muted:    #64748b;
-      --text-faint:    #1e293b;
-      --border:        rgba(255,255,255,.06);
-      --border-light:  rgba(255,255,255,.1);
-      --font-h:        'Syne', sans-serif;
-      --font-b:        'Inter', sans-serif;
-      --font-m:        'Space Mono', monospace;
-      --radius:        14px;
-      --transition:    .22s cubic-bezier(.4,0,.2,1);
-    }
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Luis Henrique Azevedo de Oliveira",
+  "alternateName": "Luis Henrique",
+  "url": "https://devluisam.github.io/",
+  "jobTitle": "Desenvolvedor de Software",
+  "description": "Desenvolvedor de software: sistemas web, dashboards e automações com IA.",
+  "address": { "@type": "PostalAddress", "addressLocality": "Manaus", "addressRegion": "AM", "addressCountry": "BR" },
+  "knowsAbout": ["TypeScript", "Next.js", "React", "Node.js", "Python", "FastAPI", "Prisma", "PostgreSQL", "SQLite", "Three.js"],
+  "sameAs": ["https://github.com/devluisam", "https://www.linkedin.com/in/luis-henrique-94a6183b3"]
+}
+</script>
 
-    html { scroll-behavior: smooth; font-size: 16px; }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: var(--font-b);
-      font-size: 15px;
-      line-height: 1.65;
-      overflow-x: hidden;
-      -webkit-font-smoothing: antialiased;
-    }
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
-    /* ── SCROLLBAR ── */
-    ::-webkit-scrollbar { width: 3px; }
-    ::-webkit-scrollbar-track { background: var(--bg); }
-    ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+:root{
+  --bg:#08090c;
+  --bg-soft:#0b0d11;
+  --card:#0e1015;
+  --card-hover:#111419;
+  --line:rgba(255,255,255,.08);
+  --line-strong:rgba(255,255,255,.16);
+  --text:#e9ebef;
+  --muted:#959ba6;
+  --faint:#6b7280;
+  --accent:#4ade80;
+  --accent-soft:rgba(74,222,128,.10);
+  --accent-line:rgba(74,222,128,.28);
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --wrap:1120px;
+  --gutter:24px;
+  --radius:14px;
+}
 
-    /* ── PROGRESS BAR ── */
-    #progress-bar {
-      position: fixed; top: 0; left: 0; height: 2px;
-      background: linear-gradient(90deg, var(--accent), var(--indigo));
-      width: 0%; z-index: 9999; transition: width .1s linear;
-    }
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg);color:var(--text);font-family:var(--sans);
+  font-size:16px;line-height:1.65;letter-spacing:-.011em;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
 
-    /* ── BACKGROUND ELEMENTS ── */
-    .bg-grid {
-      position: fixed; inset: 0; pointer-events: none; z-index: 0;
-      background-image:
-        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
-      background-size: 56px 56px;
-    }
-    .bg-noise {
-      position: fixed; inset: 0; pointer-events: none; z-index: 0; opacity: .35;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
-    }
-    .orb {
-      position: fixed; border-radius: 50%; pointer-events: none; filter: blur(120px); z-index: 0;
-    }
-    .orb-1 { width: 600px; height: 600px; top: -200px; left: -150px; background: rgba(0,255,136,.04); }
-    .orb-2 { width: 500px; height: 500px; bottom: -150px; right: -100px; background: rgba(129,140,248,.05); }
+.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 var(--gutter)}
+.skip{position:absolute;left:-9999px;top:0;background:var(--accent);color:#04120a;padding:10px 16px;font-weight:600;z-index:100}
+.skip:focus{left:12px;top:12px}
 
-    /* ── CURSOR GLOW ── */
-    #cursor-glow {
-      position: fixed; width: 350px; height: 350px; pointer-events: none; z-index: 0;
-      border-radius: 50%; transform: translate(-50%,-50%);
-      background: radial-gradient(circle, rgba(0,255,136,.04) 0%, transparent 70%);
-      transition: left .12s ease, top .12s ease;
-    }
+header.nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(8,9,12,.78);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:var(--mono);font-size:14px;font-weight:700;letter-spacing:-.02em}
+.logo b{color:var(--accent);font-weight:700}
+.nav-links{display:flex;align-items:center;gap:28px}
+.nav-links a{font-size:14px;color:var(--muted);transition:color .18s}
+.nav-links a:hover{color:var(--text)}
+.nav-cta{
+  font-size:13px;font-weight:600;color:var(--accent);
+  border:1px solid var(--accent-line);background:var(--accent-soft);
+  padding:8px 16px;border-radius:8px;transition:background .18s,border-color .18s;
+}
+.nav-cta:hover{background:rgba(74,222,128,.16);border-color:var(--accent)}
+.burger{display:none;background:none;border:1px solid var(--line-strong);border-radius:8px;padding:9px;color:var(--text);cursor:pointer;line-height:0}
+.mobile-menu{display:none;border-top:1px solid var(--line);background:var(--bg-soft)}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;padding:14px 0;font-size:15px;color:var(--muted);border-bottom:1px solid var(--line)}
+.mobile-menu a:last-child{border-bottom:0;color:var(--accent);font-weight:600}
 
-    /* ── NAVIGATION ── */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-      background: rgba(5,5,10,.82); backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border);
-    }
-    .nav-inner {
-      max-width: 1200px; margin: 0 auto;
-      display: flex; align-items: center; gap: 2rem;
-      padding: 0 2.5rem; height: 64px;
-    }
-    .nav-logo {
-      font-family: var(--font-m); font-size: 13px;
-      color: var(--text); text-decoration: none; letter-spacing: .04em;
-      margin-right: auto;
-    }
-    .nav-logo .accent { color: var(--accent); }
-    .nav-links { display: flex; gap: 2rem; list-style: none; }
-    .nav-links a {
-      font-family: var(--font-m); font-size: 11px; letter-spacing: .1em;
-      text-transform: uppercase; color: var(--text-muted); text-decoration: none;
-      transition: color var(--transition);
-    }
-    .nav-links a:hover, .nav-links a.active { color: var(--accent); }
-    .btn-nav {
-      font-family: var(--font-m); font-size: 11px; letter-spacing: .08em;
-      text-transform: uppercase; color: var(--bg); background: var(--accent);
-      padding: .5rem 1.2rem; border-radius: 6px; text-decoration: none;
-      font-weight: 700; transition: all var(--transition); white-space: nowrap;
-    }
-    .btn-nav:hover { background: #00cc6e; transform: translateY(-1px); }
+.hero{padding:96px 0 80px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.hero::before{
+  content:"";position:absolute;inset:-40% 30% auto -10%;height:420px;
+  background:radial-gradient(closest-side,rgba(74,222,128,.07),transparent 70%);
+  pointer-events:none;
+}
+.hero-in{position:relative;max-width:780px}
+.chip{
+  display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;
+  color:var(--accent);background:var(--accent-soft);border:1px solid var(--accent-line);
+  padding:6px 12px;border-radius:999px;margin-bottom:28px;
+}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--accent)}
+h1{font-size:clamp(2.4rem,6.2vw,4rem);line-height:1.04;font-weight:700;letter-spacing:-.035em}
+.role{margin-top:18px;font-family:var(--mono);font-size:clamp(.88rem,2.3vw,1rem);color:var(--accent)}
+.lead{margin-top:24px;font-size:clamp(1.02rem,2.4vw,1.2rem);color:var(--muted);max-width:640px}
+.lead strong{color:var(--text);font-weight:500}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:38px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;
+  padding:12px 22px;border-radius:10px;border:1px solid transparent;transition:all .18s;
+}
+.btn-primary{background:var(--accent);color:#04120a}
+.btn-primary:hover{background:#6ee7a4}
+.btn-ghost{border-color:var(--line-strong);color:var(--text)}
+.btn-ghost:hover{border-color:var(--accent-line);background:var(--accent-soft);color:var(--accent)}
+.hero-meta{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:44px;font-size:13px;color:var(--faint);font-family:var(--mono)}
 
-    /* Hamburger */
-    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; background: none; border: none; }
-    .hamburger span { width: 22px; height: 2px; background: var(--text); display: block; transition: all var(--transition); border-radius: 2px; }
-    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-    .hamburger.open span:nth-child(2) { opacity: 0; }
-    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+section{padding:88px 0;border-bottom:1px solid var(--line)}
+.sec-index{font-family:var(--mono);font-size:12px;color:var(--faint);margin-bottom:14px}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.12;font-weight:700;letter-spacing:-.03em}
+.sec-lead{margin-top:16px;color:var(--muted);max-width:640px}
+.sec-head{margin-bottom:52px}
 
-    /* Mobile menu */
-    .mobile-menu {
-      position: fixed; inset: 64px 0 0 0; background: rgba(5,5,10,.97);
-      backdrop-filter: blur(20px); z-index: 999;
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      gap: 2.5rem; opacity: 0; pointer-events: none; transition: opacity var(--transition);
-    }
-    .mobile-menu.open { opacity: 1; pointer-events: all; }
-    .mobile-menu ul { list-style: none; display: flex; flex-direction: column; align-items: center; gap: 2rem; }
-    .mobile-menu a {
-      font-family: var(--font-h); font-size: 1.5rem; font-weight: 700;
-      color: var(--text); text-decoration: none; transition: color var(--transition);
-    }
-    .mobile-menu a:hover { color: var(--accent); }
-    .mobile-cta {
-      font-family: var(--font-m); font-size: 13px; letter-spacing: .08em;
-      text-transform: uppercase; color: var(--bg); background: var(--accent);
-      padding: .85rem 2.5rem; border-radius: 8px; text-decoration: none;
-      font-weight: 700;
-    }
+.cases{display:flex;flex-direction:column;gap:20px}
+.case{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:30px;transition:border-color .2s,background .2s;
+}
+.case:hover{border-color:var(--line-strong);background:var(--card-hover)}
+.case-top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.case-num{font-family:var(--mono);font-size:12px;color:var(--faint)}
+.case-tags{display:flex;gap:8px;flex-wrap:wrap}
+.tag{font-family:var(--mono);font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:4px 9px}
+.tag.priv{color:var(--accent);border-color:var(--accent-line);background:var(--accent-soft)}
+.case h3{font-size:1.5rem;font-weight:600;letter-spacing:-.025em;margin-top:10px}
+.case-sub{margin-top:10px;color:var(--muted);max-width:680px}
+.stack{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px}
+.stack li{
+  list-style:none;font-family:var(--mono);font-size:11.5px;color:var(--muted);
+  background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:6px;padding:4px 9px;
+}
+details.study{margin-top:22px;border-top:1px solid var(--line)}
+details.study summary{
+  cursor:pointer;list-style:none;font-size:13.5px;font-weight:600;color:var(--accent);
+  padding:16px 0 4px;display:flex;align-items:center;gap:8px;
+}
+details.study summary::-webkit-details-marker{display:none}
+details.study summary::after{content:"↓";font-family:var(--mono);transition:transform .2s}
+details.study[open] summary::after{transform:rotate(180deg)}
+.study-body{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;padding:18px 0 4px}
+.block h4{
+  font-family:var(--mono);font-size:11px;font-weight:600;color:var(--faint);
+  text-transform:uppercase;letter-spacing:.09em;margin-bottom:10px;
+}
+.block p{font-size:14.5px;color:var(--muted)}
+.block ul{margin:0;padding-left:18px}
+.block li{font-size:14.5px;color:var(--muted);margin-bottom:6px}
+.block.full{grid-column:1/-1}
+pre.arch{
+  font-family:var(--mono);font-size:12px;line-height:1.75;color:var(--muted);
+  background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;
+  padding:18px;overflow-x:auto;
+}
+.case-links{display:flex;flex-wrap:wrap;align-items:center;gap:20px;margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}
+.case-links a{font-size:13.5px;font-weight:600;display:inline-flex;align-items:center;gap:6px;transition:color .18s}
+.case-links a:hover{color:var(--accent)}
+.case-links .note{font-size:12.5px;color:var(--faint);font-family:var(--mono)}
 
-    /* ── SHARED ── */
-    section { position: relative; z-index: 1; }
-    .section-wrap { max-width: 1200px; margin: 0 auto; padding: 6rem 2.5rem; }
-    .section-label {
-      font-family: var(--font-m); font-size: 11px; letter-spacing: .15em;
-      text-transform: uppercase; color: var(--accent); margin-bottom: .75rem;
-    }
-    .section-title {
-      font-family: var(--font-h); font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 800; letter-spacing: -.025em; line-height: 1.1; margin-bottom: .75rem;
-    }
-    .section-sub {
-      font-size: 15px; color: var(--text-muted); line-height: 1.8;
-      max-width: 520px; margin-bottom: 3.5rem;
-    }
-    .accent { color: var(--accent); }
-    .gradient-text {
-      background: linear-gradient(135deg, var(--accent) 0%, var(--indigo) 100%);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+.mini{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px;transition:border-color .2s,background .2s}
+.mini:hover{border-color:var(--line-strong);background:var(--card-hover)}
+.mini h3{font-size:1.06rem;font-weight:600;letter-spacing:-.02em}
+.mini p{margin-top:9px;font-size:14px;color:var(--muted)}
+.mini-links{display:flex;gap:16px;margin-top:18px;font-size:13px;font-weight:600}
+.mini-links a{color:var(--faint);transition:color .18s}
+.mini-links a:hover{color:var(--accent)}
 
-    /* ── BUTTONS ── */
-    .btn {
-      display: inline-flex; align-items: center; gap: .5rem;
-      font-family: var(--font-m); font-size: 12px; letter-spacing: .06em;
-      text-transform: uppercase; text-decoration: none; padding: .8rem 1.6rem;
-      border-radius: 8px; transition: all var(--transition); cursor: pointer;
-      border: none; font-weight: 700;
-    }
-    .btn-primary { background: var(--accent); color: var(--bg); }
-    .btn-primary:hover { background: #00cc6e; transform: translateY(-2px); box-shadow: 0 8px 24px var(--accent-glow); }
-    .btn-outline { background: transparent; color: var(--text); border: 1px solid var(--border-light); }
-    .btn-outline:hover { border-color: var(--accent-border); color: var(--accent); background: var(--accent-dim); }
-    .btn-ghost { background: transparent; color: var(--text-muted); border: 1px solid var(--border); font-size: 11px; padding: .55rem 1rem; }
-    .btn-ghost:hover { color: var(--accent); border-color: var(--accent-border); }
+.about{display:grid;grid-template-columns:1.35fr 1fr;gap:56px;align-items:start}
+.about p{color:var(--muted);margin-bottom:18px}
+.about p strong{color:var(--text);font-weight:500}
+.facts{border:1px solid var(--line);border-radius:12px;background:var(--card);padding:6px 22px}
+.fact{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.fact:last-child{border-bottom:0}
+.fact dt{color:var(--faint);font-family:var(--mono);font-size:12px}
+.fact dd{color:var(--text);text-align:right;font-size:14px}
 
-    /* ── HERO ── */
-    #hero {
-      min-height: 100vh; display: flex; flex-direction: column;
-      justify-content: center; padding: 8rem 2.5rem 4rem;
-    }
-    .hero-content {
-      max-width: 1200px; margin: 0 auto; width: 100%;
-      display: grid; grid-template-columns: 1fr 420px;
-      gap: 6rem; align-items: center;
-    }
-    .hero-availability {
-      display: inline-flex; align-items: center; gap: .6rem;
-      font-family: var(--font-m); font-size: 11px; letter-spacing: .1em;
-      text-transform: uppercase; color: var(--accent);
-      border: 1px solid var(--accent-border); background: var(--accent-dim);
-      padding: .4rem 1rem; border-radius: 20px; margin-bottom: 1.75rem;
-    }
-    .availability-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); animation: pulse 2s ease-in-out infinite; }
-    @keyframes pulse { 0%,100% { opacity:1; box-shadow:0 0 0 0 var(--accent-glow); } 50% { opacity:.7; box-shadow:0 0 0 6px transparent; } }
+.stack-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.stack-col{border:1px solid var(--line);border-radius:12px;background:var(--card);padding:24px}
+.stack-col h3{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.09em;margin-bottom:16px}
+.stack-col ul{list-style:none}
+.stack-col li{font-size:14px;color:var(--muted);padding:5px 0}
 
-    .hero-name {
-      font-family: var(--font-h); font-size: clamp(3rem, 6vw, 5.5rem);
-      font-weight: 800; letter-spacing: -.04em; line-height: 1.0;
-      margin-bottom: 1.25rem;
-    }
-    .hero-title {
-      font-family: var(--font-m); font-size: 13px; color: var(--text-muted);
-      letter-spacing: .04em; margin-bottom: 1.5rem;
-    }
-    .hero-desc {
-      font-size: 15.5px; color: var(--text-muted); line-height: 1.85;
-      max-width: 480px; margin-bottom: 2.5rem;
-    }
-    .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
-    .hero-socials { display: flex; gap: 1rem; }
-    .social-link {
-      display: flex; align-items: center; justify-content: center;
-      width: 38px; height: 38px; border-radius: 8px;
-      background: var(--bg-card); border: 1px solid var(--border);
-      color: var(--text-muted); text-decoration: none;
-      transition: all var(--transition);
-    }
-    .social-link:hover { color: var(--accent); border-color: var(--accent-border); background: var(--accent-dim); transform: translateY(-2px); }
-    .social-link svg { width: 16px; height: 16px; }
+.svc{border:1px solid var(--line);border-radius:12px;background:var(--card);padding:26px}
+.svc h3{font-size:1.05rem;font-weight:600;letter-spacing:-.02em}
+.svc p{margin-top:10px;font-size:14px;color:var(--muted)}
 
-    /* Avatar */
-    .hero-right { display: flex; justify-content: center; align-items: center; position: relative; }
-    .avatar-wrap { position: relative; width: 300px; height: 300px; }
-    .avatar-ring {
-      position: absolute; inset: -14px; border-radius: 50%;
-      border: 1px solid var(--accent-border);
-      animation: spin 25s linear infinite;
-    }
-    .avatar-ring::before {
-      content: ''; position: absolute; top: -4px; left: 50%; transform: translateX(-50%);
-      width: 8px; height: 8px; background: var(--accent); border-radius: 50%;
-      box-shadow: 0 0 12px var(--accent);
-    }
-    @keyframes spin { to { transform: rotate(360deg); } }
-    .avatar-img {
-      width: 100%; height: 100%; border-radius: 50%;
-      overflow: hidden; border: 2px solid var(--border-light);
-      background: var(--bg-card2);
-    }
-    .avatar-img img { width: 100%; height: 100%; object-fit: cover; }
-    .avatar-badge {
-      position: absolute; bottom: 16px; right: -8px;
-      background: var(--bg-card); border: 1px solid var(--border-light);
-      border-radius: 20px; padding: .45rem 1rem;
-      font-family: var(--font-m); font-size: 11px; color: var(--text-muted);
-      display: flex; align-items: center; gap: .5rem;
-      box-shadow: 0 4px 24px rgba(0,0,0,.5);
-    }
-    .badge-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); animation: pulse 2s ease-in-out infinite; }
+.contact{border-bottom:0}
+.contact-in{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.contact h2{max-width:440px}
+.ch{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;border-bottom:1px solid var(--line);transition:padding-left .18s}
+.ch:hover{padding-left:8px}
+.ch:hover .ch-val{color:var(--accent)}
+.ch-key{font-family:var(--mono);font-size:12px;color:var(--faint)}
+.ch-val{font-size:15px;font-weight:500;transition:color .18s}
 
-    .float-card {
-      position: absolute; background: var(--bg-card); border: 1px solid var(--border-light);
-      border-radius: 12px; padding: .85rem 1.25rem; box-shadow: 0 8px 32px rgba(0,0,0,.5);
-    }
-    .float-card-1 { top: 20px; left: -30px; }
-    .float-card-2 { bottom: 30px; left: -40px; }
-    .float-num { font-family: var(--font-h); font-size: 1.5rem; font-weight: 800; color: var(--accent); display: block; line-height: 1; }
-    .float-label { font-family: var(--font-m); font-size: 10px; color: var(--text-muted); letter-spacing: .08em; text-transform: uppercase; }
+footer{padding:36px 0}
+.foot-in{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px;color:var(--faint)}
 
-    /* Marquee */
-    .marquee-wrap {
-      max-width: 1200px; margin: 3rem auto 0; padding: 0 2.5rem;
-      overflow: hidden; border-top: 1px solid var(--border);
-      padding-top: 2rem;
-    }
-    .marquee-inner {
-      display: flex; gap: 2.5rem; width: max-content;
-      animation: marquee 30s linear infinite;
-    }
-    .marquee-inner:hover { animation-play-state: paused; }
-    @keyframes marquee { to { transform: translateX(-50%); } }
-    .marquee-item {
-      font-family: var(--font-m); font-size: 11px; letter-spacing: .1em;
-      text-transform: uppercase; color: var(--text-faint); white-space: nowrap;
-      transition: color var(--transition);
-    }
-    .marquee-item:hover { color: var(--accent); }
-    .marquee-sep { color: var(--accent); opacity: .4; }
-
-    /* ── ABOUT ── */
-    #sobre { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-    .about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 5rem; align-items: start; }
-    .about-text p { color: var(--text-muted); font-size: 15px; line-height: 1.9; margin-bottom: 1.25rem; }
-    .about-text p strong { color: var(--text); font-weight: 600; }
-    .about-highlights { display: flex; flex-direction: column; gap: .75rem; margin-top: 1.75rem; }
-    .highlight-item {
-      display: flex; align-items: flex-start; gap: .75rem;
-      padding: 1rem 1.25rem; background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: var(--radius); transition: border-color var(--transition);
-    }
-    .highlight-item:hover { border-color: var(--accent-border); }
-    .hi-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: .1rem; }
-    .hi-text { font-size: 13.5px; color: var(--text-muted); line-height: 1.6; }
-    .hi-text strong { color: var(--text); font-weight: 600; }
-
-    .stats-col { display: flex; flex-direction: column; gap: 1rem; }
-    .stat-card {
-      background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 1.5rem;
-      transition: all var(--transition); cursor: default;
-    }
-    .stat-card:hover { border-color: var(--accent-border); transform: translateX(4px); }
-    .stat-num { font-family: var(--font-h); font-size: 2.5rem; font-weight: 800; color: var(--accent); line-height: 1; margin-bottom: .3rem; }
-    .stat-lbl { font-family: var(--font-m); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--text-muted); }
-    .stat-sub { font-size: 12px; color: var(--text-faint); margin-top: .3rem; }
-
-    /* ── SKILLS ── */
-    .skills-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; margin-bottom: 3rem; }
-    .skills-cats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
-    .skill-cat {
-      background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 1.5rem;
-      transition: all var(--transition);
-    }
-    .skill-cat:hover { border-color: var(--accent-border); transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,.4); }
-    .skill-cat-header { display: flex; align-items: center; gap: .75rem; margin-bottom: 1.25rem; }
-    .skill-icon-wrap {
-      width: 36px; height: 36px; border-radius: 8px; background: var(--accent-dim);
-      border: 1px solid var(--accent-border); display: flex; align-items: center; justify-content: center;
-      font-size: 1.1rem;
-    }
-    .skill-cat-name { font-family: var(--font-h); font-size: 14px; font-weight: 700; }
-    .skill-list { list-style: none; display: flex; flex-direction: column; gap: .6rem; }
-    .skill-item { font-size: 13px; color: var(--text-muted); display: flex; align-items: center; gap: .7rem; justify-content: space-between; }
-    .skill-item-left { display: flex; align-items: center; gap: .6rem; }
-    .skill-item-left i { font-size: 1rem; }
-    .skill-bar-wrap { width: 60px; height: 3px; background: var(--text-faint); border-radius: 2px; overflow: hidden; flex-shrink: 0; }
-    .skill-bar { height: 100%; background: linear-gradient(90deg, var(--accent), var(--indigo)); border-radius: 2px; transform-origin: left; transform: scaleX(0); }
-
-    /* ── PROJECTS ── */
-    #projetos { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-    .filter-bar { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 3rem; }
-    .filter-btn {
-      font-family: var(--font-m); font-size: 11px; letter-spacing: .08em;
-      text-transform: uppercase; padding: .5rem 1.1rem; border-radius: 6px;
-      border: 1px solid var(--border); background: transparent; color: var(--text-muted);
-      cursor: pointer; transition: all var(--transition);
-    }
-    .filter-btn:hover, .filter-btn.active { background: var(--accent-dim); border-color: var(--accent-border); color: var(--accent); }
-    .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-    .project-card {
-      background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: var(--radius); overflow: hidden;
-      transition: all var(--transition); display: flex; flex-direction: column;
-      transform-style: preserve-3d; will-change: transform;
-    }
-    .project-card:hover { border-color: var(--accent-border); box-shadow: 0 16px 48px rgba(0,0,0,.5); }
-    .project-card.hidden { display: none; }
-
-    /* Project cover */
-    .proj-cover {
-      height: 170px; position: relative; overflow: hidden;
-      display: flex; align-items: flex-end; padding: 1.25rem;
-    }
-    .proj-cover::before { content: ''; position: absolute; inset: 0; }
-    .proj-cover::after { content: ''; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(14,14,26,.95) 0%, transparent 60%); }
-    .cover-voo     { background: linear-gradient(135deg, #0a1628 0%, #0d2144 50%, #0e2d5e 100%); }
-    .cover-flow    { background: linear-gradient(135deg, #130d1e 0%, #1e0d38 50%, #2a1050 100%); }
-    .cover-anato   { background: linear-gradient(135deg, #0a1a12 0%, #0d2a1a 50%, #0e3522 100%); }
-    .cover-kinga   { background: linear-gradient(135deg, #1a1205 0%, #2a1e08 50%, #33250a 100%); }
-    .cover-nutri   { background: linear-gradient(135deg, #1a0a14 0%, #2a0f20 50%, #3a1230 100%); }
-    .cover-costa   { background: linear-gradient(135deg, #10100a 0%, #1c1c12 50%, #22221a 100%); }
-    .cover-pulso   { background: linear-gradient(135deg, #051a08 0%, #082a0c 50%, #0a3510 100%); }
-    .cover-dental  { background: linear-gradient(135deg, #0a0d1a 0%, #0f1428 50%, #121830 100%); }
-
-    .cover-pattern {
-      position: absolute; inset: 0; opacity: .12;
-      background-image: radial-gradient(circle at 30% 40%, white 1px, transparent 1px),
-                        radial-gradient(circle at 70% 70%, white 1px, transparent 1px);
-      background-size: 32px 32px;
-    }
-    .cover-badges { position: relative; z-index: 1; display: flex; gap: .4rem; flex-wrap: wrap; }
-    .cover-badge {
-      font-family: var(--font-m); font-size: 9px; letter-spacing: .06em;
-      padding: .25rem .6rem; border-radius: 4px; border: 1px solid rgba(255,255,255,.15);
-      color: rgba(255,255,255,.6); background: rgba(255,255,255,.05); text-transform: uppercase;
-    }
-    .cover-type {
-      position: absolute; top: 1rem; right: 1rem; z-index: 1;
-      font-family: var(--font-m); font-size: 10px; letter-spacing: .08em;
-      padding: .3rem .8rem; border-radius: 20px; text-transform: uppercase;
-    }
-    .type-saas   { background: rgba(129,140,248,.15); border: 1px solid rgba(129,140,248,.3); color: #818cf8; }
-    .type-ia     { background: rgba(0,255,136,.1);  border: 1px solid rgba(0,255,136,.25); color: #00ff88; }
-    .type-site   { background: rgba(251,191,36,.1); border: 1px solid rgba(251,191,36,.3); color: #fbbf24; }
-    .type-dash   { background: rgba(56,189,248,.1); border: 1px solid rgba(56,189,248,.3); color: #38bdf8; }
-    .type-crm    { background: rgba(244,114,182,.1);border: 1px solid rgba(244,114,182,.3);color: #f472b6; }
-
-    /* Project body */
-    .proj-body { padding: 1.5rem; display: flex; flex-direction: column; gap: 1rem; flex: 1; }
-    .proj-header { display: flex; align-items: center; justify-content: space-between; }
-    .proj-num { font-family: var(--font-m); font-size: 11px; color: var(--text-faint); }
-    .complexity {
-      display: flex; gap: 3px;
-    }
-    .complexity-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--text-faint); }
-    .complexity-dot.filled { background: var(--accent); }
-    .proj-title { font-family: var(--font-h); font-size: 1.1rem; font-weight: 700; line-height: 1.3; }
-    .proj-problem {
-      font-family: var(--font-m); font-size: 10.5px; letter-spacing: .04em;
-      color: var(--accent); opacity: .7; line-height: 1.5;
-    }
-    .proj-desc { font-size: 13px; color: var(--text-muted); line-height: 1.75; flex: 1; }
-    .proj-meta { display: flex; gap: 1.5rem; }
-    .proj-meta-item { font-family: var(--font-m); font-size: 10px; color: var(--text-faint); letter-spacing: .05em; }
-    .proj-meta-item span { color: var(--text-muted); }
-    .proj-tags { display: flex; flex-wrap: wrap; gap: .4rem; }
-    .tag {
-      font-family: var(--font-m); font-size: 10px; letter-spacing: .04em;
-      color: var(--indigo); border: 1px solid var(--indigo-dim);
-      background: var(--indigo-dim); padding: .2rem .65rem; border-radius: 4px;
-    }
-    .proj-actions { display: flex; gap: .6rem; padding-top: .5rem; border-top: 1px solid var(--border); margin-top: auto; }
-
-    /* ── SERVICES ── */
-    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
-    .service-card {
-      background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 1.75rem;
-      transition: all var(--transition); cursor: default;
-    }
-    .service-card:hover { border-color: var(--accent-border); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,.4); }
-    .service-icon {
-      width: 44px; height: 44px; border-radius: 10px;
-      background: var(--accent-dim); border: 1px solid var(--accent-border);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.25rem; margin-bottom: 1.25rem;
-    }
-    .service-name { font-family: var(--font-h); font-size: 15px; font-weight: 700; margin-bottom: .6rem; }
-    .service-desc { font-size: 13px; color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem; }
-    .service-features { list-style: none; display: flex; flex-direction: column; gap: .4rem; }
-    .service-features li { font-family: var(--font-m); font-size: 11px; color: var(--text-faint); display: flex; align-items: center; gap: .5rem; }
-    .service-features li::before { content: ''; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
-
-    /* ── CONTACT ── */
-    #contato .section-wrap { text-align: center; }
-    .contact-sub { font-size: 15px; color: var(--text-muted); max-width: 480px; margin: 0 auto 3rem; line-height: 1.8; }
-    .contact-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; max-width: 640px; margin: 0 auto 3rem; }
-    .contact-card {
-      display: flex; align-items: center; gap: 1rem;
-      background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 1.25rem 1.5rem;
-      text-decoration: none; color: var(--text-muted);
-      transition: all var(--transition); text-align: left;
-    }
-    .contact-card:hover { border-color: var(--accent-border); color: var(--accent); background: var(--accent-dim); transform: translateY(-2px); }
-    .contact-card svg { width: 20px; height: 20px; flex-shrink: 0; }
-    .cc-label { font-family: var(--font-m); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; display: block; margin-bottom: .15rem; }
-    .cc-value { font-size: 13px; }
-
-    .contact-cta {
-      display: inline-flex; align-items: center; gap: .75rem;
-      background: var(--accent); color: var(--bg); font-family: var(--font-h);
-      font-size: 1rem; font-weight: 700; padding: 1.1rem 2.5rem;
-      border-radius: 12px; text-decoration: none; transition: all var(--transition);
-      letter-spacing: -.01em;
-    }
-    .contact-cta:hover { background: #00cc6e; transform: translateY(-3px); box-shadow: 0 12px 40px var(--accent-glow); }
-
-    /* ── FOOTER ── */
-    footer {
-      position: relative; z-index: 1;
-      border-top: 1px solid var(--border); padding: 2rem 2.5rem;
-    }
-    .footer-inner {
-      max-width: 1200px; margin: 0 auto;
-      display: flex; align-items: center; justify-content: space-between;
-      flex-wrap: wrap; gap: 1rem;
-    }
-    .footer-logo { font-family: var(--font-m); font-size: 12px; color: var(--text-muted); }
-    .footer-logo .accent { color: var(--accent); }
-    .footer-copy { font-family: var(--font-m); font-size: 11px; color: var(--text-faint); }
-    .footer-links { display: flex; gap: 1.5rem; }
-    .footer-links a { font-family: var(--font-m); font-size: 11px; color: var(--text-faint); text-decoration: none; transition: color var(--transition); letter-spacing: .06em; }
-    .footer-links a:hover { color: var(--accent); }
-
-    /* ── BACK TO TOP ── */
-    #back-top {
-      position: fixed; bottom: 2rem; right: 2rem; z-index: 100;
-      width: 42px; height: 42px; border-radius: 10px;
-      background: var(--bg-card); border: 1px solid var(--border);
-      color: var(--text-muted); cursor: pointer; display: flex; align-items: center; justify-content: center;
-      opacity: 0; pointer-events: none; transition: all var(--transition);
-    }
-    #back-top.visible { opacity: 1; pointer-events: all; }
-    #back-top:hover { border-color: var(--accent-border); color: var(--accent); transform: translateY(-3px); }
-
-    /* ── ANIMATIONS ── */
-    .animate { opacity: 0; }
-    .animate.fade-up { transform: translateY(32px); }
-    .animate.fade-in { opacity: 0; }
-    .animate.visible { opacity: 1; transform: none; transition: opacity .7s ease, transform .7s ease; }
-    .animate.delay-1 { transition-delay: .1s; }
-    .animate.delay-2 { transition-delay: .2s; }
-    .animate.delay-3 { transition-delay: .3s; }
-    .animate.delay-4 { transition-delay: .4s; }
-    .animate.delay-5 { transition-delay: .5s; }
-
-    /* Skill bar animation triggered by observer */
-    .skills-visible .skill-bar { animation: growBar .9s ease forwards; }
-    @keyframes growBar { to { transform: scaleX(1); } }
-    .skill-bar[data-w="95"] { width: 95%; }
-    .skill-bar[data-w="90"] { width: 90%; }
-    .skill-bar[data-w="85"] { width: 85%; }
-    .skill-bar[data-w="80"] { width: 80%; }
-    .skill-bar[data-w="75"] { width: 75%; }
-    .skill-bar[data-w="70"] { width: 70%; }
-    .skill-bar[data-w="65"] { width: 65%; }
-    .skill-bar[data-w="60"] { width: 60%; }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 1100px) {
-      .projects-grid { grid-template-columns: repeat(2, 1fr); }
-      .services-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (max-width: 900px) {
-      .hero-content { grid-template-columns: 1fr; gap: 3rem; }
-      .hero-right { display: none; }
-      .about-grid { grid-template-columns: 1fr; gap: 3rem; }
-      .skills-intro { grid-template-columns: 1fr; gap: 2rem; }
-      .skills-cats { grid-template-columns: repeat(2, 1fr); }
-      .contact-grid { grid-template-columns: 1fr; }
-      .nav-links, .btn-nav { display: none; }
-      .hamburger { display: flex; }
-      .section-wrap { padding: 5rem 1.5rem; }
-      #hero { padding: 7rem 1.5rem 3rem; }
-    }
-    @media (max-width: 640px) {
-      .projects-grid { grid-template-columns: 1fr; }
-      .services-grid { grid-template-columns: 1fr; }
-      .skills-cats { grid-template-columns: 1fr; }
-      .footer-inner { flex-direction: column; text-align: center; }
-      .footer-links { justify-content: center; }
-    }
-  </style>
+@media (max-width:900px){
+  .about,.contact-in{grid-template-columns:1fr;gap:36px}
+  .study-body{grid-template-columns:1fr;gap:24px}
+}
+@media (max-width:760px){
+  :root{--gutter:16px}
+  .nav-links{display:none}
+  .burger{display:block}
+  .hero{padding:64px 0 56px}
+  section{padding:64px 0}
+  .sec-head{margin-bottom:36px}
+  .case{padding:22px}
+  .actions .btn{flex:1 1 auto;justify-content:center}
+  .hero-meta{gap:6px 18px;font-size:12px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+</style>
 </head>
+
 <body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
 
-<div id="progress-bar"></div>
-<div class="bg-grid" aria-hidden="true"></div>
-<div class="bg-noise" aria-hidden="true"></div>
-<span class="orb orb-1" aria-hidden="true"></span>
-<span class="orb orb-2" aria-hidden="true"></span>
-<div id="cursor-glow" aria-hidden="true"></div>
-
-<!-- NAV -->
-<nav id="nav" role="navigation" aria-label="Navegação principal">
-  <div class="nav-inner">
-    <a href="#" class="nav-logo">&lt;lh<span class="accent">.</span>dev/&gt;</a>
-    <ul class="nav-links" role="list">
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#habilidades">Habilidades</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#servicos">Serviços</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-    <a href="https://wa.me/5592981295837" target="_blank" rel="noopener noreferrer" class="btn-nav">Fale Comigo ↗</a>
-    <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
-      <span></span><span></span><span></span>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="#" class="logo">lh<b>.dev</b></a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="#projetos">Projetos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#stack">Stack</a>
+      <a href="#servicos">Serviços</a>
+      <a href="https://github.com/devluisam" target="_blank" rel="noopener">GitHub</a>
+      <a class="nav-cta" href="#contato">Falar comigo</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
   </div>
-</nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="wrap">
+      <a href="#projetos">Projetos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#stack">Stack</a>
+      <a href="#servicos">Serviços</a>
+      <a href="https://github.com/devluisam" target="_blank" rel="noopener">GitHub</a>
+      <a href="#contato">Falar comigo</a>
+    </div>
+  </div>
+</header>
 
-<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu de navegação">
-  <ul>
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#habilidades">Habilidades</a></li>
-    <li><a href="#projetos">Projetos</a></li>
-    <li><a href="#servicos">Serviços</a></li>
-    <li><a href="#contato">Contato</a></li>
-  </ul>
-  <a href="https://wa.me/5592981295837" target="_blank" rel="noopener noreferrer" class="mobile-cta">Fale Comigo →</a>
+<main id="main">
+
+<!-- ═══ HERO ═══ -->
+<div class="hero">
+  <div class="wrap">
+  <div class="hero-in">
+    <span class="chip"><span class="dot"></span> Disponível para projetos e estágio</span>
+    <h1>Luis Henrique Azevedo</h1>
+    <p class="role">Desenvolvedor de software · Manaus, AM</p>
+    <p class="lead">
+      Construo <strong>sistemas web, dashboards e automações com IA</strong> — do modelo de
+      dados à interface. A maior parte dos projetos abaixo nasceu de um problema concreto:
+      meu, da minha família ou de um negócio local.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+      <a class="btn btn-ghost" href="https://github.com/devluisam" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn-ghost" href="#contato">Falar comigo</a>
+    </div>
+    <div class="hero-meta">
+      <span>TypeScript · Python</span>
+      <span>Next.js · React · FastAPI</span>
+      <span>Prisma · PostgreSQL · SQLite</span>
+    </div>
+  </div>
+  </div>
 </div>
 
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-content">
-    <div class="hero-left">
-      <div class="hero-availability animate fade-up">
-        <span class="availability-dot"></span>
-        Disponível para projetos
-      </div>
-      <h1 class="hero-name animate fade-up delay-1">
-        Desenvolvedor<br>
-        <span class="gradient-text">Full Stack &amp; IA</span>
-      </h1>
-      <p class="hero-title animate fade-up delay-2">Luis Henrique Azevedo · Desenvolvedor de Software · Manaus, AM</p>
-      <p class="hero-desc animate fade-up delay-2">
-        Desenvolvo produtos digitais completos — do planejamento ao deploy.
-        React, Next.js, Node.js, Python e inteligência artificial para resolver problemas reais.
-        Código limpo, experiência de uso refinada e foco em resultados para o seu negócio.
+<!-- ═══ PROJETOS EM DESTAQUE ═══ -->
+<section id="projetos" aria-labelledby="h-projetos">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-index">01 — projetos em destaque</p>
+      <h2 id="h-projetos">O que eu construí<br>e como funciona</h2>
+      <p class="sec-lead">
+        Cinco sistemas, cada um com o problema que resolve, as decisões de arquitetura e os
+        desafios técnicos que apareceram no caminho. Abra qualquer um para ver o estudo de caso.
       </p>
-      <div class="hero-ctas animate fade-up delay-3">
-        <a href="#projetos" class="btn btn-primary">Ver Projetos →</a>
-        <a href="#contato" class="btn btn-outline">Entrar em Contato</a>
-      </div>
-      <div class="hero-socials animate fade-up delay-4">
-        <a href="https://github.com/devluisam" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/luis-henrique-94a6183b3" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-        <a href="https://www.instagram.com/luixss__/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-        </a>
-        <a href="https://wa.me/5592981295837" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        </a>
-      </div>
     </div>
-    <div class="hero-right animate fade-in delay-3">
-      <div class="float-card float-card-1 animate fade-up delay-4">
-        <span class="float-num" data-count="8">0</span><span class="float-num accent">+</span>
-        <span class="float-label">Projetos</span>
-      </div>
-      <div class="avatar-wrap">
-        <div class="avatar-ring"></div>
-        <div class="avatar-img">
-          <img src="./05f3517e-7d55-457c-beec-7460c57defc2.jpg" alt="Luis Henrique Azevedo" loading="eager">
-        </div>
-        <div class="avatar-badge">
-          <span class="badge-dot"></span>
-          Manaus, AM
-        </div>
-      </div>
-      <div class="float-card float-card-2 animate fade-up delay-5">
-        <span class="float-num" data-count="10">0</span><span class="float-num accent">+</span>
-        <span class="float-label">Tecnologias</span>
-      </div>
-    </div>
-  </div>
 
-  <!-- Marquee -->
-  <div class="marquee-wrap" aria-hidden="true">
-    <div class="marquee-inner">
-      <span class="marquee-item">React</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">Next.js 15</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">Node.js</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">TypeScript</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">Python</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">PostgreSQL</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">Docker</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">Claude API</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">OpenAI</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">Supabase</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">Tailwind CSS</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">NestJS</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">FastAPI</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">Redis</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">Prisma</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">Three.js</span><span class="marquee-sep">·</span>
-      <!-- duplicate for seamless loop -->
-      <span class="marquee-item">React</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">Next.js 15</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">Node.js</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">TypeScript</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">Python</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">PostgreSQL</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">Docker</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">Claude API</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">OpenAI</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">Supabase</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">Tailwind CSS</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">NestJS</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">FastAPI</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">Redis</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">Prisma</span><span class="marquee-sep">·</span>
-      <span class="marquee-item">Three.js</span><span class="marquee-sep">·</span>
+    <div class="cases">
+
+      <!-- 01 TOSHIBA -->
+      <article class="case">
+        <div class="case-top">
+          <span class="case-num">01</span>
+          <div class="case-tags">
+            <span class="tag">Sistema completo</span>
+            <span class="tag">IA</span>
+            <span class="tag priv">Privado</span>
+          </div>
+        </div>
+        <h3>TOSHIBA — Personal Life Operating System</h3>
+        <p class="case-sub">
+          Sistema local-first de uso diário que centraliza finanças, revendas, faculdade,
+          estudos, tarefas, hábitos, treino, alimentação e documentos em 19 módulos sobre um
+          único banco — e é operado por conversa.
+        </p>
+        <ul class="stack">
+          <li>Next.js 16</li><li>React 19</li><li>TypeScript strict</li><li>Prisma 7</li>
+          <li>SQLite</li><li>Tailwind v4</li><li>shadcn/ui</li><li>Zod 4</li><li>Vitest</li><li>PWA</li>
+        </ul>
+
+        <details class="study">
+          <summary>Ver estudo de caso</summary>
+          <div class="study-body">
+            <div class="block">
+              <h4>Problema</h4>
+              <p>
+                Minha vida estava espalhada por aplicativos que não se conversavam: finanças numa
+                planilha, tarefas num caderno, notas da faculdade no portal, treino e alimentação
+                em apps separados. Registrar qualquer coisa exigia abrir o app certo e preencher
+                formulário — o custo de registrar era maior que o benefício, então eu simplesmente
+                não registrava, e nenhum dado se cruzava com outro.
+              </p>
+            </div>
+            <div class="block">
+              <h4>Solução</h4>
+              <p>
+                Um sistema único operado por conversa: “gastei 27 no almoço” vira uma transação;
+                “estudei 1h de cálculo” vira uma sessão registrada. Frases diretas são
+                interpretadas por um roteador de intenção baseado em regras e viram dados
+                <em>sem nenhuma chamada paga de IA</em>; só perguntas abertas acionam o modelo.
+                Tudo roda na máquina, com o banco em arquivo.
+              </p>
+            </div>
+            <div class="block full">
+              <h4>Arquitetura</h4>
+              <pre class="arch">Entrada de texto
+     │
+     ├─→ Roteador de intenção (regras)  ──→ função de domínio ──→ banco     [custo zero]
+     │
+     └─→ Camada AIProvider  ──→  Ollama (local) | Claude | OpenAI | Gemini
+              │                        │
+              │                        └─→ orçamento mensal com corte automático
+              │                            (ao estourar, volta para o modo regras)
+              ↓
+        Tool Registry  ──→  as MESMAS funções de domínio que a interface usa
+              ↓
+        Server Actions (Next.js) ──→ Prisma 7 ──→ SQLite (WAL, local)</pre>
+            </div>
+            <div class="block">
+              <h4>Desafios técnicos</h4>
+              <ul>
+                <li>
+                  <strong>Não duplicar regra de negócio.</strong> A IA não tem um caminho paralelo:
+                  ela executa as mesmas funções de domínio que a interface chama, através de um
+                  registro de ferramentas próprio — escrito à mão em vez de adotar um framework de
+                  agentes, para manter o comportamento auditável.
+                </li>
+                <li>
+                  <strong>Propagação transacional.</strong> Registrar a compra de um produto para
+                  revenda precisa criar a transação financeira, o item de estoque e atualizar o
+                  painel — tudo ou nada, numa transação só.
+                </li>
+                <li>
+                  <strong>Custo previsível.</strong> Teto de gasto mensal configurável; ao atingir
+                  o limite, o sistema degrada para o modo regras em vez de parar de funcionar.
+                </li>
+              </ul>
+            </div>
+            <div class="block">
+              <h4>Minha responsabilidade</h4>
+              <p>
+                Projeto inteiro, sozinho: decisões de arquitetura e a justificativa de cada uma,
+                modelagem do banco, camada de IA, regras de domínio, interface, testes e a
+                documentação técnica (arquitetura, esquema de dados e roadmap).
+              </p>
+              <h4 style="margin-top:20px">Resultado</h4>
+              <p>
+                MVP concluído e em uso diário: <strong>54 modelos no schema</strong>,
+                <strong>58 arquivos de teste</strong> (unitários e de integração com banco
+                descartável) e <strong>87 commits</strong>. Funciona offline e, com modelo local,
+                sem custo de IA.
+              </p>
+            </div>
+          </div>
+        </details>
+
+        <div class="case-links">
+          <span class="note">Repositório privado — o sistema guarda dados pessoais reais (finanças e diário).</span>
+        </div>
+      </article>
+
+      <!-- 02 MEDATLAS -->
+      <article class="case">
+        <div class="case-top">
+          <span class="case-num">02</span>
+          <div class="case-tags">
+            <span class="tag">EdTech</span>
+            <span class="tag">3D</span>
+            <span class="tag">IA</span>
+          </div>
+        </div>
+        <h3>MEDATLAS 3D</h3>
+        <p class="case-sub">
+          Plataforma de estudo de anatomia: um modelo 3D navegável no navegador, ligado ao banco
+          de estruturas anatômicas, com quiz gerado por IA e flashcards com repetição espaçada.
+        </p>
+        <ul class="stack">
+          <li>Next.js 15</li><li>React 19</li><li>Three.js</li><li>React Three Fiber</li>
+          <li>Zustand</li><li>Prisma</li><li>PostgreSQL</li><li>OpenAI API</li><li>Tailwind</li>
+        </ul>
+
+        <details class="study">
+          <summary>Ver estudo de caso</summary>
+          <div class="study-body">
+            <div class="block">
+              <h4>Problema</h4>
+              <p>
+                Anatomia é um conteúdo espacial estudado em material plano. Atlas impressos mostram
+                cortes fixos, e as ferramentas 3D disponíveis costumam ser pagas ou desconectadas
+                do estudo em si: você gira um osso numa aba, e o que precisa memorizar está em outra.
+              </p>
+            </div>
+            <div class="block">
+              <h4>Solução</h4>
+              <p>
+                Modelo 3D e material de estudo na mesma tela. O estudante seleciona uma estrutura e
+                recebe ali a descrição clínica, as relações anatômicas, as patologias associadas, as
+                questões e os flashcards daquela estrutura — com o progresso registrado para orientar
+                a próxima sessão.
+              </p>
+            </div>
+            <div class="block full">
+              <h4>Arquitetura</h4>
+              <pre class="arch">Navegador — Next.js 15 (App Router) + React 19
+   │
+   ├─ Three.js / React Three Fiber ──→ modelo .glb + SSAO, Bloom e Vignette
+   ├─ Zustand ──→ estado isolado por domínio: viewer · quiz · study
+   │
+   ↓  rotas de API
+   ├─ /api/structures/[id]   estrutura, relações e patologias
+   ├─ /api/search            busca por sistema anatômico
+   ├─ /api/ai/chat   (Edge)  ──→ OpenAI, resposta em streaming
+   └─ /api/ai/quiz           ──→ OpenAI, geração de questões
+   ↓
+Prisma ORM ──→ PostgreSQL  (20 modelos: estruturas, quiz, progresso, conversas)</pre>
+            </div>
+            <div class="block">
+              <h4>Desafios técnicos</h4>
+              <ul>
+                <li>
+                  <strong>Separar cena 3D de estado de aplicação.</strong> Misturar as duas coisas
+                  faz a cena re-renderizar a cada clique de menu. Resolvi isolando o estado em três
+                  stores Zustand por domínio, deixando os componentes de cena sem lógica de aplicação.
+                </li>
+                <li>
+                  <strong>Pós-processamento sem derrubar o frame rate</strong> — SSAO, Bloom e
+                  Vignette aplicados com controle de camadas e de plano de corte.
+                </li>
+                <li>
+                  <strong>Conteúdo fora do código.</strong> Todo o material anatômico vive no banco
+                  e entra por seed, para poder crescer sem tocar na aplicação.
+                </li>
+              </ul>
+            </div>
+            <div class="block">
+              <h4>Minha responsabilidade</h4>
+              <p>
+                Projeto inteiro: modelagem das 20 entidades, integração 3D, rotas de API, geração de
+                questões e tutor por IA, interface e documentação de arquitetura.
+              </p>
+              <h4 style="margin-top:20px">Resultado</h4>
+              <p>
+                MVP funcional com visualizador, busca, conteúdo clínico, quiz, flashcards (algoritmo
+                SM-2) e tutor em streaming. O repositório estava sem os arquivos de configuração e
+                não instalava; reconstruí os manifestos e hoje ele passa em <code>tsc --noEmit</code>
+                e conclui o <code>next build</code>. A autenticação ainda não está ligada — isso está
+                declarado no README em vez de ser apresentado como pronto.
+              </p>
+            </div>
+          </div>
+        </details>
+
+        <div class="case-links">
+          <a href="https://github.com/devluisam/medatlas-3d" target="_blank" rel="noopener">Ver repositório ↗</a>
+          <span class="note">README com arquitetura e instruções de execução</span>
+        </div>
+      </article>
+
+      <!-- 03 DENTAL -->
+      <article class="case">
+        <div class="case-top">
+          <span class="case-num">03</span>
+          <div class="case-tags">
+            <span class="tag">Automação</span>
+            <span class="tag">IA aplicada</span>
+            <span class="tag">OCR</span>
+          </div>
+        </div>
+        <h3>Dental Report AI</h3>
+        <p class="case-sub">
+          Transforma fotos de fichas clínicas preenchidas à mão em um relatório de estágio
+          odontológico pronto para entregar em PDF.
+        </p>
+        <ul class="stack">
+          <li>Next.js 15</li><li>TypeScript</li><li>Claude API</li><li>Tesseract.js</li>
+          <li>jsPDF</li><li>React Hook Form</li><li>Zod</li>
+        </ul>
+
+        <details class="study">
+          <summary>Ver estudo de caso</summary>
+          <div class="study-body">
+            <div class="block">
+              <h4>Problema</h4>
+              <p>
+                O relatório de estágio da clínica é montado a partir de fichas de papel: dados do
+                paciente, situação do tratamento e a contagem de cada procedimento. Transcrever isso
+                à mão é demorado, repetitivo e fácil de errar na soma — e o erro só aparece depois
+                de entregue.
+              </p>
+            </div>
+            <div class="block">
+              <h4>Solução</h4>
+              <p>
+                O aluno fotografa as fichas; o sistema lê as imagens, estrutura os dados e monta o
+                relatório. Tudo fica editável antes de exportar: a automação adianta o trabalho, mas
+                a palavra final continua sendo de quem assina o documento.
+              </p>
+            </div>
+            <div class="block full">
+              <h4>Arquitetura</h4>
+              <pre class="arch">Upload das fotos
+   │
+   ├─ Caminho A ──→ POST /api/extract ──→ Claude (visão) ──→ JSON estruturado
+   │                    (a chave da API fica só no servidor)
+   │
+   └─ Caminho B ──→ Tesseract.js no cliente ──→ parser próprio ──→ JSON estruturado
+                              │
+                              ↓
+        Formulários editáveis (React Hook Form + Zod)  ← revisão humana
+                              ↓
+        Pré-visualização A4 ──→ html2canvas ──→ jsPDF ──→ PDF</pre>
+            </div>
+            <div class="block">
+              <h4>Desafios técnicos</h4>
+              <ul>
+                <li>
+                  <strong>Ler ficha manuscrita com layout irregular.</strong> OCR genérico devolve
+                  texto embaralhado. Escrevi um parser específico para esse formulário: busca por
+                  rótulo, normalização de acentuação e maiúsculas, e leitura da próxima linha
+                  significativa quando o valor não está na mesma linha do rótulo.
+                </li>
+                <li>
+                  <strong>Não confiar cegamente na extração.</strong> Todo campo extraído passa por
+                  validação com Zod e entra num formulário revisável.
+                </li>
+                <li>
+                  <strong>PDF fiel à tela</strong> — a pré-visualização é o próprio documento,
+                  capturada e paginada em A4.
+                </li>
+              </ul>
+            </div>
+            <div class="block">
+              <h4>Minha responsabilidade</h4>
+              <p>
+                Projeto inteiro: fluxo de upload, integração com a API da Claude no servidor, parser
+                de OCR, formulários, pré-visualização e geração do PDF.
+              </p>
+              <h4 style="margin-top:20px">Resultado</h4>
+              <p>
+                Fluxo completo funcionando do upload ao PDF, com dois caminhos independentes de
+                extração e a credencial nunca exposta ao navegador.
+              </p>
+            </div>
+          </div>
+        </details>
+
+        <div class="case-links">
+          <a href="https://github.com/devluisam/dental-report-ai" target="_blank" rel="noopener">Ver repositório ↗</a>
+        </div>
+      </article>
+
+      <!-- 04 DPE-AM -->
+      <article class="case">
+        <div class="case-top">
+          <span class="case-num">04</span>
+          <div class="case-tags">
+            <span class="tag">Sistema completo</span>
+            <span class="tag">Algoritmo</span>
+            <span class="tag priv">Privado</span>
+          </div>
+        </div>
+        <h3>Centro de Comando DPE-AM</h3>
+        <p class="case-sub">
+          Plataforma de preparação para concurso que responde uma pergunta por dia: o que estudar
+          hoje para maximizar a chance de aprovação — e deixa o algoritmo decidir.
+        </p>
+        <ul class="stack">
+          <li>Next.js 15</li><li>React 19</li><li>TypeScript strict</li><li>Prisma 6</li>
+          <li>SQLite</li><li>Zod</li><li>Recharts</li><li>Vitest</li><li>PWA</li>
+        </ul>
+
+        <details class="study">
+          <summary>Ver estudo de caso</summary>
+          <div class="study-body">
+            <div class="block">
+              <h4>Problema</h4>
+              <p>
+                Edital de concurso é grande demais para caber num cronograma fixo. Qualquer plano
+                montado na segunda-feira está errado na quarta: você foi mal num simulado, uma
+                revisão venceu, um assunto novo entrou. A pergunta difícil não é “estudar?”, é
+                <em>“o que estudar agora?”</em>.
+              </p>
+            </div>
+            <div class="block">
+              <h4>Solução</h4>
+              <p>
+                Em vez de cronograma, uma <strong>fila de prioridade adaptativa</strong>, recalculada
+                a cada abertura do painel e após qualquer evento relevante — com o detalhamento de
+                cada fator visível, para a decisão não ser uma caixa-preta.
+              </p>
+            </div>
+            <div class="block full">
+              <h4>O algoritmo de priorização</h4>
+              <pre class="arch">prioridade = peso_do_edital   (0,30)
+           × fraqueza        (0,30)   ← desempenho real em questões
+           × urgência        (0,15)   ← dias restantes até a prova
+           × atraso_revisão  (0,15)
+           × lacuna_cobertura(0,10)
+           × bônus_novidade
+           com piso mínimo, para matéria fraca NUNCA sumir da fila
+
+Funções puras: sem I/O, sem relógio escondido — e, por isso, testáveis.</pre>
+            </div>
+            <div class="block">
+              <h4>Desafios técnicos</h4>
+              <ul>
+                <li>
+                  <strong>Tornar a regra testável.</strong> A camada <code>domain/</code> não toca em
+                  banco nem em data do sistema; quem orquestra Prisma é a camada de serviços. Isso
+                  permitiu cobrir a fórmula, o FSRS e as métricas com testes de verdade.
+                </li>
+                <li>
+                  <strong>Evitar que o algoritmo abandone matéria difícil.</strong> Multiplicação de
+                  fatores tende a zerar itens ruins em todos os critérios; um piso garante que eles
+                  continuem aparecendo.
+                </li>
+                <li>
+                  <strong>Detectar o edital sozinho.</strong> Um monitor acompanha fontes oficiais,
+                  classifica documentos e compara versões com um mecanismo de diff, mostrando o que
+                  mudou entre uma publicação e outra.
+                </li>
+                <li>
+                  <strong>Fuso fixo.</strong> Todas as datas operam em America/Manaus, para o “hoje”
+                  do sistema não escorregar.
+                </li>
+              </ul>
+            </div>
+            <div class="block">
+              <h4>Minha responsabilidade</h4>
+              <p>
+                Projeto inteiro: fórmula de priorização, implementação do FSRS para revisão
+                espaçada, caderno de erros com detecção de padrões, simulados no formato do
+                regulamento, índice de preparação, modelagem do banco, interface e testes.
+              </p>
+              <h4 style="margin-top:20px">Resultado</h4>
+              <p>
+                Sistema em uso: <strong>33 modelos</strong> no schema, <strong>65 testes</strong>
+                (46 de domínio e 19 de integração com SQLite descartável), PWA instalável que
+                funciona offline e backup completo em JSON.
+              </p>
+            </div>
+          </div>
+        </details>
+
+        <div class="case-links">
+          <span class="note">Repositório privado — contém material de estudo e dados de desempenho pessoais.</span>
+        </div>
+      </article>
+
+      <!-- 05 KINGA -->
+      <article class="case">
+        <div class="case-top">
+          <span class="case-num">05</span>
+          <div class="case-tags">
+            <span class="tag">Dashboard</span>
+            <span class="tag">Backend</span>
+            <span class="tag">Negócio real</span>
+          </div>
+        </div>
+        <h3>Kinga Finance AI</h3>
+        <p class="case-sub">
+          Análise financeira para um pequeno comércio com várias lojas e uma fábrica: importa
+          vendas e custos, classifica as despesas sozinho e mostra o resultado por unidade.
+        </p>
+        <ul class="stack">
+          <li>Python</li><li>FastAPI</li><li>SQLAlchemy 2</li><li>Streamlit</li>
+          <li>Plotly</li><li>pandas</li><li>SQLite / PostgreSQL</li>
+        </ul>
+
+        <details class="study">
+          <summary>Ver estudo de caso</summary>
+          <div class="study-body">
+            <div class="block">
+              <h4>Problema</h4>
+              <p>
+                Comércio pequeno fecha o mês na planilha. O dono sabe quanto entrou, mas não quanto
+                cada loja deu de lucro, qual categoria de custo cresceu, nem se o mês vai fechar no
+                azul antes de ele acabar. Os dados existem — estão soltos, sem categoria.
+              </p>
+            </div>
+            <div class="block">
+              <h4>Solução</h4>
+              <p>
+                Um sistema que recebe os lançamentos, categoriza cada custo automaticamente,
+                consolida o resultado por unidade e transforma isso num painel com projeção de
+                fechamento, ranking de custos e alertas do que saiu do padrão.
+              </p>
+            </div>
+            <div class="block full">
+              <h4>Arquitetura</h4>
+              <pre class="arch">Dashboard (Streamlit + Plotly)
+        │  HTTP
+        ↓
+API REST (FastAPI)  ──  /sales · /costs · /stores · /report
+        │
+        ↓
+Módulos de domínio — Python puro, sem framework
+   classifier · results · costs · billing · factory · forecast · health · alerts
+        │
+        ↓
+SQLAlchemy 2 ──→ SQLite (padrão) ou PostgreSQL</pre>
+            </div>
+            <div class="block">
+              <h4>Desafios técnicos</h4>
+              <ul>
+                <li>
+                  <strong>Categorizar despesa escrita em texto livre, sem ML.</strong> Motor de
+                  regras por palavra-chave que devolve categoria, subcategoria e um grau de
+                  confiança proporcional aos termos reconhecidos — com sobrescrita manual quando
+                  erra. Previsível e explicável, ao contrário de um classificador treinado.
+                </li>
+                <li>
+                  <strong>Um só núcleo de cálculo.</strong> Os módulos de domínio não conhecem
+                  FastAPI nem Streamlit: recebem uma sessão e devolvem <code>dataclasses</code>. O
+                  mesmo cálculo alimenta a API, o dashboard e o relatório de terminal.
+                </li>
+                <li>
+                  <strong>Índice de saúde financeira</strong> ponderado entre margem, crescimento,
+                  controle de custo e resultado, para virar um número que o dono entende.
+                </li>
+              </ul>
+            </div>
+            <div class="block">
+              <h4>Minha responsabilidade</h4>
+              <p>
+                Projeto inteiro: modelagem, API, motor de classificação, cálculos financeiros
+                (resultado por loja, projeção, Pareto, alertas) e o dashboard.
+              </p>
+              <h4 style="margin-top:20px">Resultado</h4>
+              <p>
+                API, painel e relatório de terminal compartilhando a mesma regra de negócio, com
+                backup automático do banco a cada inicialização e importação por CSV.
+              </p>
+            </div>
+          </div>
+        </details>
+
+        <div class="case-links">
+          <a href="https://github.com/devluisam/kinga-finance-ai" target="_blank" rel="noopener">Ver repositório ↗</a>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
 
-<!-- SOBRE MIM -->
-<section id="sobre">
-  <div class="section-wrap">
-    <div class="about-grid">
+<!-- ═══ OUTROS PROJETOS ═══ -->
+<section id="outros" aria-labelledby="h-outros">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-index">02 — outros projetos</p>
+      <h2 id="h-outros">Projetos complementares</h2>
+      <p class="sec-lead">Menores em escopo, mas com um ponto técnico específico em cada um.</p>
+    </div>
+
+    <div class="grid">
+      <article class="mini">
+        <h3>Pulso Verde</h3>
+        <p>
+          Mapa interativo de queimadas e desmatamento na Amazônia. Consome a API da
+          <strong>NASA FIRMS</strong> (CSV com parser próprio) e o WFS do
+          <strong>TerraBrasilis/INPE</strong> com filtro <code>CQL</code> por período. Cada chamada
+          tem timeout com <code>AbortController</code> e erro traduzido para a interface.
+        </p>
+        <ul class="stack"><li>React</li><li>Leaflet</li><li>Recharts</li><li>Dados abertos</li></ul>
+        <div class="mini-links">
+          <a href="https://github.com/devluisam/pulso-verde" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </article>
+
+      <article class="mini">
+        <h3>NutriTrack Pro</h3>
+        <p>
+          Dashboard de nutrição: diário alimentar, controle de macros e cálculo de meta calórica
+          pela equação de <strong>Mifflin-St Jeor</strong>. Os gráficos — anel de macros e série
+          semanal — foram escritos em SVG à mão, sem biblioteca de charts.
+          <em>Aplicação frontend, com dados em memória.</em>
+        </p>
+        <ul class="stack"><li>React</li><li>Vite</li><li>Tailwind</li><li>SVG</li></ul>
+        <div class="mini-links">
+          <a href="https://github.com/devluisam/nutritrack-pro" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </article>
+
+      <article class="mini">
+        <h3>Landing pages — peças demonstrativas</h3>
+        <p>
+          Três páginas institucionais (advocacia, clínica e restaurante) em HTML, CSS e JavaScript,
+          responsivas e com SEO on-page, publicadas na Vercel.
+          <em>Conteúdo fictício: são demonstrações do serviço, não clientes reais.</em>
+        </p>
+        <ul class="stack"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>SEO</li></ul>
+        <div class="mini-links">
+          <a href="https://site-advocacia-brown.vercel.app" target="_blank" rel="noopener">Advocacia ↗</a>
+          <a href="https://site-clinica-gilt.vercel.app" target="_blank" rel="noopener">Clínica ↗</a>
+          <a href="https://site-restaurante-rho-ten.vercel.app" target="_blank" rel="noopener">Restaurante ↗</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SOBRE ═══ -->
+<section id="sobre" aria-labelledby="h-sobre">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-index">03 — sobre</p>
+      <h2 id="h-sobre">Quem sou</h2>
+    </div>
+    <div class="about">
       <div>
-        <div class="section-label animate fade-up">// 01 — sobre mim</div>
-        <h2 class="section-title animate fade-up delay-1">Quem sou<br><span class="accent">eu</span></h2>
-        <div class="about-text">
-          <p class="animate fade-up delay-2">
-            Sou <strong>Luis Henrique</strong>, tenho 18 anos e estou cursando <strong>Engenharia de Software</strong> na Fametro, em Manaus. Enquanto estudo, construo produtos digitais completos — sistemas SaaS, dashboards analíticos, integrações com IA e sites profissionais.
-          </p>
-          <p class="animate fade-up delay-3">
-            Tenho uma abordagem <strong>orientada a resultado</strong>: não basta o código funcionar, o produto precisa ser bonito, rápido e resolver o problema real de quem vai usá-lo. Por isso combino desenvolvimento técnico sólido com atenção a design e experiência do usuário.
-          </p>
-          <p class="animate fade-up delay-4">
-            Meu ritmo de aprendizado é acelerado. Construo em tecnologias como <strong>Next.js, NestJS, Python e IA generativa</strong> porque fui atrás delas por necessidade dos projetos, não por obrigação acadêmica.
-          </p>
-        </div>
-        <div class="about-highlights animate fade-up delay-4">
-          <div class="highlight-item">
-            <span class="hi-icon">⚡</span>
-            <p class="hi-text"><strong>Do design ao deploy.</strong> Cuido do projeto inteiro: arquitetura, banco de dados, API, frontend e publicação em produção.</p>
-          </div>
-          <div class="highlight-item">
-            <span class="hi-icon">🤖</span>
-            <p class="hi-text"><strong>IA como ferramenta real.</strong> Integro Claude e OpenAI para criar agentes, automações e análises que economizam horas de trabalho manual.</p>
-          </div>
-          <div class="highlight-item">
-            <span class="hi-icon">🎯</span>
-            <p class="hi-text"><strong>Foco em conversão e resultado.</strong> Cada decisão de design e código considera o usuário final e o objetivo de negócio.</p>
-          </div>
-        </div>
+        <p>
+          Sou Luis Henrique, tenho 18 anos e curso <strong>Engenharia de Software na Fametro</strong>,
+          em Manaus. Comecei a programar por necessidade: queria resolver problemas que os
+          aplicativos prontos não resolviam do jeito que eu precisava.
+        </p>
+        <p>
+          Desde então construí sistemas que uso todo dia e ferramentas para pessoas próximas —
+          um sistema pessoal de organização com 19 módulos, uma plataforma de preparação para
+          concurso com algoritmo de priorização próprio, um painel financeiro para um comércio da
+          família e um gerador de relatórios que economiza horas de transcrição manual.
+        </p>
+        <p>
+          Gosto da parte que aparece pouco: <strong>modelar o banco</strong>, separar regra de
+          negócio de entrada e saída para conseguir testar, e decidir o que <em>não</em> colocar no
+          projeto. Escrevo documentação de arquitetura porque ela me obriga a justificar as escolhas
+          — e porque quem chega depois precisa entender o sistema sem me perguntar.
+        </p>
+        <p>
+          Aprendi as tecnologias que uso porque um projeto pediu, não porque estavam na ementa. É
+          assim que pretendo continuar.
+        </p>
       </div>
-      <div class="stats-col">
-        <div class="stat-card animate fade-up delay-1">
-          <div class="stat-num" data-count="8">0</div>
-          <div class="stat-lbl">Projetos construídos</div>
-          <div class="stat-sub">SaaS, dashboards, sites, agentes de IA</div>
-        </div>
-        <div class="stat-card animate fade-up delay-2">
-          <div class="stat-num accent">3</div>
-          <div class="stat-lbl">Plataformas SaaS completas</div>
-          <div class="stat-sub">Com auth, pagamentos, multi-tenant e IA</div>
-        </div>
-        <div class="stat-card animate fade-up delay-3">
-          <div class="stat-num accent">10<span style="font-size:1.5rem">+</span></div>
-          <div class="stat-lbl">Tecnologias dominadas</div>
-          <div class="stat-sub">Frontend, backend, banco de dados, IA</div>
-        </div>
-        <div class="stat-card animate fade-up delay-4">
-          <div class="stat-num">1°</div>
-          <div class="stat-lbl">Semestre — Eng. de Software</div>
-          <div class="stat-sub">Fametro · Manaus, Amazonas</div>
-        </div>
+      <dl class="facts">
+        <div class="fact"><dt>Formação</dt><dd>Eng. de Software — Fametro</dd></div>
+        <div class="fact"><dt>Local</dt><dd>Manaus, AM — Brasil</dd></div>
+        <div class="fact"><dt>Sistemas em uso diário</dt><dd>2</dd></div>
+        <div class="fact"><dt>Projetos públicos</dt><dd>GitHub · @devluisam</dd></div>
+        <div class="fact"><dt>Disponibilidade</dt><dd>Freelance e estágio</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ STACK ═══ -->
+<section id="stack" aria-labelledby="h-stack">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-index">04 — stack</p>
+      <h2 id="h-stack">Tecnologias que uso</h2>
+      <p class="sec-lead">
+        Só o que aparece nos projetos desta página. Sem barra de porcentagem: o código está no
+        GitHub, e ele diz mais do que qualquer medidor de domínio.
+      </p>
+    </div>
+    <div class="stack-grid">
+      <div class="stack-col">
+        <h3>Linguagens</h3>
+        <ul><li>TypeScript</li><li>JavaScript</li><li>Python</li><li>SQL</li><li>C</li></ul>
+      </div>
+      <div class="stack-col">
+        <h3>Frontend</h3>
+        <ul><li>React</li><li>Next.js (App Router)</li><li>Tailwind CSS</li><li>shadcn/ui · Radix</li><li>Three.js · React Three Fiber</li><li>Recharts · Leaflet</li></ul>
+      </div>
+      <div class="stack-col">
+        <h3>Backend</h3>
+        <ul><li>Node.js</li><li>FastAPI</li><li>Server Actions</li><li>Prisma ORM</li><li>SQLAlchemy</li><li>Zod</li></ul>
+      </div>
+      <div class="stack-col">
+        <h3>Banco de dados</h3>
+        <ul><li>PostgreSQL</li><li>SQLite</li><li>Modelagem relacional</li><li>Migrations e seed</li></ul>
+      </div>
+      <div class="stack-col">
+        <h3>IA aplicada</h3>
+        <ul><li>Claude API (Anthropic SDK)</li><li>OpenAI API</li><li>Modelos locais (Ollama)</li><li>Tesseract.js (OCR)</li></ul>
+      </div>
+      <div class="stack-col">
+        <h3>Qualidade e ferramentas</h3>
+        <ul><li>Vitest · Testing Library</li><li>Testes de integração</li><li>ESLint · Prettier</li><li>Git</li><li>Vercel · Streamlit</li></ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- HABILIDADES -->
-<section id="habilidades">
-  <div class="section-wrap">
-    <div class="section-label animate fade-up">// 02 — tecnologias</div>
-    <h2 class="section-title animate fade-up delay-1">Stack &amp;<br><span class="accent">Habilidades</span></h2>
-    <p class="section-sub animate fade-up delay-2">Tecnologias que estou estudando e aplicando na prática em projetos reais — aprendizado constante, do frontend ao backend, banco de dados e IA.</p>
-    <div class="animate fade-up delay-2" style="display:inline-flex;align-items:center;gap:.6rem;font-family:var(--font-m);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--indigo);border:1px solid var(--indigo-dim);background:var(--indigo-dim);padding:.4rem 1rem;border-radius:20px;margin-bottom:2.5rem;">
-      <span style="width:7px;height:7px;border-radius:50%;background:var(--indigo);display:block;animation:pulse 2s ease-in-out infinite;"></span>
-      Em constante aprendizado
+<!-- ═══ SERVIÇOS ═══ -->
+<section id="servicos" aria-labelledby="h-servicos">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="sec-index">05 — serviços</p>
+      <h2 id="h-servicos">O que posso desenvolver</h2>
+      <p class="sec-lead">Tipos de trabalho que correspondem ao que já construí e está documentado acima.</p>
     </div>
-
-    <div class="skills-cats" id="skillsSection">
-      <!-- Frontend -->
-      <div class="skill-cat animate fade-up delay-1">
-        <div class="skill-cat-header">
-          <div class="skill-icon-wrap">🌐</div>
-          <span class="skill-cat-name">Frontend</span>
-        </div>
-        <ul class="skill-list">
-          <li class="skill-item">
-            <span class="skill-item-left"><i class="devicon-react-original colored"></i> React</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="90" style="width:90%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left"><i class="devicon-nextjs-plain"></i> Next.js 15</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="85" style="width:85%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left"><i class="devicon-typescript-plain colored"></i> TypeScript</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="80" style="width:80%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left"><i class="devicon-tailwindcss-plain colored"></i> Tailwind CSS</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="90" style="width:90%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left"><i class="devicon-html5-plain colored"></i> HTML5</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="95" style="width:95%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left"><i class="devicon-css3-plain colored"></i> CSS3</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="90" style="width:90%"></div></div>
-          </li>
-        </ul>
+    <div class="grid">
+      <div class="svc">
+        <h3>Sistemas web sob medida</h3>
+        <p>
+          Aplicações completas em Next.js e TypeScript: modelagem do banco, regras de negócio,
+          interface e publicação. Da definição do schema ao deploy.
+        </p>
       </div>
-
-      <!-- Backend -->
-      <div class="skill-cat animate fade-up delay-2">
-        <div class="skill-cat-header">
-          <div class="skill-icon-wrap">⚙️</div>
-          <span class="skill-cat-name">Backend</span>
-        </div>
-        <ul class="skill-list">
-          <li class="skill-item">
-            <span class="skill-item-left"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="85" style="width:85%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left"><i class="devicon-nestjs-plain colored"></i> NestJS</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="75" style="width:75%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left"><i class="devicon-python-plain colored"></i> Python</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="75" style="width:75%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left"><i class="devicon-fastapi-plain colored"></i> FastAPI</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="70" style="width:70%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left"><i class="devicon-express-original"></i> Express</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="80" style="width:80%"></div></div>
-          </li>
-        </ul>
+      <div class="svc">
+        <h3>Dashboards e análise de dados</h3>
+        <p>
+          Painéis que transformam planilha e lançamento solto em indicador: consolidação, gráficos,
+          projeções e alertas do que saiu do padrão.
+        </p>
       </div>
-
-      <!-- Banco de Dados -->
-      <div class="skill-cat animate fade-up delay-3">
-        <div class="skill-cat-header">
-          <div class="skill-icon-wrap">🗄️</div>
-          <span class="skill-cat-name">Banco de Dados</span>
-        </div>
-        <ul class="skill-list">
-          <li class="skill-item">
-            <span class="skill-item-left"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="80" style="width:80%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left"><i class="devicon-sqlite-plain colored"></i> SQLite</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="75" style="width:75%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left"><i class="devicon-redis-plain colored"></i> Redis</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="65" style="width:65%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left"><i class="devicon-prisma-original"></i> Prisma ORM</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="80" style="width:80%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left"><i class="devicon-supabase-plain colored"></i> Supabase</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="75" style="width:75%"></div></div>
-          </li>
-        </ul>
+      <div class="svc">
+        <h3>Automação com IA</h3>
+        <p>
+          Extração de dados de documentos e imagens, geração de relatórios e classificação
+          automática — sempre com revisão humana antes do resultado final.
+        </p>
       </div>
-
-      <!-- IA & Automação -->
-      <div class="skill-cat animate fade-up delay-1">
-        <div class="skill-cat-header">
-          <div class="skill-icon-wrap">🤖</div>
-          <span class="skill-cat-name">IA &amp; Automação</span>
-        </div>
-        <ul class="skill-list">
-          <li class="skill-item">
-            <span class="skill-item-left">🟢 Claude API</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="85" style="width:85%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left">⚡ OpenAI API</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="80" style="width:80%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left">🔗 LLM Agents</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="75" style="width:75%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left">📱 Twilio WhatsApp</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="70" style="width:70%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left">📊 Streamlit</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="70" style="width:70%"></div></div>
-          </li>
-        </ul>
-      </div>
-
-      <!-- DevOps & Ferramentas -->
-      <div class="skill-cat animate fade-up delay-2">
-        <div class="skill-cat-header">
-          <div class="skill-icon-wrap">🚀</div>
-          <span class="skill-cat-name">DevOps &amp; Tools</span>
-        </div>
-        <ul class="skill-list">
-          <li class="skill-item">
-            <span class="skill-item-left"><i class="devicon-docker-plain colored"></i> Docker</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="70" style="width:70%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left"><i class="devicon-git-plain colored"></i> Git</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="80" style="width:80%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left">▲ Vercel</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="85" style="width:85%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left">🚂 Railway</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="75" style="width:75%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left"><i class="devicon-github-original"></i> GitHub Actions</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="65" style="width:65%"></div></div>
-          </li>
-        </ul>
-      </div>
-
-      <!-- UI/UX & Design -->
-      <div class="skill-cat animate fade-up delay-3">
-        <div class="skill-cat-header">
-          <div class="skill-icon-wrap">🎨</div>
-          <span class="skill-cat-name">UI/UX &amp; Design</span>
-        </div>
-        <ul class="skill-list">
-          <li class="skill-item">
-            <span class="skill-item-left"><i class="devicon-figma-plain colored"></i> Figma</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="70" style="width:70%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left">🎞 Framer Motion</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="75" style="width:75%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left">🔲 shadcn/ui</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="80" style="width:80%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left">📈 Recharts</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="75" style="width:75%"></div></div>
-          </li>
-          <li class="skill-item">
-            <span class="skill-item-left">🗺 Leaflet.js</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" data-w="70" style="width:70%"></div></div>
-          </li>
-        </ul>
+      <div class="svc">
+        <h3>Landing pages</h3>
+        <p>
+          Sites institucionais responsivos, com SEO on-page, pré-visualização correta ao
+          compartilhar e carregamento rápido.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PROJETOS -->
-<section id="projetos">
-  <div class="section-wrap">
-    <div class="section-label animate fade-up">// 03 — projetos</div>
-    <h2 class="section-title animate fade-up delay-1">O que já<br><span class="accent">construí</span></h2>
-    <p class="section-sub animate fade-up delay-2">Produtos reais desenvolvidos do zero — cada um com arquitetura própria, desafios técnicos únicos e foco em resolver problemas concretos.</p>
-
-    <div class="filter-bar animate fade-up delay-2">
-      <button class="filter-btn active" data-filter="all">Todos</button>
-      <button class="filter-btn" data-filter="saas">SaaS</button>
-      <button class="filter-btn" data-filter="ia">IA</button>
-      <button class="filter-btn" data-filter="dashboard">Dashboard</button>
-      <button class="filter-btn" data-filter="crm">CRM</button>
-      <button class="filter-btn" data-filter="site">Sites</button>
-    </div>
-
-    <div class="projects-grid" id="projectsGrid">
-
-      <!-- 01 Voo Manaus AI -->
-      <div class="project-card animate fade-up delay-1" data-category="saas ia">
-        <div class="proj-cover cover-voo">
-          <div class="cover-pattern"></div>
-          <span class="cover-type type-saas">SaaS · IA</span>
-          <div class="cover-badges">
-            <span class="cover-badge">Next.js 15</span>
-            <span class="cover-badge">NestJS</span>
-            <span class="cover-badge">Claude API</span>
-            <span class="cover-badge">Stripe</span>
-          </div>
-        </div>
-        <div class="proj-body">
-          <div class="proj-header">
-            <span class="proj-num">01</span>
-            <div class="complexity" title="Complexidade: Muito Alta">
-              <span class="complexity-dot filled"></span><span class="complexity-dot filled"></span>
-              <span class="complexity-dot filled"></span><span class="complexity-dot filled"></span>
-              <span class="complexity-dot filled"></span>
-            </div>
-          </div>
-          <h3 class="proj-title">Voo Manaus AI</h3>
-          <p class="proj-problem">Monitoramento inteligente de passagens aéreas</p>
-          <p class="proj-desc">Plataforma SaaS completa similar ao Google Flights + Hopper, com IA para previsão de preços, alertas automáticos e detecção de erro tarifário. Dashboard pessoal, histórico de preços e planos de assinatura via Stripe.</p>
-          <div class="proj-meta">
-            <div class="proj-meta-item">Duração: <span>4–6 semanas</span></div>
-            <div class="proj-meta-item">Complexidade: <span>Muito Alta</span></div>
-          </div>
-          <div class="proj-tags">
-            <span class="tag">Next.js 15</span><span class="tag">NestJS</span>
-            <span class="tag">TypeScript</span><span class="tag">PostgreSQL</span>
-            <span class="tag">Redis</span><span class="tag">Claude</span>
-            <span class="tag">Stripe</span><span class="tag">Docker</span>
-          </div>
-          <div class="proj-actions">
-            <a href="https://github.com/devluisam/voo-manaus-ai" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Ver repositório ↗</a>
-          </div>
+<!-- ═══ CONTATO ═══ -->
+<section id="contato" class="contact" aria-labelledby="h-contato">
+  <div class="wrap">
+    <div class="contact-in">
+      <div>
+        <p class="sec-index">06 — contato</p>
+        <h2 id="h-contato">Vamos conversar sobre o seu projeto</h2>
+        <p class="sec-lead" style="margin-top:20px">
+          Disponível para freelance, parcerias e oportunidades de estágio. Se puder, mande junto o
+          problema que você precisa resolver — é por onde eu começo.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://wa.me/5592981295837?text=Oi%20Luis%2C%20vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener">Chamar no WhatsApp</a>
         </div>
       </div>
-
-      <!-- 02 FlowSST -->
-      <div class="project-card animate fade-up delay-2" data-category="saas crm ia">
-        <div class="proj-cover cover-flow">
-          <div class="cover-pattern"></div>
-          <span class="cover-type type-crm">SaaS · CRM</span>
-          <div class="cover-badges">
-            <span class="cover-badge">NestJS</span>
-            <span class="cover-badge">Next.js 15</span>
-            <span class="cover-badge">WhatsApp API</span>
-            <span class="cover-badge">GPT-4o</span>
-          </div>
-        </div>
-        <div class="proj-body">
-          <div class="proj-header">
-            <span class="proj-num">02</span>
-            <div class="complexity" title="Complexidade: Muito Alta">
-              <span class="complexity-dot filled"></span><span class="complexity-dot filled"></span>
-              <span class="complexity-dot filled"></span><span class="complexity-dot filled"></span>
-              <span class="complexity-dot filled"></span>
-            </div>
-          </div>
-          <h3 class="proj-title">FlowSST</h3>
-          <p class="proj-problem">CRM inteligente para consultorias de SST</p>
-          <p class="proj-desc">O principal CRM do Brasil especializado em Segurança e Saúde no Trabalho. WhatsApp Business integrado, pipeline Kanban, gestão documental SST com alertas de vencimento, IA para qualificação de leads e plataforma multi-tenant.</p>
-          <div class="proj-meta">
-            <div class="proj-meta-item">Duração: <span>6–8 semanas</span></div>
-            <div class="proj-meta-item">Complexidade: <span>Muito Alta</span></div>
-          </div>
-          <div class="proj-tags">
-            <span class="tag">NestJS</span><span class="tag">Next.js 15</span>
-            <span class="tag">PostgreSQL</span><span class="tag">Redis</span>
-            <span class="tag">WhatsApp API</span><span class="tag">GPT-4o</span>
-            <span class="tag">Docker</span><span class="tag">BullMQ</span>
-          </div>
-          <div class="proj-actions">
-            <a href="https://github.com/devluisam/flowsst" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Ver repositório ↗</a>
-          </div>
-        </div>
+      <div>
+        <a class="ch" href="https://wa.me/5592981295837" target="_blank" rel="noopener">
+          <span class="ch-key">WhatsApp</span><span class="ch-val">+55 (92) 98129-5837 ↗</span>
+        </a>
+        <a class="ch" href="https://github.com/devluisam" target="_blank" rel="noopener">
+          <span class="ch-key">GitHub</span><span class="ch-val">@devluisam ↗</span>
+        </a>
+        <a class="ch" href="https://www.linkedin.com/in/luis-henrique-94a6183b3" target="_blank" rel="noopener">
+          <span class="ch-key">LinkedIn</span><span class="ch-val">Luis Henrique ↗</span>
+        </a>
+        <a class="ch" href="https://www.instagram.com/luixss__/" target="_blank" rel="noopener">
+          <span class="ch-key">Instagram</span><span class="ch-val">@luixss__ ↗</span>
+        </a>
       </div>
-
-      <!-- 03 MEDATLAS 3D -->
-      <div class="project-card animate fade-up delay-3" data-category="ia dashboard">
-        <div class="proj-cover cover-anato">
-          <div class="cover-pattern"></div>
-          <span class="cover-type type-ia">EdTech · IA · 3D</span>
-          <div class="cover-badges">
-            <span class="cover-badge">Three.js</span>
-            <span class="cover-badge">Next.js 15</span>
-            <span class="cover-badge">GPT-4o</span>
-            <span class="cover-badge">Supabase</span>
-          </div>
-        </div>
-        <div class="proj-body">
-          <div class="proj-header">
-            <span class="proj-num">03</span>
-            <div class="complexity" title="Complexidade: Muito Alta">
-              <span class="complexity-dot filled"></span><span class="complexity-dot filled"></span>
-              <span class="complexity-dot filled"></span><span class="complexity-dot filled"></span>
-              <span class="complexity-dot filled"></span>
-            </div>
-          </div>
-          <h3 class="proj-title">MEDATLAS 3D</h3>
-          <p class="proj-problem">Plataforma de anatomia humana 3D com IA</p>
-          <p class="proj-desc">Plataforma EdTech com visualizador 3D interativo do corpo humano, sistema de quiz gerado por GPT-4o, flashcards com spaced repetition (SM-2) e assistente de IA em streaming. Post-processing avançado: SSAO, Bloom e Vignette.</p>
-          <div class="proj-meta">
-            <div class="proj-meta-item">Duração: <span>3–4 semanas (MVP)</span></div>
-            <div class="proj-meta-item">Complexidade: <span>Muito Alta</span></div>
-          </div>
-          <div class="proj-tags">
-            <span class="tag">Next.js 15</span><span class="tag">Three.js</span>
-            <span class="tag">R3F</span><span class="tag">TypeScript</span>
-            <span class="tag">Supabase</span><span class="tag">OpenAI</span>
-            <span class="tag">Framer Motion</span><span class="tag">Prisma</span>
-          </div>
-          <div class="proj-actions">
-            <a href="https://github.com/devluisam/medatlas-3d" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Ver repositório ↗</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 04 Kinga Finance AI -->
-      <div class="project-card animate fade-up delay-1" data-category="ia dashboard">
-        <div class="proj-cover cover-kinga">
-          <div class="cover-pattern"></div>
-          <span class="cover-type type-ia">IA · Finanças</span>
-          <div class="cover-badges">
-            <span class="cover-badge">Python</span>
-            <span class="cover-badge">FastAPI</span>
-            <span class="cover-badge">Claude API</span>
-            <span class="cover-badge">WhatsApp</span>
-          </div>
-        </div>
-        <div class="proj-body">
-          <div class="proj-header">
-            <span class="proj-num">04</span>
-            <div class="complexity" title="Complexidade: Alta">
-              <span class="complexity-dot filled"></span><span class="complexity-dot filled"></span>
-              <span class="complexity-dot filled"></span><span class="complexity-dot filled"></span>
-              <span class="complexity-dot"></span>
-            </div>
-          </div>
-          <h3 class="proj-title">Kinga Finance AI</h3>
-          <p class="proj-problem">Gestão financeira inteligente para lojistas</p>
-          <p class="proj-desc">Agente de IA financeiro para pequenos comerciantes. Analisa vendas, custos e lucros via conversa natural. Envia relatórios automáticos pelo WhatsApp, faz previsões financeiras e alerta sobre anomalias. Dashboard analítico com Streamlit.</p>
-          <div class="proj-meta">
-            <div class="proj-meta-item">Duração: <span>2–3 semanas</span></div>
-            <div class="proj-meta-item">Complexidade: <span>Alta</span></div>
-          </div>
-          <div class="proj-tags">
-            <span class="tag">Python</span><span class="tag">FastAPI</span>
-            <span class="tag">SQLite</span><span class="tag">Claude API</span>
-            <span class="tag">Twilio</span><span class="tag">Streamlit</span>
-          </div>
-          <div class="proj-actions">
-            <a href="https://github.com/devluisam/kinga-finance-ai" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Ver repositório ↗</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 05 NutriTrack Pro -->
-      <div class="project-card animate fade-up delay-2" data-category="dashboard">
-        <div class="proj-cover cover-nutri">
-          <div class="cover-pattern"></div>
-          <span class="cover-type type-dash">Dashboard · Saúde</span>
-          <div class="cover-badges">
-            <span class="cover-badge">React</span>
-            <span class="cover-badge">Node.js</span>
-            <span class="cover-badge">PostgreSQL</span>
-            <span class="cover-badge">JWT</span>
-          </div>
-        </div>
-        <div class="proj-body">
-          <div class="proj-header">
-            <span class="proj-num">05</span>
-            <div class="complexity" title="Complexidade: Média-Alta">
-              <span class="complexity-dot filled"></span><span class="complexity-dot filled"></span>
-              <span class="complexity-dot filled"></span><span class="complexity-dot"></span>
-              <span class="complexity-dot"></span>
-            </div>
-          </div>
-          <h3 class="proj-title">NutriTrack Pro</h3>
-          <p class="proj-problem">Dashboard moderno para controle nutricional</p>
-          <p class="proj-desc">App full stack de nutrição com controle de macros, diário alimentar, gráficos SVG customizados e calculadora TDEE (Mifflin-St Jeor). Motor de sugestões inteligentes adapta recomendações ao objetivo de cada usuário.</p>
-          <div class="proj-meta">
-            <div class="proj-meta-item">Duração: <span>2 semanas</span></div>
-            <div class="proj-meta-item">Complexidade: <span>Média-Alta</span></div>
-          </div>
-          <div class="proj-tags">
-            <span class="tag">React</span><span class="tag">Tailwind CSS</span>
-            <span class="tag">Node.js</span><span class="tag">Express</span>
-            <span class="tag">PostgreSQL</span><span class="tag">JWT</span>
-          </div>
-          <div class="proj-actions">
-            <a href="https://github.com/devluisam/nutritrack-pro" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Ver repositório ↗</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 06 Costa & Associados -->
-      <div class="project-card animate fade-up delay-3" data-category="site">
-        <div class="proj-cover cover-costa">
-          <div class="cover-pattern"></div>
-          <span class="cover-type type-site">Site Institucional</span>
-          <div class="cover-badges">
-            <span class="cover-badge">HTML5</span>
-            <span class="cover-badge">CSS3</span>
-            <span class="cover-badge">JavaScript</span>
-            <span class="cover-badge">SEO</span>
-          </div>
-        </div>
-        <div class="proj-body">
-          <div class="proj-header">
-            <span class="proj-num">06</span>
-            <div class="complexity" title="Complexidade: Média">
-              <span class="complexity-dot filled"></span><span class="complexity-dot filled"></span>
-              <span class="complexity-dot filled"></span><span class="complexity-dot"></span>
-              <span class="complexity-dot"></span>
-            </div>
-          </div>
-          <h3 class="proj-title">Costa &amp; Associados</h3>
-          <p class="proj-problem">Site premium para escritório de advocacia</p>
-          <p class="proj-desc">Site institucional elegante em preto e dourado para escritório de advocacia em Manaus com 15+ anos de atuação. Design premium com tipografia serif, animações suaves, SEO técnico completo e 100% responsivo.</p>
-          <div class="proj-meta">
-            <div class="proj-meta-item">Duração: <span>1 semana</span></div>
-            <div class="proj-meta-item">Complexidade: <span>Média</span></div>
-          </div>
-          <div class="proj-tags">
-            <span class="tag">HTML5</span><span class="tag">CSS3</span>
-            <span class="tag">JavaScript</span><span class="tag">SEO</span>
-            <span class="tag">Responsivo</span>
-          </div>
-          <div class="proj-actions">
-            <a href="https://site-advocacia-brown.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Ver site ↗</a>
-            <a href="https://github.com/devluisam/site-advocacia" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Ver repositório ↗</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 07 Pulso Verde -->
-      <div class="project-card animate fade-up delay-1" data-category="dashboard">
-        <div class="proj-cover cover-pulso">
-          <div class="cover-pattern"></div>
-          <span class="cover-type type-dash">Dashboard · Mapa</span>
-          <div class="cover-badges">
-            <span class="cover-badge">React</span>
-            <span class="cover-badge">Leaflet</span>
-            <span class="cover-badge">Recharts</span>
-          </div>
-        </div>
-        <div class="proj-body">
-          <div class="proj-header">
-            <span class="proj-num">07</span>
-            <div class="complexity" title="Complexidade: Média">
-              <span class="complexity-dot filled"></span><span class="complexity-dot filled"></span>
-              <span class="complexity-dot filled"></span><span class="complexity-dot"></span>
-              <span class="complexity-dot"></span>
-            </div>
-          </div>
-          <h3 class="proj-title">Pulso Verde</h3>
-          <p class="proj-problem">Monitoramento ambiental interativo da Amazônia</p>
-          <p class="proj-desc">Plataforma de visualização de dados ambientais da Amazônia com mapa geoespacial interativo, clustering automático de pontos e gráficos analíticos. Foco em apresentar dados complexos de forma intuitiva e visual.</p>
-          <div class="proj-meta">
-            <div class="proj-meta-item">Duração: <span>1–2 semanas</span></div>
-            <div class="proj-meta-item">Complexidade: <span>Média</span></div>
-          </div>
-          <div class="proj-tags">
-            <span class="tag">React</span><span class="tag">Leaflet</span>
-            <span class="tag">React-Leaflet</span><span class="tag">Recharts</span>
-          </div>
-          <div class="proj-actions">
-            <a href="https://github.com/devluisam/pulso-verde" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Ver repositório ↗</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 08 Dental Report -->
-      <div class="project-card animate fade-up delay-2" data-category="ia">
-        <div class="proj-cover cover-dental">
-          <div class="cover-pattern"></div>
-          <span class="cover-type type-ia">IA · Documentos</span>
-          <div class="cover-badges">
-            <span class="cover-badge">Next.js</span>
-            <span class="cover-badge">TypeScript</span>
-            <span class="cover-badge">Claude API</span>
-          </div>
-        </div>
-        <div class="proj-body">
-          <div class="proj-header">
-            <span class="proj-num">08</span>
-            <div class="complexity" title="Complexidade: Alta">
-              <span class="complexity-dot filled"></span><span class="complexity-dot filled"></span>
-              <span class="complexity-dot filled"></span><span class="complexity-dot filled"></span>
-              <span class="complexity-dot"></span>
-            </div>
-          </div>
-          <h3 class="proj-title">Dental Report AI</h3>
-          <p class="proj-problem">Extração inteligente de laudos odontológicos</p>
-          <p class="proj-desc">Sistema de análise e extração automática de dados de documentos odontológicos usando IA. Processa laudos, relatórios e fichas de pacientes via Claude, estruturando as informações automaticamente em formato padronizado.</p>
-          <div class="proj-meta">
-            <div class="proj-meta-item">Duração: <span>1–2 semanas</span></div>
-            <div class="proj-meta-item">Complexidade: <span>Alta</span></div>
-          </div>
-          <div class="proj-tags">
-            <span class="tag">Next.js</span><span class="tag">TypeScript</span>
-            <span class="tag">Claude API</span><span class="tag">Tailwind</span>
-          </div>
-          <div class="proj-actions">
-            <a href="https://github.com/devluisam/dental-report-ai" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Ver repositório ↗</a>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
 
-<!-- SERVIÇOS -->
-<section id="servicos">
-  <div class="section-wrap">
-    <div class="section-label animate fade-up">// 04 — serviços</div>
-    <h2 class="section-title animate fade-up delay-1">O que posso<br><span class="accent">entregar</span></h2>
-    <p class="section-sub animate fade-up delay-2">Desenvolvimento de ponta a ponta com foco em qualidade técnica, design e resultado. Do MVP ao produto escalável.</p>
+</main>
 
-    <div class="services-grid">
-
-      <div class="service-card animate fade-up delay-1">
-        <div class="service-icon">🚀</div>
-        <h3 class="service-name">Landing Pages &amp; Sites</h3>
-        <p class="service-desc">Sites de alta conversão com design premium, animações suaves, SEO técnico e performance otimizada. Do institucional ao portfólio.</p>
-        <ul class="service-features">
-          <li>Design responsivo e acessível</li>
-          <li>SEO On-page e Open Graph</li>
-          <li>Animações e microinterações</li>
-          <li>Performance Core Web Vitals</li>
-        </ul>
-      </div>
-
-      <div class="service-card animate fade-up delay-2">
-        <div class="service-icon">⚙️</div>
-        <h3 class="service-name">Sistemas Web Full Stack</h3>
-        <p class="service-desc">Aplicações web completas com React/Next.js no frontend, Node.js/NestJS no backend e banco de dados relacional.</p>
-        <ul class="service-features">
-          <li>Autenticação JWT + OAuth</li>
-          <li>API REST ou GraphQL</li>
-          <li>Banco de dados PostgreSQL</li>
-          <li>Deploy na Vercel / Railway</li>
-        </ul>
-      </div>
-
-      <div class="service-card animate fade-up delay-3">
-        <div class="service-icon">💼</div>
-        <h3 class="service-name">SaaS Completo</h3>
-        <p class="service-desc">Plataformas SaaS de ponta a ponta: multi-tenant, planos de assinatura, pagamentos, dashboard e painel admin.</p>
-        <ul class="service-features">
-          <li>Multi-tenant isolado por empresa</li>
-          <li>Stripe para assinaturas e pagamentos</li>
-          <li>Dashboard analítico em tempo real</li>
-          <li>RBAC com perfis e permissões</li>
-        </ul>
-      </div>
-
-      <div class="service-card animate fade-up delay-1">
-        <div class="service-icon">🤖</div>
-        <h3 class="service-name">Integrações com IA</h3>
-        <p class="service-desc">Agentes inteligentes, chatbots, automações e análises usando Claude API e OpenAI. IA que resolve problemas reais.</p>
-        <ul class="service-features">
-          <li>Agentes conversacionais</li>
-          <li>Análise e extração de documentos</li>
-          <li>Geração automática de relatórios</li>
-          <li>Notificações via WhatsApp com IA</li>
-        </ul>
-      </div>
-
-      <div class="service-card animate fade-up delay-2">
-        <div class="service-icon">📊</div>
-        <h3 class="service-name">Dashboards Analíticos</h3>
-        <p class="service-desc">Painéis interativos com visualizações de dados, gráficos em tempo real e KPIs que facilitam a tomada de decisão.</p>
-        <ul class="service-features">
-          <li>Gráficos com Recharts / D3</li>
-          <li>Filtros e exportação de dados</li>
-          <li>Atualizações em tempo real</li>
-          <li>Mobile-first e responsivo</li>
-        </ul>
-      </div>
-
-      <div class="service-card animate fade-up delay-3">
-        <div class="service-icon">💬</div>
-        <h3 class="service-name">CRM &amp; Automação</h3>
-        <p class="service-desc">CRMs personalizados com WhatsApp integrado, pipeline de vendas, gestão de leads e automações que eliminam trabalho manual.</p>
-        <ul class="service-features">
-          <li>WhatsApp Business API</li>
-          <li>Pipeline Kanban drag-and-drop</li>
-          <li>Alertas e notificações automáticas</li>
-          <li>Relatórios e métricas de vendas</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CONTATO -->
-<section id="contato">
-  <div class="section-wrap">
-    <div class="section-label animate fade-up">// 05 — contato</div>
-    <h2 class="section-title animate fade-up delay-1">Vamos<br><span class="accent">conversar?</span></h2>
-    <p class="contact-sub animate fade-up delay-2">
-      Estou disponível para projetos freelance, parcerias e oportunidades de estágio ou trabalho.
-      Respondo rápido — geralmente em menos de 24h.
-    </p>
-
-    <div class="contact-grid animate fade-up delay-2">
-      <a href="https://wa.me/5592981295837" target="_blank" rel="noopener noreferrer" class="contact-card">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        <div>
-          <span class="cc-label">WhatsApp</span>
-          <span class="cc-value">+55 (92) 98129-5837</span>
-        </div>
-      </a>
-      <a href="https://github.com/devluisam" target="_blank" rel="noopener noreferrer" class="contact-card">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-        <div>
-          <span class="cc-label">GitHub</span>
-          <span class="cc-value">github.com/devluisam</span>
-        </div>
-      </a>
-      <a href="https://www.linkedin.com/in/luis-henrique-94a6183b3" target="_blank" rel="noopener noreferrer" class="contact-card">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        <div>
-          <span class="cc-label">LinkedIn</span>
-          <span class="cc-value">Luis Henrique</span>
-        </div>
-      </a>
-      <a href="https://www.instagram.com/luixss__/" target="_blank" rel="noopener noreferrer" class="contact-card">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-        <div>
-          <span class="cc-label">Instagram</span>
-          <span class="cc-value">@luixss__</span>
-        </div>
-      </a>
-    </div>
-
-    <a href="https://wa.me/5592981295837?text=Oi%20Luis%2C%20vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20projeto!" target="_blank" rel="noopener noreferrer" class="contact-cta animate fade-up delay-3">
-      Iniciar conversa no WhatsApp →
-    </a>
-  </div>
-</section>
-
-<!-- FOOTER -->
 <footer>
-  <div class="footer-inner">
-    <div class="footer-logo">&lt;lh<span class="accent">.</span>dev/&gt;</div>
-    <p class="footer-copy">© 2026 Luis Henrique Azevedo — Manaus, AM</p>
-    <nav class="footer-links" aria-label="Links do rodapé">
-      <a href="#sobre">Sobre</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#contato">Contato</a>
-    </nav>
+  <div class="wrap foot-in">
+    <span class="logo">lh<b>.dev</b></span>
+    <span>© 2026 Luis Henrique Azevedo — Manaus, AM</span>
   </div>
 </footer>
 
-<!-- BACK TO TOP -->
-<button id="back-top" aria-label="Voltar ao topo" onclick="window.scrollTo({top:0,behavior:'smooth'})">
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
-</button>
-
 <script>
-  /* ── CURSOR GLOW ── */
-  const glow = document.getElementById('cursor-glow');
-  document.addEventListener('mousemove', e => {
-    glow.style.left = e.clientX + 'px';
-    glow.style.top  = e.clientY + 'px';
+(function () {
+  var burger = document.getElementById('burger');
+  var menu = document.getElementById('mobile-menu');
+  burger.addEventListener('click', function () {
+    var open = menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded', String(open));
+    burger.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
   });
-
-  /* ── PROGRESS BAR ── */
-  const bar = document.getElementById('progress-bar');
-  window.addEventListener('scroll', () => {
-    const total = document.documentElement.scrollHeight - window.innerHeight;
-    bar.style.width = (window.scrollY / total * 100) + '%';
+  menu.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+      menu.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+    }
   });
-
-  /* ── BACK TO TOP ── */
-  const backTop = document.getElementById('back-top');
-  window.addEventListener('scroll', () => {
-    backTop.classList.toggle('visible', window.scrollY > 600);
-  });
-
-  /* ── MOBILE MENU ── */
-  const hamburger = document.getElementById('hamburger');
-  const mobileMenu = document.getElementById('mobileMenu');
-  hamburger.addEventListener('click', () => {
-    const open = hamburger.classList.toggle('open');
-    mobileMenu.classList.toggle('open', open);
-    hamburger.setAttribute('aria-expanded', open);
-    mobileMenu.setAttribute('aria-hidden', !open);
-    document.body.style.overflow = open ? 'hidden' : '';
-  });
-  mobileMenu.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      hamburger.classList.remove('open');
-      mobileMenu.classList.remove('open');
-      hamburger.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-    });
-  });
-
-  /* ── NAV ACTIVE LINK ── */
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-links a');
-  window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(s => {
-      if (window.scrollY >= s.offsetTop - 100) current = s.id;
-    });
-    navLinks.forEach(a => {
-      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
-    });
-  });
-
-  /* ── INTERSECTION OBSERVER (animate elements) ── */
-  const animObs = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        animObs.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.animate').forEach(el => animObs.observe(el));
-
-  /* ── SKILL BARS ── */
-  const skillObs = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('skills-visible');
-        e.target.querySelectorAll('.skill-bar').forEach((bar, i) => {
-          bar.style.animationDelay = (i * 0.08) + 's';
-        });
-        skillObs.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.2 });
-  document.querySelectorAll('.skill-cat').forEach(el => skillObs.observe(el));
-
-  /* ── COUNTER ANIMATION ── */
-  function animCount(el, target, duration = 1200) {
-    let start = 0, startTime = null;
-    const step = ts => {
-      if (!startTime) startTime = ts;
-      const progress = Math.min((ts - startTime) / duration, 1);
-      el.textContent = Math.floor(progress * target);
-      if (progress < 1) requestAnimationFrame(step);
-      else el.textContent = target;
-    };
-    requestAnimationFrame(step);
-  }
-  const countObs = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        const el = e.target;
-        const target = parseInt(el.dataset.count);
-        if (!isNaN(target)) animCount(el, target);
-        countObs.unobserve(el);
-      }
-    });
-  }, { threshold: 0.5 });
-  document.querySelectorAll('[data-count]').forEach(el => countObs.observe(el));
-
-  /* ── PROJECT FILTERS ── */
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const cards = document.querySelectorAll('.project-card');
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const filter = btn.dataset.filter;
-      cards.forEach(card => {
-        if (filter === 'all') {
-          card.classList.remove('hidden');
-        } else {
-          const cats = card.dataset.category || '';
-          card.classList.toggle('hidden', !cats.includes(filter));
-        }
-      });
-    });
-  });
-
-  /* ── 3D CARD TILT ── */
-  document.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('mousemove', e => {
-      const r = card.getBoundingClientRect();
-      const x = e.clientX - r.left - r.width  / 2;
-      const y = e.clientY - r.top  - r.height / 2;
-      const tiltX = -(y / r.height) * 6;
-      const tiltY =  (x / r.width)  * 6;
-      card.style.transform = `perspective(800px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateZ(4px)`;
-    });
-    card.addEventListener('mouseleave', () => {
-      card.style.transform = '';
-    });
-  });
-
-  /* ── NAV SCROLL STYLE ── */
-  const nav = document.getElementById('nav');
-  window.addEventListener('scroll', () => {
-    nav.style.borderBottomColor = window.scrollY > 20
-      ? 'rgba(255,255,255,.08)'
-      : 'rgba(255,255,255,.04)';
-  });
+})();
 </script>
 </body>
 </html>
