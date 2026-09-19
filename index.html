@@ -178,6 +178,11 @@ pre.arch{
   background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;
   padding:18px;overflow-x:auto;
 }
+.shots{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:24px}
+.shots figure{margin:0}
+.shots img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:10px;background:var(--card)}
+.shots figcaption{margin-top:8px;font-size:12.5px;color:var(--faint)}
+@media (max-width:640px){.shots{grid-template-columns:1fr}}
 .case-links{display:flex;flex-wrap:wrap;align-items:center;gap:20px;margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}
 .case-links a{font-size:13.5px;font-weight:600;display:inline-flex;align-items:center;gap:6px;transition:color .18s}
 .case-links a:hover{color:var(--accent)}
@@ -337,6 +342,19 @@ footer{padding:36px 0}
           <li>Next.js 16</li><li>React 19</li><li>TypeScript strict</li><li>Prisma 7</li>
           <li>SQLite</li><li>Tailwind v4</li><li>shadcn/ui</li><li>Zod 4</li><li>Vitest</li><li>PWA</li>
         </ul>
+
+        <div class="shots">
+          <figure>
+            <img src="img/toshiba-dashboard.jpg" width="1568" height="772" loading="lazy" decoding="async"
+                 alt="Dashboard do TOSHIBA: bloco &quot;Precisa da sua atenção&quot; com contas a vencer e prova próxima, e cartões de finanças, investimentos, revendas, estudos e metas.">
+            <figcaption>Dashboard — o que precisa de atenção hoje, cruzando os módulos.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/toshiba-assistente.jpg" width="1568" height="772" loading="lazy" decoding="async"
+                 alt="Assistente do TOSHIBA: as frases &quot;gastei 27 no almoço&quot; e &quot;estudei 1h de cálculo&quot; viram registros confirmados, marcados como &quot;por regra · custo zero&quot;, cada um com botão desfazer.">
+            <figcaption>Assistente — frases viram dados por regra, sem chamar o modelo.</figcaption>
+          </figure>
+        </div>
 
         <details class="study">
           <summary>Ver estudo de caso</summary>
