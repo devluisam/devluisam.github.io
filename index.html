@@ -436,7 +436,7 @@ footer{padding:36px 0}
         </p>
         <ul class="stack">
           <li>Next.js 15</li><li>React 19</li><li>Three.js</li><li>React Three Fiber</li>
-          <li>Zustand</li><li>Prisma</li><li>PostgreSQL</li><li>OpenAI API</li><li>Tailwind</li>
+          <li>Zustand</li><li>Prisma</li><li>PostgreSQL</li><li>NextAuth</li><li>OpenAI API</li><li>Tailwind</li>
         </ul>
 
         <details class="study">
@@ -503,7 +503,9 @@ Prisma ORM ──→ PostgreSQL  (20 modelos: estruturas, quiz, progresso, conve
                 MVP funcional com visualizador, busca, conteúdo clínico, quiz, flashcards (algoritmo
                 SM-2) e tutor em streaming. O repositório estava sem os arquivos de configuração e
                 não instalava; reconstruí os manifestos e hoje ele passa em <code>tsc --noEmit</code>
-                e conclui o <code>next build</code>. A autenticação ainda não está ligada — isso está
+                e conclui o <code>next build</code>. A autenticação está ligada: NextAuth v5 com
+                credenciais (bcrypt), sessão em JWT e o painel protegido no servidor. O que segue
+                pendente — verificação de email e as métricas do painel vindas do banco — está
                 declarado no README em vez de ser apresentado como pronto.
               </p>
             </div>
