@@ -178,6 +178,10 @@ pre.arch{
   background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;
   padding:18px;overflow-x:auto;
 }
+.shots-mini{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.shots-mini.duo{grid-template-columns:repeat(2,1fr)}
+.shots-mini img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:8px;background:var(--card)}
+@media (max-width:640px){.shots-mini,.shots-mini.duo{grid-template-columns:1fr}}
 .shots{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:24px}
 .shots figure{margin:0}
 .shots img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:10px;background:var(--card)}
@@ -875,6 +879,12 @@ SQLAlchemy 2 ──→ SQLite (padrão) ou PostgreSQL</pre>
           <em>Sem provedor de IA configurado, a interface declara modo básico e responde por regras.</em>
         </p>
         <ul class="stack"><li>React 19</li><li>TypeScript</li><li>Cloudflare Workers</li><li>D1 / SQLite</li><li>Drizzle</li><li>Zod</li></ul>
+        <div class="shots-mini duo">
+          <img src="img/bodyos-visao.jpg" width="1568" height="772" loading="lazy" decoding="async"
+               alt="Visão geral do BODY OS: peso atual, média de 7 dias, gráfico de evolução corporal e metas de macronutrientes do dia.">
+          <img src="img/bodyos-assistente.jpg" width="1568" height="772" loading="lazy" decoding="async"
+               alt="Assistente do BODY OS exibindo o aviso &quot;Modo básico · regras com seus registros&quot; e sugestões a partir dos dados do dia.">
+        </div>
         <div class="mini-links">
           <a href="https://github.com/devluisam/body-os" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
@@ -888,6 +898,14 @@ SQLAlchemy 2 ──→ SQLite (padrão) ou PostgreSQL</pre>
           <em>Conteúdo fictício: são demonstrações do serviço, não clientes reais.</em>
         </p>
         <ul class="stack"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>SEO</li></ul>
+        <div class="shots-mini">
+          <img src="img/site-advocacia.jpg" width="1568" height="772" loading="lazy" decoding="async"
+               alt="Landing page de escritório de advocacia: título &quot;Defendemos seus direitos com ética e competência&quot; sobre fundo escuro com detalhes dourados.">
+          <img src="img/site-clinica.jpg" width="1568" height="726" loading="lazy" decoding="async"
+               alt="Landing page de clínica odontológica: título &quot;Seu sorriso merece o melhor cuidado odontológico&quot;, botões de agendamento e indicadores da clínica.">
+          <img src="img/site-restaurante.jpg" width="1568" height="772" loading="lazy" decoding="async"
+               alt="Landing page de restaurante amazônico: título &quot;O sabor da Amazônia na sua mesa&quot;, botões de cardápio e pedido por WhatsApp.">
+        </div>
         <div class="mini-links">
           <a href="https://site-advocacia-brown.vercel.app" target="_blank" rel="noopener">Advocacia ↗</a>
           <a href="https://site-clinica-gilt.vercel.app" target="_blank" rel="noopener">Clínica ↗</a>
