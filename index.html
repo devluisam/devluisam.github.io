@@ -197,8 +197,8 @@ pre.arch{
 .mini:hover{border-color:var(--line-strong);background:var(--card-hover)}
 .mini h3{font-size:1.06rem;font-weight:600;letter-spacing:-.02em}
 .mini p{margin-top:9px;font-size:14px;color:var(--muted)}
-.mini-links{display:flex;gap:16px;margin-top:18px;font-size:13px;font-weight:600}
-.mini-links a{color:var(--faint);transition:color .18s}
+.mini-links{display:flex;flex-wrap:wrap;gap:10px 16px;margin-top:18px;font-size:13px;font-weight:600}
+.mini-links a{color:var(--faint);transition:color .18s;white-space:nowrap}
 .mini-links a:hover{color:var(--accent)}
 
 .about{display:grid;grid-template-columns:1.35fr 1fr;gap:56px;align-items:start}
@@ -905,25 +905,26 @@ SQLAlchemy 2 ──→ SQLite (padrão) ou PostgreSQL</pre>
       </article>
 
       <article class="mini">
-        <h3>Landing pages — peças demonstrativas</h3>
+        <h3>Sites-modelo para negócios locais</h3>
         <p>
-          Três páginas institucionais (advocacia, clínica e restaurante) em HTML, CSS e JavaScript,
-          responsivas e com SEO on-page, publicadas na Vercel.
+          Três sites completos (peixaria amazônica, clínica odontológica e escritório de advocacia) em HTML, CSS e JavaScript,
+          com fotos reais, feitos primeiro para o celular e publicados no GitHub Pages. Cada um tem visual próprio: cardápio,
+          tratamentos, áreas de atuação, mapa e contato pelo WhatsApp.
           <em>Conteúdo fictício: são demonstrações do serviço, não clientes reais.</em>
         </p>
-        <ul class="stack"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>SEO</li></ul>
+        <ul class="stack"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Mobile first</li><li>SEO</li></ul>
         <div class="shots-mini">
-          <img src="img/site-advocacia.jpg" width="1568" height="772" loading="lazy" decoding="async"
-               alt="Landing page de escritório de advocacia: título &quot;Defendemos seus direitos com ética e competência&quot; sobre fundo escuro com detalhes dourados.">
-          <img src="img/site-clinica.jpg" width="1568" height="726" loading="lazy" decoding="async"
-               alt="Landing page de clínica odontológica: título &quot;Seu sorriso merece o melhor cuidado odontológico&quot;, botões de agendamento e indicadores da clínica.">
-          <img src="img/site-restaurante.jpg" width="1568" height="772" loading="lazy" decoding="async"
-               alt="Landing page de restaurante amazônico: título &quot;O sabor da Amazônia na sua mesa&quot;, botões de cardápio e pedido por WhatsApp.">
+          <img src="img/modelo-restaurante.webp" width="1200" height="675" loading="lazy" decoding="async"
+               alt="Site-modelo de peixaria amazônica: título &quot;Peixe da Amazônia, na brasa.&quot; sobre foto de peixe assado na folha de bananeira.">
+          <img src="img/modelo-clinica.webp" width="1200" height="675" loading="lazy" decoding="async"
+               alt="Site-modelo de clínica odontológica: título &quot;Tratamento sem pressa. Sorriso sem medo.&quot; ao lado da foto de uma mulher sorrindo.">
+          <img src="img/modelo-advocacia.webp" width="1200" height="675" loading="lazy" decoding="async"
+               alt="Site-modelo de escritório de advocacia: título &quot;Direito explicado em português claro.&quot; ao lado da foto de uma reunião com cliente.">
         </div>
         <div class="mini-links">
-          <a href="https://site-advocacia-brown.vercel.app" target="_blank" rel="noopener">Advocacia ↗</a>
-          <a href="https://site-clinica-gilt.vercel.app" target="_blank" rel="noopener">Clínica ↗</a>
-          <a href="https://site-restaurante-rho-ten.vercel.app" target="_blank" rel="noopener">Restaurante ↗</a>
+          <a href="https://devluisam.github.io/sites/modelos/restaurante/" target="_blank" rel="noopener">Restaurante ↗</a>
+          <a href="https://devluisam.github.io/sites/modelos/clinica/" target="_blank" rel="noopener">Clínica ↗</a>
+          <a href="https://devluisam.github.io/sites/modelos/advocacia/" target="_blank" rel="noopener">Advocacia ↗</a>
         </div>
       </article>
     </div>
@@ -1048,6 +1049,7 @@ SQLAlchemy 2 ──→ SQLite (padrão) ou PostgreSQL</pre>
           Sites institucionais responsivos, com SEO on-page, pré-visualização correta ao
           compartilhar e carregamento rápido.
         </p>
+        <p><a href="https://devluisam.github.io/sites/" target="_blank" rel="noopener">Ver modelos e pedir orçamento ↗</a></p>
       </div>
     </div>
   </div>
