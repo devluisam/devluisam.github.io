@@ -1,1118 +1,470 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- Gerado por scripts/build.mjs — edite data/ ou scripts/templates.mjs e rode `npm run build`. -->
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Luis Henrique Azevedo — Desenvolvedor de Software</title>
-<meta name="description" content="Desenvolvedor de software em Manaus, AM. Construo sistemas web, dashboards e automações com IA — do modelo de dados à interface. Next.js, TypeScript, Node.js e Python.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Luis Henrique Azevedo — Desenvolvedor web em Manaus</title>
+<meta name="description" content="Crio websites modernos, interativos e estratégicos para empresas, além de sistemas web sob medida. Veja os projetos e peça um orçamento pelo WhatsApp.">
 <meta name="author" content="Luis Henrique Azevedo de Oliveira">
-<meta name="robots" content="index, follow">
 <link rel="canonical" href="https://devluisam.github.io/">
-
+<link rel="alternate" hreflang="pt-BR" href="https://devluisam.github.io/">
+<link rel="alternate" hreflang="en" href="https://devluisam.github.io/en/">
+<link rel="alternate" hreflang="x-default" href="https://devluisam.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Luis Henrique Azevedo">
 <meta property="og:locale" content="pt_BR">
-<meta property="og:title" content="Luis Henrique Azevedo — Desenvolvedor de Software">
-<meta property="og:description" content="Construo sistemas web, dashboards e automações com IA — do modelo de dados à interface. Veja os projetos e como cada um foi construído.">
+<meta property="og:title" content="Luis Henrique Azevedo — Desenvolvedor web em Manaus">
+<meta property="og:description" content="Crio websites modernos, interativos e estratégicos para empresas, além de sistemas web sob medida. Veja os projetos e peça um orçamento pelo WhatsApp.">
 <meta property="og:url" content="https://devluisam.github.io/">
-<meta property="og:image" content="https://devluisam.github.io/05f3517e-7d55-457c-beec-7460c57defc2.jpg">
-<meta property="og:image:alt" content="Luis Henrique Azevedo, desenvolvedor de software">
+<meta property="og:image" content="https://devluisam.github.io/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Luis Henrique Azevedo — Desenvolvedor de Software">
-<meta name="twitter:description" content="Sistemas web, dashboards e automações com IA. Manaus, AM.">
-<meta name="twitter:image" content="https://devluisam.github.io/05f3517e-7d55-457c-beec-7460c57defc2.jpg">
-<meta name="theme-color" content="#08090c">
-
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230d0f13'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='15' font-weight='700' fill='%234ade80' text-anchor='middle'%3Elh%3C/text%3E%3C/svg%3E">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Luis Henrique Azevedo de Oliveira",
-  "alternateName": "Luis Henrique",
-  "url": "https://devluisam.github.io/",
-  "jobTitle": "Desenvolvedor de Software",
-  "description": "Desenvolvedor de software: sistemas web, dashboards e automações com IA.",
-  "address": { "@type": "PostalAddress", "addressLocality": "Manaus", "addressRegion": "AM", "addressCountry": "BR" },
-  "knowsAbout": ["TypeScript", "Next.js", "React", "Node.js", "Python", "FastAPI", "Prisma", "PostgreSQL", "SQLite", "Three.js"],
-  "sameAs": ["https://github.com/devluisam", "https://www.linkedin.com/in/luis-henrique-94a6183b3"]
-}
-</script>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-
-:root{
-  --bg:#08090c;
-  --bg-soft:#0b0d11;
-  --card:#0e1015;
-  --card-hover:#111419;
-  --line:rgba(255,255,255,.08);
-  --line-strong:rgba(255,255,255,.16);
-  --text:#e9ebef;
-  --muted:#959ba6;
-  --faint:#6b7280;
-  --accent:#4ade80;
-  --accent-soft:rgba(74,222,128,.10);
-  --accent-line:rgba(74,222,128,.28);
-  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
-  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-  --wrap:1120px;
-  --gutter:24px;
-  --radius:14px;
-}
-
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{
-  background:var(--bg);color:var(--text);font-family:var(--sans);
-  font-size:16px;line-height:1.65;letter-spacing:-.011em;
-  -webkit-font-smoothing:antialiased;overflow-x:hidden;
-}
-img{max-width:100%;display:block}
-a{color:inherit;text-decoration:none}
-:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
-
-.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 var(--gutter)}
-.skip{position:absolute;left:-9999px;top:0;background:var(--accent);color:#04120a;padding:10px 16px;font-weight:600;z-index:100}
-.skip:focus{left:12px;top:12px}
-
-header.nav{
-  position:sticky;top:0;z-index:50;
-  background:rgba(8,9,12,.78);backdrop-filter:blur(14px);
-  border-bottom:1px solid var(--line);
-}
-.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
-.logo{font-family:var(--mono);font-size:14px;font-weight:700;letter-spacing:-.02em}
-.logo b{color:var(--accent);font-weight:700}
-.nav-links{display:flex;align-items:center;gap:28px}
-.nav-links a{font-size:14px;color:var(--muted);transition:color .18s}
-.nav-links a:hover{color:var(--text)}
-.nav-cta{
-  font-size:13px;font-weight:600;color:var(--accent);
-  border:1px solid var(--accent-line);background:var(--accent-soft);
-  padding:8px 16px;border-radius:8px;transition:background .18s,border-color .18s;
-}
-.nav-cta:hover{background:rgba(74,222,128,.16);border-color:var(--accent)}
-.burger{display:none;background:none;border:1px solid var(--line-strong);border-radius:8px;padding:9px;color:var(--text);cursor:pointer;line-height:0}
-.mobile-menu{display:none;border-top:1px solid var(--line);background:var(--bg-soft)}
-.mobile-menu.open{display:block}
-.mobile-menu a{display:block;padding:14px 0;font-size:15px;color:var(--muted);border-bottom:1px solid var(--line)}
-.mobile-menu a:last-child{border-bottom:0;color:var(--accent);font-weight:600}
-
-.hero{padding:96px 0 80px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
-.hero::before{
-  content:"";position:absolute;inset:-40% 30% auto -10%;height:420px;
-  background:radial-gradient(closest-side,rgba(74,222,128,.07),transparent 70%);
-  pointer-events:none;
-}
-.hero-in{position:relative;max-width:780px}
-.chip{
-  display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;
-  color:var(--accent);background:var(--accent-soft);border:1px solid var(--accent-line);
-  padding:6px 12px;border-radius:999px;margin-bottom:28px;
-}
-.dot{width:6px;height:6px;border-radius:50%;background:var(--accent)}
-h1{font-size:clamp(2.4rem,6.2vw,4rem);line-height:1.04;font-weight:700;letter-spacing:-.035em}
-.role{margin-top:18px;font-family:var(--mono);font-size:clamp(.88rem,2.3vw,1rem);color:var(--accent)}
-.lead{margin-top:24px;font-size:clamp(1.02rem,2.4vw,1.2rem);color:var(--muted);max-width:640px}
-.lead strong{color:var(--text);font-weight:500}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:38px}
-.btn{
-  display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;
-  padding:12px 22px;border-radius:10px;border:1px solid transparent;transition:all .18s;
-}
-.btn-primary{background:var(--accent);color:#04120a}
-.btn-primary:hover{background:#6ee7a4}
-.btn-ghost{border-color:var(--line-strong);color:var(--text)}
-.btn-ghost:hover{border-color:var(--accent-line);background:var(--accent-soft);color:var(--accent)}
-.hero-meta{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:44px;font-size:13px;color:var(--faint);font-family:var(--mono)}
-
-section{padding:88px 0;border-bottom:1px solid var(--line)}
-.sec-index{font-family:var(--mono);font-size:12px;color:var(--faint);margin-bottom:14px}
-h2{font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.12;font-weight:700;letter-spacing:-.03em}
-.sec-lead{margin-top:16px;color:var(--muted);max-width:640px}
-.sec-head{margin-bottom:52px}
-
-.cases{display:flex;flex-direction:column;gap:20px}
-.case{
-  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
-  padding:30px;transition:border-color .2s,background .2s;
-}
-.case:hover{border-color:var(--line-strong);background:var(--card-hover)}
-.case-top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.case-num{font-family:var(--mono);font-size:12px;color:var(--faint)}
-.case-tags{display:flex;gap:8px;flex-wrap:wrap}
-.tag{font-family:var(--mono);font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:4px 9px}
-.tag.priv{color:var(--accent);border-color:var(--accent-line);background:var(--accent-soft)}
-.case h3{font-size:1.5rem;font-weight:600;letter-spacing:-.025em;margin-top:10px}
-.case-sub{margin-top:10px;color:var(--muted);max-width:680px}
-.stack{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px}
-.stack li{
-  list-style:none;font-family:var(--mono);font-size:11.5px;color:var(--muted);
-  background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:6px;padding:4px 9px;
-}
-details.study{margin-top:22px;border-top:1px solid var(--line)}
-details.study summary{
-  cursor:pointer;list-style:none;font-size:13.5px;font-weight:600;color:var(--accent);
-  padding:16px 0 4px;display:flex;align-items:center;gap:8px;
-}
-details.study summary::-webkit-details-marker{display:none}
-details.study summary::after{content:"↓";font-family:var(--mono);transition:transform .2s}
-details.study[open] summary::after{transform:rotate(180deg)}
-.study-body{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;padding:18px 0 4px}
-.block h4{
-  font-family:var(--mono);font-size:11px;font-weight:600;color:var(--faint);
-  text-transform:uppercase;letter-spacing:.09em;margin-bottom:10px;
-}
-.block p{font-size:14.5px;color:var(--muted)}
-.block ul{margin:0;padding-left:18px}
-.block li{font-size:14.5px;color:var(--muted);margin-bottom:6px}
-.block.full{grid-column:1/-1}
-pre.arch{
-  font-family:var(--mono);font-size:12px;line-height:1.75;color:var(--muted);
-  background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;
-  padding:18px;overflow-x:auto;
-}
-.shots-mini{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
-.shots-mini.duo{grid-template-columns:repeat(2,1fr)}
-.shots-mini img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:8px;background:var(--card)}
-@media (max-width:640px){.shots-mini,.shots-mini.duo{grid-template-columns:1fr}}
-.shots{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:24px}
-.shots figure{margin:0}
-.shots img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:10px;background:var(--card)}
-.shots figcaption{margin-top:8px;font-size:12.5px;color:var(--faint)}
-@media (max-width:640px){.shots{grid-template-columns:1fr}}
-.case-links{display:flex;flex-wrap:wrap;align-items:center;gap:20px;margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}
-.case-links a{font-size:13.5px;font-weight:600;display:inline-flex;align-items:center;gap:6px;transition:color .18s}
-.case-links a:hover{color:var(--accent)}
-.case-links .note{font-size:12.5px;color:var(--faint);font-family:var(--mono)}
-
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
-.mini{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px;transition:border-color .2s,background .2s}
-.mini:hover{border-color:var(--line-strong);background:var(--card-hover)}
-.mini h3{font-size:1.06rem;font-weight:600;letter-spacing:-.02em}
-.mini p{margin-top:9px;font-size:14px;color:var(--muted)}
-.mini-links{display:flex;flex-wrap:wrap;gap:10px 16px;margin-top:18px;font-size:13px;font-weight:600}
-.mini-links a{color:var(--faint);transition:color .18s;white-space:nowrap}
-.mini-links a:hover{color:var(--accent)}
-
-.about{display:grid;grid-template-columns:1.35fr 1fr;gap:56px;align-items:start}
-.about p{color:var(--muted);margin-bottom:18px}
-.about p strong{color:var(--text);font-weight:500}
-.facts{border:1px solid var(--line);border-radius:12px;background:var(--card);padding:6px 22px}
-.fact{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
-.fact:last-child{border-bottom:0}
-.fact dt{color:var(--faint);font-family:var(--mono);font-size:12px}
-.fact dd{color:var(--text);text-align:right;font-size:14px}
-
-.stack-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
-.stack-col{border:1px solid var(--line);border-radius:12px;background:var(--card);padding:24px}
-.stack-col h3{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.09em;margin-bottom:16px}
-.stack-col ul{list-style:none}
-.stack-col li{font-size:14px;color:var(--muted);padding:5px 0}
-
-.svc{border:1px solid var(--line);border-radius:12px;background:var(--card);padding:26px}
-.svc h3{font-size:1.05rem;font-weight:600;letter-spacing:-.02em}
-.svc p{margin-top:10px;font-size:14px;color:var(--muted)}
-
-.contact{border-bottom:0}
-.contact-in{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
-.contact h2{max-width:440px}
-.ch{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;border-bottom:1px solid var(--line);transition:padding-left .18s}
-.ch:hover{padding-left:8px}
-.ch:hover .ch-val{color:var(--accent)}
-.ch-key{font-family:var(--mono);font-size:12px;color:var(--faint)}
-.ch-val{font-size:15px;font-weight:500;transition:color .18s}
-
-footer{padding:36px 0}
-.foot-in{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px;color:var(--faint)}
-
-@media (max-width:900px){
-  .about,.contact-in{grid-template-columns:1fr;gap:36px}
-  .study-body{grid-template-columns:1fr;gap:24px}
-}
-@media (max-width:760px){
-  :root{--gutter:16px}
-  .nav-links{display:none}
-  .burger{display:block}
-  .hero{padding:64px 0 56px}
-  section{padding:64px 0}
-  .sec-head{margin-bottom:36px}
-  .case{padding:22px}
-  .actions .btn{flex:1 1 auto;justify-content:center}
-  .hero-meta{gap:6px 18px;font-size:12px}
-}
-@media (prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  *{transition:none!important;animation:none!important}
-}
-</style>
+<meta name="twitter:title" content="Luis Henrique Azevedo — Desenvolvedor web em Manaus">
+<meta name="twitter:description" content="Crio websites modernos, interativos e estratégicos para empresas, além de sistemas web sob medida. Veja os projetos e peça um orçamento pelo WhatsApp.">
+<meta name="twitter:image" content="https://devluisam.github.io/img/og.jpg">
+<meta name="theme-color" content="#0b0b0a">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/instrument-serif-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css?v=ec678c53">
+<script src="/assets/js/site.js?v=04dc59f0" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","@id":"https://devluisam.github.io/#person","name":"Luis Henrique Azevedo de Oliveira","alternateName":"Luis Henrique Azevedo","url":"https://devluisam.github.io/","jobTitle":"Desenvolvedor web","email":"mailto:devluisam@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Manaus","addressRegion":"AM","addressCountry":"BR"},"sameAs":["https://github.com/devluisam","https://www.linkedin.com/in/luis-henrique-94a6183b3","https://www.instagram.com/devluisam/"],"knowsAbout":["Web development","Next.js","React","TypeScript","Node.js","Python","SEO","Motion design"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Projetos","itemListElement":[{"@type":"ListItem","position":1,"url":"https://devluisam.github.io/projetos/blackwash/","name":"BLACKWASH"},{"@type":"ListItem","position":2,"url":"https://devluisam.github.io/projetos/brasa-e-rio/","name":"Brasa & Rio"},{"@type":"ListItem","position":3,"url":"https://devluisam.github.io/projetos/remanso/","name":"Remanso"},{"@type":"ListItem","position":4,"url":"https://devluisam.github.io/projetos/sorriso-norte/","name":"Sorriso Norte"},{"@type":"ListItem","position":5,"url":"https://devluisam.github.io/projetos/forja/","name":"Forja"},{"@type":"ListItem","position":6,"url":"https://devluisam.github.io/projetos/vetor-mecanica/","name":"Vetor Mecânica"},{"@type":"ListItem","position":7,"url":"https://devluisam.github.io/projetos/andrade-menezes/","name":"Andrade & Menezes"},{"@type":"ListItem","position":8,"url":"https://devluisam.github.io/projetos/medatlas-3d/","name":"MEDATLAS 3D"},{"@type":"ListItem","position":9,"url":"https://devluisam.github.io/projetos/toshiba/","name":"TOSHIBA — Personal Life OS"},{"@type":"ListItem","position":10,"url":"https://devluisam.github.io/projetos/dental-report-ai/","name":"Dental Report AI"},{"@type":"ListItem","position":11,"url":"https://devluisam.github.io/projetos/dpe-am/","name":"Centro de Comando DPE-AM"},{"@type":"ListItem","position":12,"url":"https://devluisam.github.io/projetos/kinga-finance-ai/","name":"Kinga Finance AI"},{"@type":"ListItem","position":13,"url":"https://devluisam.github.io/projetos/pulso-verde/","name":"Pulso Verde"},{"@type":"ListItem","position":14,"url":"https://devluisam.github.io/projetos/body-os/","name":"BODY OS"}]}</script>
 </head>
-
 <body>
 <a class="skip" href="#main">Pular para o conteúdo</a>
-
 <header class="nav">
   <div class="wrap nav-in">
-    <a href="#" class="logo">lh<b>.dev</b></a>
+    <a class="logo" href="#inicio" aria-label="lh.dev — página inicial de Luis Henrique Azevedo">lh<b>.dev</b></a>
     <nav class="nav-links" aria-label="Navegação principal">
+      <span class="nav-indicator" aria-hidden="true"></span>
       <a href="#projetos">Projetos</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#stack">Stack</a>
       <a href="#servicos">Serviços</a>
-      <a href="https://github.com/devluisam" target="_blank" rel="noopener">GitHub</a>
-      <a class="nav-cta" href="#contato">Falar comigo</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
     </nav>
-    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-    </button>
-  </div>
-  <div class="mobile-menu" id="mobile-menu">
-    <div class="wrap">
-      <a href="#projetos">Projetos</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#stack">Stack</a>
-      <a href="#servicos">Serviços</a>
-      <a href="https://github.com/devluisam" target="_blank" rel="noopener">GitHub</a>
-      <a href="#contato">Falar comigo</a>
+    <div class="nav-right">
+      <nav class="lang" aria-label="Idioma"><a href="/" hreflang="pt-BR" lang="pt-BR" aria-current="true"><span class="sr-only">Português </span><span aria-hidden="true">PT</span></a><a href="/en/" hreflang="en" lang="en" title="Ver em inglês"><span class="sr-only">English </span><span aria-hidden="true">EN</span></a></nav>
+      <a class="btn btn-primary btn-sm" href="https://wa.me/5592981295937?text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20o%20desenvolvimento%20de%20um%20site." target="_blank" rel="noopener"><span class="btn-label">Solicitar orçamento</span><span class="btn-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/></svg><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/></svg></span></a>
+      <button class="burger" type="button" aria-label="Abrir menu" data-label-open="Abrir menu" data-label-close="Fechar menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
     </div>
   </div>
 </header>
-
-<main id="main">
-
-<!-- ═══ HERO ═══ -->
-<div class="hero">
-  <div class="wrap">
-  <div class="hero-in">
-    <span class="chip"><span class="dot"></span> Disponível para novos projetos</span>
-    <h1>Luis Henrique Azevedo</h1>
-    <p class="role">Desenvolvedor de software · Manaus, AM</p>
-    <p class="lead">
-      Construo <strong>sistemas web, dashboards e automações com IA</strong> — do modelo de
-      dados à interface. A maior parte dos projetos abaixo nasceu de um problema concreto:
-      meu, da minha família ou de um negócio local.
-    </p>
-    <div class="actions">
-      <a class="btn btn-primary" href="#projetos">Ver projetos</a>
-      <a class="btn btn-ghost" href="https://github.com/devluisam" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn btn-ghost" href="#contato">Falar comigo</a>
+<div class="menu" id="menu" aria-hidden="true">
+  <nav class="menu-links" aria-label="Menu">
+    <a href="#projetos" style="--i:0">Projetos<small>01</small></a>
+    <a href="#servicos" style="--i:1">Serviços<small>02</small></a>
+    <a href="#sobre" style="--i:2">Sobre<small>03</small></a>
+    <a href="#contato" style="--i:3">Contato<small>04</small></a>
+  </nav>
+  <div class="menu-foot">
+    <a class="btn btn-primary" href="https://wa.me/5592981295937?text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20o%20desenvolvimento%20de%20um%20site." target="_blank" rel="noopener"><span class="btn-label">Solicitar orçamento</span><span class="btn-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.24 8.24 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.24 8.24 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg></span></a>
+    <div class="menu-social">
+      <a href="mailto:devluisam@gmail.com">E-mail</a>
+      <a href="https://www.instagram.com/devluisam/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://github.com/devluisam" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/luis-henrique-94a6183b3" target="_blank" rel="noopener">LinkedIn</a>
     </div>
-    <div class="hero-meta">
-      <span>TypeScript · Python</span>
-      <span>Next.js · React · FastAPI</span>
-      <span>Prisma · PostgreSQL · SQLite</span>
-    </div>
-  </div>
   </div>
 </div>
+<main id="main">
 
-<!-- ═══ PROJETOS EM DESTAQUE ═══ -->
-<section id="projetos" aria-labelledby="h-projetos">
+<section class="hero" id="inicio" aria-labelledby="hero-titulo" data-fab-after>
+  <div class="hero-bg" aria-hidden="true"><div class="glow" data-parallax="-0.18"></div><div class="cols"></div></div>
   <div class="wrap">
-    <div class="sec-head">
-      <p class="sec-index">01 — projetos em destaque</p>
-      <h2 id="h-projetos">O que eu construí<br>e como funciona</h2>
-      <p class="sec-lead">
-        Cinco sistemas, cada um com o problema que resolve, as decisões de arquitetura e os
-        desafios técnicos que apareceram no caminho. Abra qualquer um para ver o estudo de caso.
-      </p>
+    <div class="hero-top fade-in" style="--d:.05s">
+      <span class="status"><span class="pulse" aria-hidden="true"></span>Disponível para novos projetos</span>
+      <span class="eyebrow">Luis Henrique Azevedo — Desenvolvedor web · Manaus, AM</span>
     </div>
-
-    <div class="cases">
-
-      <!-- 01 TOSHIBA -->
-      <article class="case">
-        <div class="case-top">
-          <span class="case-num">01</span>
-          <div class="case-tags">
-            <span class="tag">Sistema completo</span>
-            <span class="tag">IA</span>
-            <span class="tag priv">Privado</span>
-          </div>
+    <h1 id="hero-titulo" class="reveal-words"><span class="w"><span style="--i:0">Desenvolvo</span></span> <span class="w"><span style="--i:1">experiências</span></span> <span class="w"><span style="--i:2">digitais</span></span> <span class="w"><span style="--i:3">que</span></span> <span class="w"><span class="serif" style="--i:4">destacam</span></span> <span class="w"><span style="--i:5">marcas.</span></span></h1>
+    <div class="hero-foot">
+      <div class="fade-in" style="--d:.75s">
+        <p class="lead">Crio websites modernos, interativos e estratégicos para empresas que querem se destacar no mundo digital.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary down" href="#projetos" data-magnetic><span class="btn-label">Explorar projetos</span><span class="btn-icon down"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 2.5v11M3.5 9 8 13.5 12.5 9"/></svg><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 2.5v11M3.5 9 8 13.5 12.5 9"/></svg></span></a>
+          <a class="btn btn-ghost" href="https://wa.me/5592981295937?text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20o%20desenvolvimento%20de%20um%20site." target="_blank" rel="noopener" data-magnetic><span class="btn-label">Solicitar orçamento</span><span class="btn-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/></svg><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/></svg></span></a>
         </div>
-        <h3>TOSHIBA — Personal Life Operating System</h3>
-        <p class="case-sub">
-          Sistema local-first de uso diário que centraliza finanças, revendas, faculdade,
-          estudos, tarefas, hábitos, treino, alimentação e documentos em 19 módulos sobre um
-          único banco — e é operado por conversa.
-        </p>
-        <ul class="stack">
-          <li>Next.js 16</li><li>React 19</li><li>TypeScript strict</li><li>Prisma 7</li>
-          <li>SQLite</li><li>Tailwind v4</li><li>shadcn/ui</li><li>Zod 4</li><li>Vitest</li><li>PWA</li>
-        </ul>
-
-        <div class="shots">
-          <figure>
-            <img src="img/toshiba-dashboard.jpg" width="1568" height="772" loading="lazy" decoding="async"
-                 alt="Dashboard do TOSHIBA: bloco &quot;Precisa da sua atenção&quot; com contas a vencer e prova próxima, e cartões de finanças, investimentos, revendas, estudos e metas.">
-            <figcaption>Dashboard — o que precisa de atenção hoje, cruzando os módulos.</figcaption>
-          </figure>
-          <figure>
-            <img src="img/toshiba-assistente.jpg" width="1568" height="772" loading="lazy" decoding="async"
-                 alt="Assistente do TOSHIBA: as frases &quot;gastei 27 no almoço&quot; e &quot;estudei 1h de cálculo&quot; viram registros confirmados, marcados como &quot;por regra · custo zero&quot;, cada um com botão desfazer.">
-            <figcaption>Assistente — frases viram dados por regra, sem chamar o modelo.</figcaption>
-          </figure>
-        </div>
-
-        <details class="study">
-          <summary>Ver estudo de caso</summary>
-          <div class="study-body">
-            <div class="block">
-              <h4>Problema</h4>
-              <p>
-                Minha vida estava espalhada por aplicativos que não se conversavam: finanças numa
-                planilha, tarefas num caderno, notas da faculdade no portal, treino e alimentação
-                em apps separados. Registrar qualquer coisa exigia abrir o app certo e preencher
-                formulário — o custo de registrar era maior que o benefício, então eu simplesmente
-                não registrava, e nenhum dado se cruzava com outro.
-              </p>
-            </div>
-            <div class="block">
-              <h4>Solução</h4>
-              <p>
-                Um sistema único operado por conversa: “gastei 27 no almoço” vira uma transação;
-                “estudei 1h de cálculo” vira uma sessão registrada. Frases diretas são
-                interpretadas por um roteador de intenção baseado em regras e viram dados
-                <em>sem nenhuma chamada paga de IA</em>; só perguntas abertas acionam o modelo.
-                Tudo roda na máquina, com o banco em arquivo.
-              </p>
-            </div>
-            <div class="block full">
-              <h4>Arquitetura</h4>
-              <pre class="arch">Entrada de texto
-     │
-     ├─→ Roteador de intenção (regras)  ──→ função de domínio ──→ banco     [custo zero]
-     │
-     └─→ Camada AIProvider  ──→  Ollama (local) | Claude | OpenAI | Gemini
-              │                        │
-              │                        └─→ orçamento mensal com corte automático
-              │                            (ao estourar, volta para o modo regras)
-              ↓
-        Tool Registry  ──→  as MESMAS funções de domínio que a interface usa
-              ↓
-        Server Actions (Next.js) ──→ Prisma 7 ──→ SQLite (WAL, local)</pre>
-            </div>
-            <div class="block">
-              <h4>Desafios técnicos</h4>
-              <ul>
-                <li>
-                  <strong>Não duplicar regra de negócio.</strong> A IA não tem um caminho paralelo:
-                  ela executa as mesmas funções de domínio que a interface chama, através de um
-                  registro de ferramentas próprio — escrito à mão em vez de adotar um framework de
-                  agentes, para manter o comportamento auditável.
-                </li>
-                <li>
-                  <strong>Propagação transacional.</strong> Registrar a compra de um produto para
-                  revenda precisa criar a transação financeira, o item de estoque e atualizar o
-                  painel — tudo ou nada, numa transação só.
-                </li>
-                <li>
-                  <strong>Custo previsível.</strong> Teto de gasto mensal configurável; ao atingir
-                  o limite, o sistema degrada para o modo regras em vez de parar de funcionar.
-                </li>
-              </ul>
-            </div>
-            <div class="block">
-              <h4>Minha responsabilidade</h4>
-              <p>
-                Projeto inteiro, sozinho: decisões de arquitetura e a justificativa de cada uma,
-                modelagem do banco, camada de IA, regras de domínio, interface, testes e a
-                documentação técnica (arquitetura, esquema de dados e roadmap).
-              </p>
-              <h4 style="margin-top:20px">Resultado</h4>
-              <p>
-                MVP concluído e em uso diário: <strong>54 modelos no schema</strong>,
-                <strong>58 arquivos de teste</strong> (unitários e de integração com banco
-                descartável) e <strong>87 commits</strong>. Funciona offline e, com modelo local,
-                sem custo de IA.
-              </p>
-            </div>
-          </div>
-        </details>
-
-        <div class="case-links">
-          <a href="https://github.com/devluisam/toshiba-life-os" target="_blank" rel="noopener">Ver repositório ↗</a>
-          <span class="note">Cópia pública com o histórico completo (83 commits). O repositório de trabalho é privado: o banco guarda dados pessoais reais.</span>
-        </div>
-      </article>
-
-      <!-- 02 MEDATLAS -->
-      <article class="case">
-        <div class="case-top">
-          <span class="case-num">02</span>
-          <div class="case-tags">
-            <span class="tag">EdTech</span>
-            <span class="tag">3D</span>
-            <span class="tag">IA</span>
-          </div>
-        </div>
-        <h3>MEDATLAS 3D</h3>
-        <p class="case-sub">
-          Plataforma de estudo de anatomia: um modelo 3D navegável no navegador, ligado ao banco
-          de estruturas anatômicas, com quiz gerado por IA e flashcards com repetição espaçada.
-        </p>
-        <ul class="stack">
-          <li>Next.js 15</li><li>React 19</li><li>Three.js</li><li>React Three Fiber</li>
-          <li>Zustand</li><li>Prisma</li><li>PostgreSQL</li><li>NextAuth</li><li>OpenAI API</li><li>Tailwind</li>
-        </ul>
-
-        <div class="shots">
-          <figure>
-            <img src="img/medatlas-viewer.jpg" width="1568" height="726" loading="lazy" decoding="async"
-                 alt="Visualizador 3D do MEDATLAS: esqueleto renderizado sobre uma grade, com painel lateral de 14 camadas anatômicas ligáveis, barra de ferramentas e minimapa.">
-            <figcaption>Visualizador — 14 sistemas anatômicos como camadas ligáveis.</figcaption>
-          </figure>
-          <figure>
-            <img src="img/medatlas-home.jpg" width="1568" height="726" loading="lazy" decoding="async"
-                 alt="Home do MEDATLAS: título &quot;Explore o Corpo Humano em 3D&quot;, figura 3D à direita e quatro indicadores — 14 sistemas anatômicos, 3D no navegador, repetição espaçada SM-2 e tutor de IA.">
-            <figcaption>Home — cena 3D em tempo real no navegador.</figcaption>
-          </figure>
-        </div>
-
-        <details class="study">
-          <summary>Ver estudo de caso</summary>
-          <div class="study-body">
-            <div class="block">
-              <h4>Problema</h4>
-              <p>
-                Anatomia é um conteúdo espacial estudado em material plano. Atlas impressos mostram
-                cortes fixos, e as ferramentas 3D disponíveis costumam ser pagas ou desconectadas
-                do estudo em si: você gira um osso numa aba, e o que precisa memorizar está em outra.
-              </p>
-            </div>
-            <div class="block">
-              <h4>Solução</h4>
-              <p>
-                Modelo 3D e material de estudo na mesma tela. O estudante seleciona uma estrutura e
-                recebe ali a descrição clínica, as relações anatômicas, as patologias associadas, as
-                questões e os flashcards daquela estrutura — com o progresso registrado para orientar
-                a próxima sessão.
-              </p>
-            </div>
-            <div class="block full">
-              <h4>Arquitetura</h4>
-              <pre class="arch">Navegador — Next.js 15 (App Router) + React 19
-   │
-   ├─ Three.js / React Three Fiber ──→ modelo .glb + SSAO, Bloom e Vignette
-   ├─ Zustand ──→ estado isolado por domínio: viewer · quiz · study
-   │
-   ↓  rotas de API
-   ├─ /api/structures/[id]   estrutura, relações e patologias
-   ├─ /api/search            busca por sistema anatômico
-   ├─ /api/ai/chat   (Edge)  ──→ OpenAI, resposta em streaming
-   └─ /api/ai/quiz           ──→ OpenAI, geração de questões
-   ↓
-Prisma ORM ──→ PostgreSQL  (20 modelos: estruturas, quiz, progresso, conversas)</pre>
-            </div>
-            <div class="block">
-              <h4>Desafios técnicos</h4>
-              <ul>
-                <li>
-                  <strong>Separar cena 3D de estado de aplicação.</strong> Misturar as duas coisas
-                  faz a cena re-renderizar a cada clique de menu. Resolvi isolando o estado em três
-                  stores Zustand por domínio, deixando os componentes de cena sem lógica de aplicação.
-                </li>
-                <li>
-                  <strong>Pós-processamento sem derrubar o frame rate</strong> — SSAO, Bloom e
-                  Vignette aplicados com controle de camadas e de plano de corte.
-                </li>
-                <li>
-                  <strong>Conteúdo fora do código.</strong> Todo o material anatômico vive no banco
-                  e entra por seed, para poder crescer sem tocar na aplicação.
-                </li>
-              </ul>
-            </div>
-            <div class="block">
-              <h4>Minha responsabilidade</h4>
-              <p>
-                Projeto inteiro: modelagem das 20 entidades, integração 3D, rotas de API, geração de
-                questões e tutor por IA, interface e documentação de arquitetura.
-              </p>
-              <h4 style="margin-top:20px">Resultado</h4>
-              <p>
-                MVP funcional com visualizador, busca, conteúdo clínico, quiz, flashcards (algoritmo
-                SM-2) e tutor em streaming. O repositório estava sem os arquivos de configuração e
-                não instalava; reconstruí os manifestos e hoje ele passa em <code>tsc --noEmit</code>
-                e conclui o <code>next build</code>. A autenticação está ligada: NextAuth v5 com
-                credenciais (bcrypt), sessão em JWT e o painel protegido no servidor. O que segue
-                pendente — verificação de email e as métricas do painel vindas do banco — está
-                declarado no README em vez de ser apresentado como pronto.
-              </p>
-            </div>
-          </div>
-        </details>
-
-        <div class="case-links">
-          <a href="https://medatlas-3d.vercel.app" target="_blank" rel="noopener">Abrir o sistema ↗</a>
-          <a href="https://github.com/devluisam/medatlas-3d" target="_blank" rel="noopener">Ver repositório ↗</a>
-          <span class="note">Sistema no ar: dá para criar conta, buscar estruturas e navegar no modelo 3D.</span>
-        </div>
-      </article>
-
-      <!-- 03 DENTAL -->
-      <article class="case">
-        <div class="case-top">
-          <span class="case-num">03</span>
-          <div class="case-tags">
-            <span class="tag">Automação</span>
-            <span class="tag">IA aplicada</span>
-            <span class="tag">OCR</span>
-          </div>
-        </div>
-        <h3>Dental Report AI</h3>
-        <p class="case-sub">
-          Transforma fotos de fichas clínicas preenchidas à mão em um relatório de estágio
-          odontológico pronto para entregar em PDF.
-        </p>
-        <ul class="stack">
-          <li>Next.js 15</li><li>TypeScript</li><li>Claude API</li><li>Tesseract.js</li>
-          <li>jsPDF</li><li>React Hook Form</li><li>Zod</li>
-        </ul>
-
-        <div class="shots-mini duo" style="grid-template-columns:1fr">
-          <img src="img/dental-report.jpg" width="1568" height="726" loading="lazy" decoding="async"
-               alt="Interface do Dental Report AI: abas de extração, capa, pacientes, produtividade e fotos; área para enviar as fotos das fichas e, ao lado, o preview do relatório em A4 atualizando em tempo real.">
-        </div>
-
-        <details class="study">
-          <summary>Ver estudo de caso</summary>
-          <div class="study-body">
-            <div class="block">
-              <h4>Problema</h4>
-              <p>
-                O relatório de estágio da clínica é montado a partir de fichas de papel: dados do
-                paciente, situação do tratamento e a contagem de cada procedimento. Transcrever isso
-                à mão é demorado, repetitivo e fácil de errar na soma — e o erro só aparece depois
-                de entregue.
-              </p>
-            </div>
-            <div class="block">
-              <h4>Solução</h4>
-              <p>
-                O aluno fotografa as fichas; o sistema lê as imagens, estrutura os dados e monta o
-                relatório. Tudo fica editável antes de exportar: a automação adianta o trabalho, mas
-                a palavra final continua sendo de quem assina o documento.
-              </p>
-            </div>
-            <div class="block full">
-              <h4>Arquitetura</h4>
-              <pre class="arch">Upload das fotos
-   │
-   ├─ Caminho A ──→ POST /api/extract ──→ Claude (visão) ──→ JSON estruturado
-   │                    (a chave da API fica só no servidor)
-   │
-   └─ Caminho B ──→ Tesseract.js no cliente ──→ parser próprio ──→ JSON estruturado
-                              │
-                              ↓
-        Formulários editáveis (React Hook Form + Zod)  ← revisão humana
-                              ↓
-        Pré-visualização A4 ──→ html2canvas ──→ jsPDF ──→ PDF</pre>
-            </div>
-            <div class="block">
-              <h4>Desafios técnicos</h4>
-              <ul>
-                <li>
-                  <strong>Ler ficha manuscrita com layout irregular.</strong> OCR genérico devolve
-                  texto embaralhado. Escrevi um parser específico para esse formulário: busca por
-                  rótulo, normalização de acentuação e maiúsculas, e leitura da próxima linha
-                  significativa quando o valor não está na mesma linha do rótulo.
-                </li>
-                <li>
-                  <strong>Não confiar cegamente na extração.</strong> Todo campo extraído passa por
-                  validação com Zod e entra num formulário revisável.
-                </li>
-                <li>
-                  <strong>PDF fiel à tela</strong> — a pré-visualização é o próprio documento,
-                  capturada e paginada em A4.
-                </li>
-              </ul>
-            </div>
-            <div class="block">
-              <h4>Minha responsabilidade</h4>
-              <p>
-                Projeto inteiro: fluxo de upload, integração com a API da Claude no servidor, parser
-                de OCR, formulários, pré-visualização e geração do PDF.
-              </p>
-              <h4 style="margin-top:20px">Resultado</h4>
-              <p>
-                Fluxo completo funcionando do upload ao PDF, com dois caminhos independentes de
-                extração e a credencial nunca exposta ao navegador.
-              </p>
-            </div>
-          </div>
-        </details>
-
-        <div class="case-links">
-          <a href="https://github.com/devluisam/dental-report-ai" target="_blank" rel="noopener">Ver repositório ↗</a>
-        </div>
-      </article>
-
-      <!-- 04 DPE-AM -->
-      <article class="case">
-        <div class="case-top">
-          <span class="case-num">04</span>
-          <div class="case-tags">
-            <span class="tag">Sistema completo</span>
-            <span class="tag">Algoritmo</span>
-            <span class="tag priv">Privado</span>
-          </div>
-        </div>
-        <h3>Centro de Comando DPE-AM</h3>
-        <p class="case-sub">
-          Plataforma de preparação para concurso que responde uma pergunta por dia: o que estudar
-          hoje para maximizar a chance de aprovação — e deixa o algoritmo decidir.
-        </p>
-        <ul class="stack">
-          <li>Next.js 15</li><li>React 19</li><li>TypeScript strict</li><li>Prisma 6</li>
-          <li>SQLite</li><li>Zod</li><li>Recharts</li><li>Vitest</li><li>PWA</li>
-        </ul>
-
-        <details class="study">
-          <summary>Ver estudo de caso</summary>
-          <div class="study-body">
-            <div class="block">
-              <h4>Problema</h4>
-              <p>
-                Edital de concurso é grande demais para caber num cronograma fixo. Qualquer plano
-                montado na segunda-feira está errado na quarta: você foi mal num simulado, uma
-                revisão venceu, um assunto novo entrou. A pergunta difícil não é “estudar?”, é
-                <em>“o que estudar agora?”</em>.
-              </p>
-            </div>
-            <div class="block">
-              <h4>Solução</h4>
-              <p>
-                Em vez de cronograma, uma <strong>fila de prioridade adaptativa</strong>, recalculada
-                a cada abertura do painel e após qualquer evento relevante — com o detalhamento de
-                cada fator visível, para a decisão não ser uma caixa-preta.
-              </p>
-            </div>
-            <div class="block full">
-              <h4>O algoritmo de priorização</h4>
-              <pre class="arch">prioridade = peso_do_edital   (0,30)
-           × fraqueza        (0,30)   ← desempenho real em questões
-           × urgência        (0,15)   ← dias restantes até a prova
-           × atraso_revisão  (0,15)
-           × lacuna_cobertura(0,10)
-           × bônus_novidade
-           com piso mínimo, para matéria fraca NUNCA sumir da fila
-
-Funções puras: sem I/O, sem relógio escondido — e, por isso, testáveis.</pre>
-            </div>
-            <div class="block">
-              <h4>Desafios técnicos</h4>
-              <ul>
-                <li>
-                  <strong>Tornar a regra testável.</strong> A camada <code>domain/</code> não toca em
-                  banco nem em data do sistema; quem orquestra Prisma é a camada de serviços. Isso
-                  permitiu cobrir a fórmula, o FSRS e as métricas com testes de verdade.
-                </li>
-                <li>
-                  <strong>Evitar que o algoritmo abandone matéria difícil.</strong> Multiplicação de
-                  fatores tende a zerar itens ruins em todos os critérios; um piso garante que eles
-                  continuem aparecendo.
-                </li>
-                <li>
-                  <strong>Detectar o edital sozinho.</strong> Um monitor acompanha fontes oficiais,
-                  classifica documentos e compara versões com um mecanismo de diff, mostrando o que
-                  mudou entre uma publicação e outra.
-                </li>
-                <li>
-                  <strong>Fuso fixo.</strong> Todas as datas operam em America/Manaus, para o “hoje”
-                  do sistema não escorregar.
-                </li>
-              </ul>
-            </div>
-            <div class="block">
-              <h4>Minha responsabilidade</h4>
-              <p>
-                Projeto inteiro: fórmula de priorização, implementação do FSRS para revisão
-                espaçada, caderno de erros com detecção de padrões, simulados no formato do
-                regulamento, índice de preparação, modelagem do banco, interface e testes.
-              </p>
-              <h4 style="margin-top:20px">Resultado</h4>
-              <p>
-                Sistema em uso: <strong>33 modelos</strong> no schema, <strong>65 testes</strong>
-                (46 de domínio e 19 de integração com SQLite descartável), PWA instalável que
-                funciona offline e backup completo em JSON.
-              </p>
-            </div>
-          </div>
-        </details>
-
-        <div class="case-links">
-          <span class="note">Repositório privado — contém material de estudo e dados de desempenho pessoais.</span>
-        </div>
-      </article>
-
-      <!-- 05 KINGA -->
-      <article class="case">
-        <div class="case-top">
-          <span class="case-num">05</span>
-          <div class="case-tags">
-            <span class="tag">Dashboard</span>
-            <span class="tag">Backend</span>
-            <span class="tag">Negócio real</span>
-          </div>
-        </div>
-        <h3>Kinga Finance AI</h3>
-        <p class="case-sub">
-          Análise financeira para um pequeno comércio com várias lojas e uma fábrica: importa
-          vendas e custos, classifica as despesas sozinho e mostra o resultado por unidade.
-          A classificação é um motor de regras determinístico, sem modelo de linguagem — auditável e
-          reproduzível, que é o que o caso pedia.
-        </p>
-        <ul class="stack">
-          <li>Python</li><li>FastAPI</li><li>SQLAlchemy 2</li><li>Streamlit</li>
-          <li>Plotly</li><li>pandas</li><li>SQLite / PostgreSQL</li>
-        </ul>
-
-        <div class="shots-mini duo" style="grid-template-columns:1fr">
-          <img src="img/kinga-finance.jpg" width="1568" height="772" loading="lazy" decoding="async"
-               alt="Painel do Kinga Finance AI: relatório do mês em texto — score de saúde 100/100, faturamento, margem operacional, ponto de break-even, comparação com o mês anterior, melhor e pior loja e o maior custo do período.">
-        </div>
-
-        <details class="study">
-          <summary>Ver estudo de caso</summary>
-          <div class="study-body">
-            <div class="block">
-              <h4>Problema</h4>
-              <p>
-                Comércio pequeno fecha o mês na planilha. O dono sabe quanto entrou, mas não quanto
-                cada loja deu de lucro, qual categoria de custo cresceu, nem se o mês vai fechar no
-                azul antes de ele acabar. Os dados existem — estão soltos, sem categoria.
-              </p>
-            </div>
-            <div class="block">
-              <h4>Solução</h4>
-              <p>
-                Um sistema que recebe os lançamentos, categoriza cada custo automaticamente,
-                consolida o resultado por unidade e transforma isso num painel com projeção de
-                fechamento, ranking de custos e alertas do que saiu do padrão.
-              </p>
-            </div>
-            <div class="block full">
-              <h4>Arquitetura</h4>
-              <pre class="arch">Dashboard (Streamlit + Plotly)
-        │  HTTP
-        ↓
-API REST (FastAPI)  ──  /sales · /costs · /stores · /report
-        │
-        ↓
-Módulos de domínio — Python puro, sem framework
-   classifier · results · costs · billing · factory · forecast · health · alerts
-        │
-        ↓
-SQLAlchemy 2 ──→ SQLite (padrão) ou PostgreSQL</pre>
-            </div>
-            <div class="block">
-              <h4>Desafios técnicos</h4>
-              <ul>
-                <li>
-                  <strong>Categorizar despesa escrita em texto livre, sem ML.</strong> Motor de
-                  regras por palavra-chave que devolve categoria, subcategoria e um grau de
-                  confiança proporcional aos termos reconhecidos — com sobrescrita manual quando
-                  erra. Previsível e explicável, ao contrário de um classificador treinado.
-                </li>
-                <li>
-                  <strong>Um só núcleo de cálculo.</strong> Os módulos de domínio não conhecem
-                  FastAPI nem Streamlit: recebem uma sessão e devolvem <code>dataclasses</code>. O
-                  mesmo cálculo alimenta a API, o dashboard e o relatório de terminal.
-                </li>
-                <li>
-                  <strong>Índice de saúde financeira</strong> ponderado entre margem, crescimento,
-                  controle de custo e resultado, para virar um número que o dono entende.
-                </li>
-              </ul>
-            </div>
-            <div class="block">
-              <h4>Minha responsabilidade</h4>
-              <p>
-                Projeto inteiro: modelagem, API, motor de classificação, cálculos financeiros
-                (resultado por loja, projeção, Pareto, alertas) e o dashboard.
-              </p>
-              <h4 style="margin-top:20px">Resultado</h4>
-              <p>
-                API, painel e relatório de terminal compartilhando a mesma regra de negócio, com
-                backup automático do banco a cada inicialização e importação por CSV.
-              </p>
-            </div>
-          </div>
-        </details>
-
-        <div class="case-links">
-          <a href="https://github.com/devluisam/kinga-finance-ai" target="_blank" rel="noopener">Ver repositório ↗</a>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══ OUTROS PROJETOS ═══ -->
-<section id="outros" aria-labelledby="h-outros">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="sec-index">02 — outros projetos</p>
-      <h2 id="h-outros">Projetos complementares</h2>
-      <p class="sec-lead">Menores em escopo, mas com um ponto técnico específico em cada um.</p>
-    </div>
-
-    <div class="grid">
-      <article class="mini">
-        <h3>Pulso Verde</h3>
-        <p>
-          Mapa interativo de queimadas e desmatamento na Amazônia. Consome a API da
-          <strong>NASA FIRMS</strong> (CSV com parser próprio) e o WFS do
-          <strong>TerraBrasilis/INPE</strong> com filtro <code>CQL</code> por período. Cada chamada
-          tem timeout com <code>AbortController</code> e erro traduzido para a interface.
-        </p>
-        <ul class="stack"><li>React</li><li>Leaflet</li><li>Recharts</li><li>Dados abertos</li></ul>
-        <div class="shots-mini" style="grid-template-columns:1fr">
-          <img src="img/pulso-verde.jpg" width="1568" height="726" loading="lazy" decoding="async"
-               alt="Mapa do Pulso Verde sobre a Amazônia Legal: polígonos de unidades de conservação e terras indígenas, rios, alertas de desmatamento do DETER e painel lateral com o estado das APIs e o resumo do período.">
-        </div>
-        <div class="mini-links">
-          <a href="https://github.com/devluisam/pulso-verde" target="_blank" rel="noopener">GitHub ↗</a>
-        </div>
-      </article>
-
-      <article class="mini">
-        <h3>BODY OS</h3>
-        <p>
-          Sistema de composição corporal e performance para atleta: peso, alimentação, treinos,
-          recuperação e campeonato num só lugar, com relatório semanal. Registros funcionam
-          <strong>offline</strong> em IndexedDB e sincronizam sem duplicar. Banco com 22 tabelas
-          por domínio e fotos em armazenamento privado.
-          <em>Sem provedor de IA configurado, a interface declara modo básico e responde por regras.</em>
-        </p>
-        <ul class="stack"><li>React 19</li><li>TypeScript</li><li>Cloudflare Workers</li><li>D1 / SQLite</li><li>Drizzle</li><li>Zod</li></ul>
-        <div class="shots-mini duo">
-          <img src="img/bodyos-visao.jpg" width="1568" height="772" loading="lazy" decoding="async"
-               alt="Visão geral do BODY OS: peso atual, média de 7 dias, gráfico de evolução corporal e metas de macronutrientes do dia.">
-          <img src="img/bodyos-assistente.jpg" width="1568" height="772" loading="lazy" decoding="async"
-               alt="Assistente do BODY OS exibindo o aviso &quot;Modo básico · regras com seus registros&quot; e sugestões a partir dos dados do dia.">
-        </div>
-        <div class="mini-links">
-          <a href="https://github.com/devluisam/body-os" target="_blank" rel="noopener">GitHub ↗</a>
-        </div>
-      </article>
-
-      <article class="mini">
-        <h3>Sites-modelo para negócios locais</h3>
-        <p>
-          Três sites completos (peixaria amazônica, clínica odontológica e escritório de advocacia) em HTML, CSS e JavaScript,
-          com fotos reais, feitos primeiro para o celular e publicados no GitHub Pages. Cada um tem visual próprio: cardápio,
-          tratamentos, áreas de atuação, mapa e contato pelo WhatsApp.
-          <em>Conteúdo fictício: são demonstrações do serviço, não clientes reais.</em>
-        </p>
-        <ul class="stack"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Mobile first</li><li>SEO</li></ul>
-        <div class="shots-mini">
-          <img src="img/modelo-restaurante.webp" width="1200" height="675" loading="lazy" decoding="async"
-               alt="Site-modelo de peixaria amazônica: título &quot;Peixe da Amazônia, na brasa.&quot; sobre foto de peixe assado na folha de bananeira.">
-          <img src="img/modelo-clinica.webp" width="1200" height="675" loading="lazy" decoding="async"
-               alt="Site-modelo de clínica odontológica: título &quot;Tratamento sem pressa. Sorriso sem medo.&quot; ao lado da foto de uma mulher sorrindo.">
-          <img src="img/modelo-advocacia.webp" width="1200" height="675" loading="lazy" decoding="async"
-               alt="Site-modelo de escritório de advocacia: título &quot;Direito explicado em português claro.&quot; ao lado da foto de uma reunião com cliente.">
-        </div>
-        <div class="mini-links">
-          <a href="https://devluisam.github.io/sites/modelos/restaurante/" target="_blank" rel="noopener">Restaurante ↗</a>
-          <a href="https://devluisam.github.io/sites/modelos/clinica/" target="_blank" rel="noopener">Clínica ↗</a>
-          <a href="https://devluisam.github.io/sites/modelos/advocacia/" target="_blank" rel="noopener">Advocacia ↗</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ SOBRE ═══ -->
-<section id="sobre" aria-labelledby="h-sobre">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="sec-index">03 — sobre</p>
-      <h2 id="h-sobre">Quem sou</h2>
-    </div>
-    <div class="about">
-      <div>
-        <p>
-          Sou Luis Henrique, tenho 18 anos e curso <strong>Engenharia de Software na Fametro</strong>,
-          em Manaus. Comecei a programar por necessidade: queria resolver problemas que os
-          aplicativos prontos não resolviam do jeito que eu precisava.
-        </p>
-        <p>
-          Desde então construí sistemas que uso todo dia e ferramentas para pessoas próximas —
-          um sistema pessoal de organização com 19 módulos, uma plataforma de preparação para
-          concurso com algoritmo de priorização próprio, um painel financeiro para um comércio da
-          família e um gerador de relatórios que economiza horas de transcrição manual.
-        </p>
-        <p>
-          Gosto da parte que aparece pouco: <strong>modelar o banco</strong>, separar regra de
-          negócio de entrada e saída para conseguir testar, e decidir o que <em>não</em> colocar no
-          projeto. Escrevo documentação de arquitetura porque ela me obriga a justificar as escolhas
-          — e porque quem chega depois precisa entender o sistema sem me perguntar.
-        </p>
-        <p>
-          Aprendi as tecnologias que uso porque um projeto pediu, não porque estavam na ementa. É
-          assim que pretendo continuar.
-        </p>
       </div>
-      <dl class="facts">
-        <div class="fact"><dt>Formação</dt><dd>Eng. de Software — Fametro</dd></div>
-        <div class="fact"><dt>Local</dt><dd>Manaus, AM — Brasil</dd></div>
-        <div class="fact"><dt>Sistemas em uso diário</dt><dd>2</dd></div>
-        <div class="fact"><dt>Projetos públicos</dt><dd>GitHub · @devluisam</dd></div>
-        <div class="fact"><dt>Disponibilidade</dt><dd>Freelance e parcerias</dd></div>
+      <dl class="hero-facts fade-in" style="--d:.9s">
+        <div><dt>Projetos</dt><dd>14</dd></div>
+        <div><dt>No ar</dt><dd>04</dd></div>
+        <div><dt>Segmentos</dt><dd>07</dd></div>
       </dl>
     </div>
   </div>
+  <div class="strip fade-in" style="--d:1.05s" role="region" aria-label="Sites recentes">
+    <div class="strip-track"><a href="/projetos/blackwash/"><img src="/img/projetos/blackwash/1-capa-800.webp" width="800" height="500" alt="BLACKWASH — Lava-jatos" loading="lazy" decoding="async"><span>BLACKWASH</span></a><a href="/projetos/brasa-e-rio/"><img src="/img/projetos/brasa-e-rio/1-capa-800.webp" width="800" height="500" alt="Brasa &amp; Rio — Restaurantes" loading="lazy" decoding="async"><span>Brasa &amp; Rio</span></a><a href="/projetos/remanso/"><img src="/img/projetos/remanso/1-capa-800.webp" width="800" height="500" alt="Remanso — Lojas" loading="lazy" decoding="async"><span>Remanso</span></a><a href="/projetos/sorriso-norte/"><img src="/img/projetos/sorriso-norte/1-capa-800.webp" width="800" height="500" alt="Sorriso Norte — Clínicas" loading="lazy" decoding="async"><span>Sorriso Norte</span></a><a href="/projetos/forja/"><img src="/img/projetos/forja/1-capa-800.webp" width="800" height="500" alt="Forja — Academias" loading="lazy" decoding="async"><span>Forja</span></a><a href="/projetos/vetor-mecanica/"><img src="/img/projetos/vetor-mecanica/1-capa-800.webp" width="800" height="500" alt="Vetor Mecânica — Serviços" loading="lazy" decoding="async"><span>Vetor Mecânica</span></a><a href="/projetos/andrade-menezes/"><img src="/img/projetos/andrade-menezes/1-capa-800.webp" width="800" height="500" alt="Andrade &amp; Menezes — Serviços" loading="lazy" decoding="async"><span>Andrade &amp; Menezes</span></a><a href="/projetos/blackwash/" tabindex="-1" aria-hidden="true"><img src="/img/projetos/blackwash/1-capa-800.webp" width="800" height="500" alt="" loading="lazy" decoding="async"><span>BLACKWASH</span></a><a href="/projetos/brasa-e-rio/" tabindex="-1" aria-hidden="true"><img src="/img/projetos/brasa-e-rio/1-capa-800.webp" width="800" height="500" alt="" loading="lazy" decoding="async"><span>Brasa &amp; Rio</span></a><a href="/projetos/remanso/" tabindex="-1" aria-hidden="true"><img src="/img/projetos/remanso/1-capa-800.webp" width="800" height="500" alt="" loading="lazy" decoding="async"><span>Remanso</span></a><a href="/projetos/sorriso-norte/" tabindex="-1" aria-hidden="true"><img src="/img/projetos/sorriso-norte/1-capa-800.webp" width="800" height="500" alt="" loading="lazy" decoding="async"><span>Sorriso Norte</span></a><a href="/projetos/forja/" tabindex="-1" aria-hidden="true"><img src="/img/projetos/forja/1-capa-800.webp" width="800" height="500" alt="" loading="lazy" decoding="async"><span>Forja</span></a><a href="/projetos/vetor-mecanica/" tabindex="-1" aria-hidden="true"><img src="/img/projetos/vetor-mecanica/1-capa-800.webp" width="800" height="500" alt="" loading="lazy" decoding="async"><span>Vetor Mecânica</span></a><a href="/projetos/andrade-menezes/" tabindex="-1" aria-hidden="true"><img src="/img/projetos/andrade-menezes/1-capa-800.webp" width="800" height="500" alt="" loading="lazy" decoding="async"><span>Andrade &amp; Menezes</span></a></div>
+  </div>
 </section>
 
-<!-- ═══ STACK ═══ -->
-<section id="stack" aria-labelledby="h-stack">
+<section class="section" id="projetos" aria-labelledby="projetos-titulo">
+  <span id="outros" aria-hidden="true"></span>
   <div class="wrap">
     <div class="sec-head">
-      <p class="sec-index">04 — stack</p>
-      <h2 id="h-stack">Tecnologias que uso</h2>
-      <p class="sec-lead">
-        Só o que aparece nos projetos desta página. Sem barra de porcentagem: o código está no
-        GitHub, e ele diz mais do que qualquer medidor de domínio.
-      </p>
+      <p class="eyebrow" data-reveal><span class="num">01</span> Projetos</p>
+      <h2 class="h-section" id="projetos-titulo" data-reveal>Trabalhos <span class="serif">selecionados</span></h2>
+      <p class="lead" data-reveal style="--d:.1s">Sites para negócios locais e sistemas web completos. Filtre por segmento e abra qualquer projeto para ver as telas, as tecnologias e o site no ar.</p>
     </div>
-    <div class="stack-grid">
-      <div class="stack-col">
-        <h3>Linguagens</h3>
-        <ul><li>TypeScript</li><li>JavaScript</li><li>Python</li><li>SQL</li><li>C</li></ul>
-      </div>
-      <div class="stack-col">
-        <h3>Frontend</h3>
-        <ul><li>React</li><li>Next.js (App Router)</li><li>Tailwind CSS</li><li>shadcn/ui · Radix</li><li>Three.js · React Three Fiber</li><li>Recharts · Leaflet</li></ul>
-      </div>
-      <div class="stack-col">
-        <h3>Backend</h3>
-        <ul><li>Node.js</li><li>FastAPI</li><li>Server Actions</li><li>Prisma ORM</li><li>SQLAlchemy</li><li>Zod</li></ul>
-      </div>
-      <div class="stack-col">
-        <h3>Banco de dados</h3>
-        <ul><li>PostgreSQL</li><li>SQLite</li><li>Modelagem relacional</li><li>Migrations e seed</li></ul>
-      </div>
-      <div class="stack-col">
-        <h3>IA aplicada</h3>
-        <ul><li>Claude API (Anthropic SDK)</li><li>OpenAI API</li><li>Modelos locais (Ollama)</li><li>Tesseract.js (OCR)</li></ul>
-      </div>
-      <div class="stack-col">
-        <h3>Qualidade e ferramentas</h3>
-        <ul><li>Vitest · Testing Library</li><li>Testes de integração</li><li>ESLint · Prettier</li><li>Git</li><li>Vercel · Streamlit</li></ul>
-      </div>
+    <div class="filters" role="group" aria-label="Filtrar projetos por segmento" data-reveal>
+      <button class="filter" type="button" data-filter="todos" data-label="Todos" aria-pressed="true">Todos <sup>14</sup></button>
+      <button class="filter" type="button" data-filter="restaurantes" data-label="Restaurantes" aria-pressed="false">Restaurantes <sup>1</sup></button>
+      <button class="filter" type="button" data-filter="lava-jatos" data-label="Lava-jatos" aria-pressed="false">Lava-jatos <sup>1</sup></button>
+      <button class="filter" type="button" data-filter="lojas" data-label="Lojas" aria-pressed="false">Lojas <sup>1</sup></button>
+      <button class="filter" type="button" data-filter="clinicas" data-label="Clínicas" aria-pressed="false">Clínicas <sup>1</sup></button>
+      <button class="filter" type="button" data-filter="servicos" data-label="Serviços" aria-pressed="false">Serviços <sup>2</sup></button>
+      <button class="filter" type="button" data-filter="academias" data-label="Academias" aria-pressed="false">Academias <sup>1</sup></button>
+      <button class="filter" type="button" data-filter="sistemas" data-label="Sistemas &amp; IA" aria-pressed="false">Sistemas &amp; IA <sup>7</sup></button>
+    </div>
+    <p class="sr-only" id="filter-status" aria-live="polite" data-one="projeto" data-many="projetos" data-in="em"></p>
+    <div class="grid" id="grid">
+      <article class="card" data-category="lava-jatos" data-size="lg" data-reveal>
+        <a class="card-media" href="/projetos/blackwash/" tabindex="-1" aria-hidden="true" style="view-transition-name: p-blackwash">
+          <img src="/img/projetos/blackwash/1-capa.webp" srcset="/img/projetos/blackwash/1-capa-800.webp 800w, /img/projetos/blackwash/1-capa.webp 1440w" sizes="(min-width: 961px) 56vw, 100vw" width="1440" height="900" alt="Hero do BLACKWASH: título &quot;Não é apenas uma lavagem. É outro nível de cuidado.&quot; sobre a foto de um carro sendo lavado em um galpão escuro." loading="lazy" decoding="async">
+          <span class="card-cta">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></span>
+        </a>
+        <div class="card-body">
+          <div class="card-meta"><span class="idx">01</span><span>Lava-jatos</span><span class="badge">Modelo de demonstração</span></div>
+          <h3><a href="/projetos/blackwash/">BLACKWASH</a></h3>
+          <p>Site premium para lava-jato e estética automotiva, com motion design cinematográfico e agendamento pelo WhatsApp.</p>
+          <div class="card-links">
+            <a class="link-arrow int" href="/projetos/blackwash/">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
+            
+          </div>
+        </div>
+      </article>
+      <article class="card" data-category="restaurantes" data-size="sm" data-reveal>
+        <a class="card-media" href="/projetos/brasa-e-rio/" tabindex="-1" aria-hidden="true" style="view-transition-name: p-brasa-e-rio">
+          <img src="/img/projetos/brasa-e-rio/1-capa.webp" srcset="/img/projetos/brasa-e-rio/1-capa-800.webp 800w, /img/projetos/brasa-e-rio/1-capa.webp 1440w" sizes="(min-width: 961px) 40vw, 100vw" width="1440" height="900" alt="Hero do Brasa &amp; Rio: título &quot;Peixe da Amazônia, na brasa.&quot; sobre foto de peixe assado na folha de bananeira." loading="lazy" decoding="async">
+          <span class="card-cta">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></span>
+        </a>
+        <div class="card-body">
+          <div class="card-meta"><span class="idx">02</span><span>Restaurantes</span><span class="badge live">Modelo · no ar</span></div>
+          <h3><a href="/projetos/brasa-e-rio/">Brasa &amp; Rio</a></h3>
+          <p>Site de peixaria amazônica com cardápio, ambiente, avaliações, mapa e pedido direto pelo WhatsApp.</p>
+          <div class="card-links">
+            <a class="link-arrow int" href="/projetos/brasa-e-rio/">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
+            <a class="link-arrow" href="https://devluisam.github.io/sites/modelos/restaurante/" target="_blank" rel="noopener">Visitar site <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/></svg><span class="sr-only"> (abre em nova aba)</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="card" data-category="lojas" data-size="sm" data-reveal>
+        <a class="card-media" href="/projetos/remanso/" tabindex="-1" aria-hidden="true" style="view-transition-name: p-remanso">
+          <img src="/img/projetos/remanso/1-capa.webp" srcset="/img/projetos/remanso/1-capa-800.webp 800w, /img/projetos/remanso/1-capa.webp 1440w" sizes="(min-width: 961px) 40vw, 100vw" width="1440" height="900" alt="Hero do Remanso: título &quot;Onde o dia desacelera.&quot; ao lado da foto de um sofá com a cota de 260 cm desenhada sobre a imagem." loading="lazy" decoding="async">
+          <span class="card-cta">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></span>
+        </a>
+        <div class="card-body">
+          <div class="card-meta"><span class="idx">03</span><span>Lojas</span><span class="badge">Modelo de demonstração</span></div>
+          <h3><a href="/projetos/remanso/">Remanso</a></h3>
+          <p>Loja de móveis com catálogo filtrável, página por produto, medidas claras e atendimento pelo WhatsApp.</p>
+          <div class="card-links">
+            <a class="link-arrow int" href="/projetos/remanso/">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
+            
+          </div>
+        </div>
+      </article>
+      <article class="card" data-category="clinicas" data-size="lg" data-reveal>
+        <a class="card-media" href="/projetos/sorriso-norte/" tabindex="-1" aria-hidden="true" style="view-transition-name: p-sorriso-norte">
+          <img src="/img/projetos/sorriso-norte/1-capa.webp" srcset="/img/projetos/sorriso-norte/1-capa-800.webp 800w, /img/projetos/sorriso-norte/1-capa.webp 1440w" sizes="(min-width: 961px) 56vw, 100vw" width="1440" height="900" alt="Hero da Sorriso Norte: título &quot;Tratamento sem pressa. Sorriso sem medo.&quot; ao lado da foto de uma mulher sorrindo, com etiquetas &quot;Plano por escrito&quot; e &quot;Próximo horário livre&quot;." loading="lazy" decoding="async">
+          <span class="card-cta">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></span>
+        </a>
+        <div class="card-body">
+          <div class="card-meta"><span class="idx">04</span><span>Clínicas</span><span class="badge live">Modelo · no ar</span></div>
+          <h3><a href="/projetos/sorriso-norte/">Sorriso Norte</a></h3>
+          <p>Site de clínica odontológica: tratamentos, primeira consulta explicada, perguntas frequentes e agendamento.</p>
+          <div class="card-links">
+            <a class="link-arrow int" href="/projetos/sorriso-norte/">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
+            <a class="link-arrow" href="https://devluisam.github.io/sites/modelos/clinica/" target="_blank" rel="noopener">Visitar site <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/></svg><span class="sr-only"> (abre em nova aba)</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="card" data-category="academias" data-size="lg" data-reveal>
+        <a class="card-media" href="/projetos/forja/" tabindex="-1" aria-hidden="true" style="view-transition-name: p-forja">
+          <img src="/img/projetos/forja/1-capa.webp" srcset="/img/projetos/forja/1-capa-800.webp 800w, /img/projetos/forja/1-capa.webp 1440w" sizes="(min-width: 961px) 56vw, 100vw" width="1440" height="900" alt="Hero da Forja: título &quot;Construa sua melhor versão.&quot; em letras condensadas sobre a foto de uma mulher treinando com barra." loading="lazy" decoding="async">
+          <span class="card-cta">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></span>
+        </a>
+        <div class="card-body">
+          <div class="card-meta"><span class="idx">05</span><span>Academias</span><span class="badge">Modelo de demonstração</span></div>
+          <h3><a href="/projetos/forja/">Forja</a></h3>
+          <p>Site de academia com estrutura, modalidades, planos, etapas de matrícula e conversão pelo WhatsApp.</p>
+          <div class="card-links">
+            <a class="link-arrow int" href="/projetos/forja/">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
+            
+          </div>
+        </div>
+      </article>
+      <article class="card" data-category="servicos" data-size="sm" data-reveal>
+        <a class="card-media" href="/projetos/vetor-mecanica/" tabindex="-1" aria-hidden="true" style="view-transition-name: p-vetor-mecanica">
+          <img src="/img/projetos/vetor-mecanica/1-capa.webp" srcset="/img/projetos/vetor-mecanica/1-capa-800.webp 800w, /img/projetos/vetor-mecanica/1-capa.webp 1440w" sizes="(min-width: 961px) 40vw, 100vw" width="1440" height="900" alt="Hero da Vetor Mecânica: título &quot;Precisão mecânica. Confiança em cada quilômetro.&quot; ao lado de um carro com faróis acesos e um conta-giros." loading="lazy" decoding="async">
+          <span class="card-cta">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></span>
+        </a>
+        <div class="card-body">
+          <div class="card-meta"><span class="idx">06</span><span>Serviços</span><span class="badge">Modelo de demonstração</span></div>
+          <h3><a href="/projetos/vetor-mecanica/">Vetor Mecânica</a></h3>
+          <p>Site de oficina mecânica com serviços, diferenciais, processo, perguntas frequentes e orçamento pelo WhatsApp.</p>
+          <div class="card-links">
+            <a class="link-arrow int" href="/projetos/vetor-mecanica/">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
+            
+          </div>
+        </div>
+      </article>
+      <article class="card" data-category="servicos" data-size="sm" data-reveal>
+        <a class="card-media" href="/projetos/andrade-menezes/" tabindex="-1" aria-hidden="true" style="view-transition-name: p-andrade-menezes">
+          <img src="/img/projetos/andrade-menezes/1-capa.webp" srcset="/img/projetos/andrade-menezes/1-capa-800.webp 800w, /img/projetos/andrade-menezes/1-capa.webp 1440w" sizes="(min-width: 961px) 40vw, 100vw" width="1440" height="900" alt="Hero do Andrade &amp; Menezes: título &quot;Direito explicado em português claro.&quot; ao lado da foto de uma reunião com cliente." loading="lazy" decoding="async">
+          <span class="card-cta">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></span>
+        </a>
+        <div class="card-body">
+          <div class="card-meta"><span class="idx">07</span><span>Serviços</span><span class="badge live">Modelo · no ar</span></div>
+          <h3><a href="/projetos/andrade-menezes/">Andrade &amp; Menezes</a></h3>
+          <p>Site de escritório de advocacia: áreas de atuação, como funciona o atendimento e contato direto.</p>
+          <div class="card-links">
+            <a class="link-arrow int" href="/projetos/andrade-menezes/">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
+            <a class="link-arrow" href="https://devluisam.github.io/sites/modelos/advocacia/" target="_blank" rel="noopener">Visitar site <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/></svg><span class="sr-only"> (abre em nova aba)</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="card" data-category="sistemas" data-size="lg" data-reveal>
+        <a class="card-media" href="/projetos/medatlas-3d/" tabindex="-1" aria-hidden="true" style="view-transition-name: p-medatlas-3d">
+          <img src="/img/projetos/medatlas-3d/1-visualizador.webp" srcset="/img/projetos/medatlas-3d/1-visualizador-800.webp 800w, /img/projetos/medatlas-3d/1-visualizador.webp 1568w" sizes="(min-width: 961px) 56vw, 100vw" width="1568" height="726" alt="Visualizador 3D do MEDATLAS: esqueleto renderizado sobre uma grade, com painel lateral de 14 camadas anatômicas ligáveis, barra de ferramentas e minimapa." loading="lazy" decoding="async">
+          <span class="card-cta">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></span>
+        </a>
+        <div class="card-body">
+          <div class="card-meta"><span class="idx">08</span><span>Sistemas &amp; IA</span><span class="badge live">No ar</span></div>
+          <h3><a href="/projetos/medatlas-3d/">MEDATLAS 3D</a></h3>
+          <p>Estudo de anatomia com modelo 3D navegável no navegador, quiz gerado por IA e flashcards com repetição espaçada.</p>
+          <div class="card-links">
+            <a class="link-arrow int" href="/projetos/medatlas-3d/">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
+            <a class="link-arrow" href="https://medatlas-3d.vercel.app" target="_blank" rel="noopener">Visitar site <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/></svg><span class="sr-only"> (abre em nova aba)</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="card" data-category="sistemas" data-size="lg" data-reveal>
+        <a class="card-media" href="/projetos/toshiba/" tabindex="-1" aria-hidden="true" style="view-transition-name: p-toshiba">
+          <img src="/img/projetos/toshiba/1-dashboard.webp" srcset="/img/projetos/toshiba/1-dashboard-800.webp 800w, /img/projetos/toshiba/1-dashboard.webp 1568w" sizes="(min-width: 961px) 56vw, 100vw" width="1568" height="772" alt="Dashboard do TOSHIBA: bloco &quot;Precisa da sua atenção&quot; com contas a vencer e prova próxima, e cartões de finanças, investimentos, revendas, estudos e metas." loading="lazy" decoding="async">
+          <span class="card-cta">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></span>
+        </a>
+        <div class="card-body">
+          <div class="card-meta"><span class="idx">09</span><span>Sistemas &amp; IA</span><span class="badge">Código aberto</span></div>
+          <h3><a href="/projetos/toshiba/">TOSHIBA — Personal Life OS</a></h3>
+          <p>Sistema local-first com 19 módulos — finanças, estudos, tarefas, treino e mais — operado por conversa.</p>
+          <div class="card-links">
+            <a class="link-arrow int" href="/projetos/toshiba/">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
+            
+          </div>
+        </div>
+      </article>
+      <article class="card" data-category="sistemas" data-size="sm" data-reveal>
+        <a class="card-media" href="/projetos/dental-report-ai/" tabindex="-1" aria-hidden="true" style="view-transition-name: p-dental-report-ai">
+          <img src="/img/projetos/dental-report-ai/1-interface.webp" srcset="/img/projetos/dental-report-ai/1-interface-800.webp 800w, /img/projetos/dental-report-ai/1-interface.webp 1568w" sizes="(min-width: 961px) 40vw, 100vw" width="1568" height="726" alt="Interface do Dental Report AI: abas de extração, capa, pacientes, produtividade e fotos; área para enviar as fotos das fichas e, ao lado, o preview do relatório em A4 atualizando em tempo real." loading="lazy" decoding="async">
+          <span class="card-cta">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></span>
+        </a>
+        <div class="card-body">
+          <div class="card-meta"><span class="idx">10</span><span>Sistemas &amp; IA</span><span class="badge">Código aberto</span></div>
+          <h3><a href="/projetos/dental-report-ai/">Dental Report AI</a></h3>
+          <p>Transforma fotos de fichas clínicas preenchidas à mão em um relatório de estágio odontológico pronto em PDF.</p>
+          <div class="card-links">
+            <a class="link-arrow int" href="/projetos/dental-report-ai/">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
+            
+          </div>
+        </div>
+      </article>
+      <article class="card" data-category="sistemas" data-size="sm" data-reveal>
+        <a class="card-media" href="/projetos/dpe-am/" tabindex="-1" aria-hidden="true" style="view-transition-name: p-dpe-am">
+          <div class="card-poster" aria-hidden="true"><b>Sistema completo · Algoritmo</b><code>prioridade = peso × fraqueza × urgência × revisão × cobertura</code></div>
+          <span class="card-cta">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></span>
+        </a>
+        <div class="card-body">
+          <div class="card-meta"><span class="idx">11</span><span>Sistemas &amp; IA</span><span class="badge">Repositório privado</span></div>
+          <h3><a href="/projetos/dpe-am/">Centro de Comando DPE-AM</a></h3>
+          <p>Preparação para concurso que responde, todo dia, o que estudar agora — com uma fila de prioridade adaptativa.</p>
+          <div class="card-links">
+            <a class="link-arrow int" href="/projetos/dpe-am/">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
+            
+          </div>
+        </div>
+      </article>
+      <article class="card" data-category="sistemas" data-size="lg" data-reveal>
+        <a class="card-media" href="/projetos/kinga-finance-ai/" tabindex="-1" aria-hidden="true" style="view-transition-name: p-kinga-finance-ai">
+          <img src="/img/projetos/kinga-finance-ai/1-painel.webp" srcset="/img/projetos/kinga-finance-ai/1-painel-800.webp 800w, /img/projetos/kinga-finance-ai/1-painel.webp 1568w" sizes="(min-width: 961px) 56vw, 100vw" width="1568" height="772" alt="Painel do Kinga Finance AI: relatório do mês em texto — score de saúde 100/100, faturamento, margem operacional, ponto de break-even, comparação com o mês anterior, melhor e pior loja e o maior custo do período." loading="lazy" decoding="async">
+          <span class="card-cta">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></span>
+        </a>
+        <div class="card-body">
+          <div class="card-meta"><span class="idx">12</span><span>Sistemas &amp; IA</span><span class="badge">Código aberto</span></div>
+          <h3><a href="/projetos/kinga-finance-ai/">Kinga Finance AI</a></h3>
+          <p>Análise financeira para um comércio com várias lojas: importa vendas e custos, classifica despesas e mostra o resultado por unidade.</p>
+          <div class="card-links">
+            <a class="link-arrow int" href="/projetos/kinga-finance-ai/">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
+            
+          </div>
+        </div>
+      </article>
+      <article class="card" data-category="sistemas" data-size="lg" data-reveal>
+        <a class="card-media" href="/projetos/pulso-verde/" tabindex="-1" aria-hidden="true" style="view-transition-name: p-pulso-verde">
+          <img src="/img/projetos/pulso-verde/1-mapa.webp" srcset="/img/projetos/pulso-verde/1-mapa-800.webp 800w, /img/projetos/pulso-verde/1-mapa.webp 1568w" sizes="(min-width: 961px) 56vw, 100vw" width="1568" height="726" alt="Mapa do Pulso Verde sobre a Amazônia Legal: polígonos de unidades de conservação e terras indígenas, rios, alertas de desmatamento do DETER e painel lateral com o estado das APIs e o resumo do período." loading="lazy" decoding="async">
+          <span class="card-cta">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></span>
+        </a>
+        <div class="card-body">
+          <div class="card-meta"><span class="idx">13</span><span>Sistemas &amp; IA</span><span class="badge">Código aberto</span></div>
+          <h3><a href="/projetos/pulso-verde/">Pulso Verde</a></h3>
+          <p>Mapa interativo de queimadas e desmatamento na Amazônia com dados da NASA FIRMS e do INPE.</p>
+          <div class="card-links">
+            <a class="link-arrow int" href="/projetos/pulso-verde/">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
+            
+          </div>
+        </div>
+      </article>
+      <article class="card" data-category="sistemas" data-size="sm" data-reveal>
+        <a class="card-media" href="/projetos/body-os/" tabindex="-1" aria-hidden="true" style="view-transition-name: p-body-os">
+          <img src="/img/projetos/body-os/1-visao.webp" srcset="/img/projetos/body-os/1-visao-800.webp 800w, /img/projetos/body-os/1-visao.webp 1568w" sizes="(min-width: 961px) 40vw, 100vw" width="1568" height="772" alt="Visão geral do BODY OS: peso atual, média de 7 dias, gráfico de evolução corporal e metas de macronutrientes do dia." loading="lazy" decoding="async">
+          <span class="card-cta">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></span>
+        </a>
+        <div class="card-body">
+          <div class="card-meta"><span class="idx">14</span><span>Sistemas &amp; IA</span><span class="badge">Código aberto</span></div>
+          <h3><a href="/projetos/body-os/">BODY OS</a></h3>
+          <p>Composição corporal e performance para atleta, com registros offline que sincronizam sem duplicar.</p>
+          <div class="card-links">
+            <a class="link-arrow int" href="/projetos/body-os/">Ver projeto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
+            
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="projects-foot" data-reveal>
+      <p>Tem um negócio que precisa de um site assim? <span>Me conta o que você precisa e eu te passo o orçamento.</span></p>
+      <a class="btn btn-primary" href="https://wa.me/5592981295937?text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20o%20desenvolvimento%20de%20um%20site." target="_blank" rel="noopener" data-magnetic><span class="btn-label">Solicitar orçamento</span><span class="btn-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.24 8.24 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.24 8.24 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg></span></a>
     </div>
   </div>
 </section>
 
-<!-- ═══ SERVIÇOS ═══ -->
-<section id="servicos" aria-labelledby="h-servicos">
+<section class="section" id="servicos" aria-labelledby="servicos-titulo">
   <div class="wrap">
     <div class="sec-head">
-      <p class="sec-index">05 — serviços</p>
-      <h2 id="h-servicos">O que posso desenvolver</h2>
-      <p class="sec-lead">Tipos de trabalho que correspondem ao que já construí e está documentado acima.</p>
+      <p class="eyebrow" data-reveal><span class="num">02</span> Serviços</p>
+      <h2 class="h-section" id="servicos-titulo" data-reveal>O que posso <span class="serif">desenvolver</span></h2>
+      <p class="lead" data-reveal style="--d:.1s">Tipos de trabalho que correspondem ao que já construí e está documentado nos projetos acima.</p>
     </div>
-    <div class="grid">
-      <div class="svc">
+    <div class="services">
+      <article class="service" data-reveal>
+        <span class="n">01</span>
+        <h3>Sites e landing pages</h3>
+        <div class="service-more">
+          <p>Sites institucionais responsivos, com SEO on-page, pré-visualização correta ao compartilhar, carregamento rápido e contato direto pelo WhatsApp.</p>
+          <a class="link-arrow" href="https://devluisam.github.io/sites/" target="_blank" rel="noopener">Ver a página de sites para negócios <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/></svg></a>
+        </div>
+      </article>
+      <article class="service" data-reveal>
+        <span class="n">02</span>
         <h3>Sistemas web sob medida</h3>
-        <p>
-          Aplicações completas em Next.js e TypeScript: modelagem do banco, regras de negócio,
-          interface e publicação. Da definição do schema ao deploy.
-        </p>
-      </div>
-      <div class="svc">
+        <p>Aplicações completas em Next.js e TypeScript: modelagem do banco, regras de negócio, interface e publicação. Da definição do schema ao deploy.</p>
+      </article>
+      <article class="service" data-reveal>
+        <span class="n">03</span>
         <h3>Dashboards e análise de dados</h3>
-        <p>
-          Painéis que transformam planilha e lançamento solto em indicador: consolidação, gráficos,
-          projeções e alertas do que saiu do padrão.
-        </p>
-      </div>
-      <div class="svc">
+        <p>Painéis que transformam planilha e lançamento solto em indicador: consolidação, gráficos, projeções e alertas do que saiu do padrão.</p>
+      </article>
+      <article class="service" data-reveal>
+        <span class="n">04</span>
         <h3>Automação com IA</h3>
-        <p>
-          Extração de dados de documentos e imagens, geração de relatórios e classificação
-          automática — sempre com revisão humana antes do resultado final.
-        </p>
-      </div>
-      <div class="svc">
-        <h3>Landing pages</h3>
-        <p>
-          Sites institucionais responsivos, com SEO on-page, pré-visualização correta ao
-          compartilhar e carregamento rápido.
-        </p>
-        <p><a href="https://devluisam.github.io/sites/" target="_blank" rel="noopener">Ver modelos e pedir orçamento ↗</a></p>
-      </div>
+        <p>Extração de dados de documentos e imagens, geração de relatórios e classificação automática — sempre com revisão humana antes do resultado final.</p>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- ═══ CONTATO ═══ -->
-<section id="contato" class="contact" aria-labelledby="h-contato">
+<section class="section" id="processo" aria-labelledby="processo-titulo">
   <div class="wrap">
-    <div class="contact-in">
-      <div>
-        <p class="sec-index">06 — contato</p>
-        <h2 id="h-contato">Vamos conversar sobre o seu projeto</h2>
-        <p class="sec-lead" style="margin-top:20px">
-          Disponível para novos projetos e parcerias. Se puder, mande junto o
-          problema que você precisa resolver — é por onde eu começo.
-        </p>
-        <div class="actions">
-          <a class="btn btn-primary" href="https://wa.me/5592981295937?text=Oi%20Luis%2C%20vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+    <div class="sec-head">
+      <p class="eyebrow" data-reveal><span class="num">03</span> Como funciona</p>
+      <h2 class="h-section" id="processo-titulo" data-reveal>Simples, direto e <span class="serif">sem enrolação</span></h2>
+      <p class="lead" data-reveal style="--d:.1s">Você não precisa entender nada de site. Você fala direto comigo do começo ao fim, e eu cuido da parte técnica.</p>
+    </div>
+    <ol class="process">
+      <li class="process-line" aria-hidden="true"><i></i></li>
+      <li class="step" data-reveal><span class="n">01</span><h3>Conversa</h3><p>Você me chama no WhatsApp e conta sobre o seu negócio e o que precisa. Eu te passo o orçamento.</p></li>
+      <li class="step" data-reveal style="--d:0.08s"><span class="n">02</span><h3>Conteúdo</h3><p>Você me manda fotos, textos, logo, endereço e horários. Se faltar algo, eu te ajudo a montar.</p></li>
+      <li class="step" data-reveal style="--d:0.16s"><span class="n">03</span><h3>Desenvolvimento</h3><p>Eu construo o site com a cara do seu negócio, pensado para quem vai visitá-lo.</p></li>
+      <li class="step" data-reveal style="--d:0.24s"><span class="n">04</span><h3>Revisão e publicação</h3><p>Ajusto o que você pedir e coloco no ar. Aí é só divulgar o link.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="sobre" aria-labelledby="sobre-titulo">
+  <div class="wrap about">
+    <figure class="portrait" data-reveal>
+      <img src="/img/sobre/luis.webp" width="900" height="900" alt="Retrato de Luis Henrique Azevedo, de camiseta branca." loading="lazy" decoding="async" data-parallax="0.06">
+      <figcaption>Manaus, AM</figcaption>
+    </figure>
+    <div class="about-text">
+      <p class="eyebrow" data-reveal><span class="num">04</span> Sobre</p>
+      <h2 class="h-section mt-sm" id="sobre-titulo" data-reveal>Quem <span class="serif">sou</span></h2>
+      <div data-reveal>
+        <p>Sou Luis Henrique, tenho 18 anos e curso <strong>Engenharia de Software na Fametro</strong>, em Manaus. Comecei a programar por necessidade: queria resolver problemas que os aplicativos prontos não resolviam do jeito que eu precisava.</p>
+        <p>Desde então construí sistemas que uso todo dia e ferramentas para pessoas próximas — um sistema pessoal de organização com 19 módulos, uma plataforma de preparação para concurso com algoritmo de priorização próprio, um painel financeiro para um comércio da família e um gerador de relatórios que economiza horas de transcrição manual.</p>
+        <p>Gosto da parte que aparece pouco: <strong>modelar o banco</strong>, separar regra de negócio de entrada e saída para conseguir testar, e decidir o que <em>não</em> colocar no projeto. Escrevo documentação de arquitetura porque ela me obriga a justificar as escolhas — e porque quem chega depois precisa entender o sistema sem me perguntar.</p>
+        <p>Aprendi as tecnologias que uso porque um projeto pediu, não porque estavam na ementa. É assim que pretendo continuar.</p>
+      </div>
+      <dl class="facts" data-reveal>
+        <div class="fact"><dt>Formação</dt><dd>Eng. de Software — Fametro</dd></div>
+        <div class="fact"><dt>Local</dt><dd>Manaus, AM — Brasil</dd></div>
+        <div class="fact"><dt>Sistemas em uso diário</dt><dd>2</dd></div>
+        <div class="fact"><dt>Projetos públicos</dt><dd><a class="link-arrow" href="https://github.com/devluisam" target="_blank" rel="noopener">GitHub · @devluisam <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/></svg></a></dd></div>
+        <div class="fact"><dt>Disponibilidade</dt><dd>Freelance e parcerias</dd></div>
+      </dl>
+      <div class="stack-wrap" id="stack" data-reveal>
+        <h3>Tecnologias que uso</h3>
+        <p>Só o que aparece nos projetos desta página. Sem barra de porcentagem: o código está no GitHub, e ele diz mais do que qualquer medidor de domínio.</p>
+        <div class="stack-grid">
+          <div><h4>Linguagens</h4><ul><li>TypeScript</li><li>JavaScript</li><li>Python</li><li>SQL</li><li>C</li></ul></div>
+          <div><h4>Frontend</h4><ul><li>React</li><li>Next.js (App Router)</li><li>Tailwind CSS</li><li>shadcn/ui · Radix</li><li>Three.js · React Three Fiber</li><li>Recharts · Leaflet</li></ul></div>
+          <div><h4>Backend</h4><ul><li>Node.js</li><li>FastAPI</li><li>Server Actions</li><li>Prisma ORM</li><li>SQLAlchemy</li><li>Zod</li></ul></div>
+          <div><h4>Banco de dados</h4><ul><li>PostgreSQL</li><li>SQLite</li><li>Modelagem relacional</li><li>Migrations e seed</li></ul></div>
+          <div><h4>IA aplicada</h4><ul><li>Claude API (Anthropic SDK)</li><li>OpenAI API</li><li>Modelos locais (Ollama)</li><li>Tesseract.js (OCR)</li></ul></div>
+          <div><h4>Qualidade e ferramentas</h4><ul><li>Vitest · Testing Library</li><li>Testes de integração</li><li>ESLint · Prettier</li><li>Git</li><li>Vercel · Streamlit</li></ul></div>
         </div>
       </div>
-      <div>
-        <a class="ch" href="https://wa.me/5592981295937" target="_blank" rel="noopener">
-          <span class="ch-key">WhatsApp</span><span class="ch-val">+55 (92) 98129-5937 ↗</span>
-        </a>
-        <a class="ch" href="https://github.com/devluisam" target="_blank" rel="noopener">
-          <span class="ch-key">GitHub</span><span class="ch-val">@devluisam ↗</span>
-        </a>
-        <a class="ch" href="https://www.linkedin.com/in/luis-henrique-94a6183b3" target="_blank" rel="noopener">
-          <span class="ch-key">LinkedIn</span><span class="ch-val">Luis Henrique ↗</span>
-        </a>
-        <a class="ch" href="https://www.instagram.com/luixss__/" target="_blank" rel="noopener">
-          <span class="ch-key">Instagram</span><span class="ch-val">@luixss__ ↗</span>
-        </a>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contato" aria-labelledby="contato-titulo" data-fab-hide>
+  <div class="wrap">
+    <p class="eyebrow" data-reveal><span class="num">05</span> Contato</p>
+    <h2 class="contact-title mt-md" id="contato-titulo" data-reveal>Vamos conversar sobre o seu <span class="serif">projeto</span></h2>
+    <div class="contact-grid">
+      <div data-reveal>
+        <p class="lead">Disponível para novos projetos e parcerias. Se puder, mande junto o problema que você precisa resolver — é por onde eu começo.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary btn-lg" href="https://wa.me/5592981295937?text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20o%20desenvolvimento%20de%20um%20site." target="_blank" rel="noopener" data-magnetic><span class="btn-label">Chamar no WhatsApp</span><span class="btn-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.24 8.24 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.24 8.24 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg></span></a>
+          <a class="btn btn-ghost btn-lg" href="mailto:devluisam@gmail.com?subject=Or%C3%A7amento%20de%20site" data-magnetic><span class="btn-label">Enviar e-mail</span><span class="btn-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/></svg><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/></svg></span></a>
+        </div>
+      </div>
+      <div class="channels" data-reveal style="--d:.1s">
+        <a class="channel" href="https://wa.me/5592981295937?text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20o%20desenvolvimento%20de%20um%20site." target="_blank" rel="noopener"><span>WhatsApp</span><span>+55 (92) 98129-5937 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/></svg></span></a>
+        <a class="channel" href="mailto:devluisam@gmail.com"><span>E-mail</span><span>devluisam@gmail.com <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/></svg></span></a>
+        <a class="channel" href="https://www.instagram.com/devluisam/" target="_blank" rel="noopener"><span>Instagram</span><span>@devluisam <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/></svg></span></a>
+        <a class="channel" href="https://github.com/devluisam" target="_blank" rel="noopener"><span>GitHub</span><span>@devluisam <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/></svg></span></a>
+        <a class="channel" href="https://www.linkedin.com/in/luis-henrique-94a6183b3" target="_blank" rel="noopener"><span>LinkedIn</span><span>Luis Henrique <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4.5 11.5 11.5 4.5M5.5 4.5h6v6"/></svg></span></a>
       </div>
     </div>
   </div>
 </section>
 
 </main>
-
-<footer>
-  <div class="wrap foot-in">
-    <span class="logo">lh<b>.dev</b></span>
+<footer class="footer" data-fab-hide>
+  <div class="wrap footer-in">
+    <a class="logo" href="#inicio">lh<b>.dev</b></a>
     <span>© 2026 Luis Henrique Azevedo — Manaus, AM</span>
+    <nav aria-label="Rodapé">
+      <a href="https://github.com/devluisam" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/luis-henrique-94a6183b3" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/devluisam/" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+    <a class="to-top" href="#main" data-top>Voltar ao topo <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 13.5v-11M3.5 7 8 2.5 12.5 7"/></svg></a>
   </div>
 </footer>
-
-<script>
-(function () {
-  var burger = document.getElementById('burger');
-  var menu = document.getElementById('mobile-menu');
-  burger.addEventListener('click', function () {
-    var open = menu.classList.toggle('open');
-    burger.setAttribute('aria-expanded', String(open));
-    burger.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
-  });
-  menu.addEventListener('click', function (e) {
-    if (e.target.tagName === 'A') {
-      menu.classList.remove('open');
-      burger.setAttribute('aria-expanded', 'false');
-    }
-  });
-})();
-</script>
+<a class="fab" href="https://wa.me/5592981295937?text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20o%20desenvolvimento%20de%20um%20site." target="_blank" rel="noopener" aria-label="WhatsApp — conversar comigo"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.24 8.24 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></svg><span class="fab-label">WhatsApp</span></a>
 </body>
 </html>

@@ -1,0 +1,15 @@
+{
+  "name": "devluisam-portfolio",
+  "private": true,
+  "type": "module",
+  "description": "Portfólio de Luis Henrique Azevedo — site estático publicado no GitHub Pages.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "images": "node scripts/images.mjs",
+    "check": "node scripts/check.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "devDependencies": {
+    "sharp": "0.33.5"
+  }
+}
