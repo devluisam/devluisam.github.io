@@ -18,7 +18,7 @@ export const site = {
   social: {
     instagram: { label: '@devluisam', url: 'https://www.instagram.com/devluisam/' },
     github: { label: '@devluisam', url: 'https://github.com/devluisam' },
-    linkedin: { label: 'Luis Henrique', url: 'https://www.linkedin.com/in/luis-henrique-94a6183b3' },
+    linkedin: { label: 'Luis Henrique Azevedo', url: 'https://www.linkedin.com/in/devluisam' },
   },
 
   // Página de vendas de sites para negócios locais (outro repositório, em português).
