@@ -188,73 +188,6 @@ export const projectsEn = {
         'MVP finished and in daily use: <strong>54 models in the schema</strong>, <strong>58 test files</strong> (unit and integration with a disposable database) and <strong>87 commits</strong>. It works offline and, with a local model, at zero AI cost.',
     },
   },
-  'dental-report-ai': {
-    type: 'Automation · Applied AI',
-    summary: 'Turns photos of handwritten clinical forms into a dental internship report, ready as a PDF.',
-    intro: 'Turns photos of handwritten clinical forms into a dental internship report ready to hand in as a PDF.',
-    images: [
-      { alt: 'Dental Report AI interface: extraction, cover, patients, productivity and photos tabs; an area to upload form photos and, beside it, the A4 report preview updating in real time.', caption: 'Form upload and A4 report preview.' },
-    ],
-    study: {
-      problem:
-        'The clinic’s internship report is assembled from paper forms: patient data, treatment status and a count of each procedure. Transcribing it by hand is slow, repetitive and easy to get wrong in the totals — and the error only shows up after it has been handed in.',
-      solution:
-        'The student photographs the forms; the system reads the images, structures the data and assembles the report. Everything stays editable before export: automation speeds up the work, but the final word belongs to whoever signs the document.',
-      challenges: [
-        { title: 'Reading handwritten forms with an irregular layout.', text: 'Generic OCR returns scrambled text. I wrote a parser specific to this form: label-based search, accent and case normalization, and reading the next meaningful line when the value isn’t on the same line as its label.' },
-        { title: 'Not blindly trusting the extraction.', text: 'Every extracted field is validated with Zod and goes into a reviewable form.' },
-        { title: 'A PDF faithful to the screen', text: '— the preview is the document itself, captured and paginated as A4.' },
-      ],
-      role: 'The whole project: upload flow, server-side Claude API integration, OCR parser, forms, preview and PDF generation.',
-      result: 'A complete flow from upload to PDF, with two independent extraction paths and the credential never exposed to the browser.',
-    },
-  },
-  'dpe-am': {
-    type: 'Full system · Algorithm',
-    summary: 'Exam prep that answers, every day, what to study now — with an adaptive priority queue.',
-    intro:
-      'An exam-prep platform that answers one question a day: what to study today to maximize the chance of passing — and lets the algorithm decide.',
-    images: [],
-    poster: 'priority = weight × weakness × urgency × review × coverage',
-    note: 'Private repository — it contains study material and personal performance data.',
-    study: {
-      problem:
-        'A public exam syllabus is too big to fit a fixed schedule. Any plan made on Monday is wrong by Wednesday: you did badly on a mock exam, a review came due, a new topic appeared. The hard question isn’t “should I study?”, it’s <em>“what should I study now?”</em>.',
-      solution:
-        'Instead of a schedule, an <strong>adaptive priority queue</strong>, recalculated every time the dashboard opens and after any relevant event — with every factor visible, so the decision isn’t a black box.',
-      architectureTitle: 'The prioritization algorithm',
-      challenges: [
-        { title: 'Making the rule testable.', text: 'The <code>domain/</code> layer never touches the database or the system clock; the services layer orchestrates Prisma. That made it possible to cover the formula, FSRS and metrics with real tests.' },
-        { title: 'Keeping the algorithm from abandoning hard subjects.', text: 'Multiplying factors tends to zero out items that score badly on every criterion; a floor keeps them showing up.' },
-        { title: 'Detecting the official notice on its own.', text: 'A monitor follows official sources, classifies documents and compares versions with a diff engine, showing what changed between publications.' },
-        { title: 'Fixed time zone.', text: 'All dates run on America/Manaus, so the system’s “today” never drifts.' },
-      ],
-      role: 'The whole project: the prioritization formula, an FSRS implementation for spaced review, an error log with pattern detection, mock exams in the official format, a readiness index, database modeling, interface and tests.',
-      result: 'A system in use: <strong>33 models</strong> in the schema, <strong>65 tests</strong> (46 domain and 19 integration with disposable SQLite), an installable PWA that works offline and full JSON backup.',
-    },
-  },
-  'kinga-finance-ai': {
-    type: 'Dashboard · Backend',
-    summary: 'Financial analysis for a multi-store retailer: imports sales and costs, classifies expenses and shows results per store.',
-    intro:
-      'Financial analysis for a small retailer with several stores and a factory: it imports sales and costs, classifies expenses on its own and shows results per unit. Classification is a deterministic rules engine, with no language model — auditable and reproducible, which is what the case required.',
-    images: [
-      { alt: 'Kinga Finance AI dashboard: monthly text report — health score 100/100, revenue, operating margin, break-even point, comparison with the previous month, best and worst store and the largest cost of the period.', caption: 'Monthly report in the dashboard.' },
-    ],
-    study: {
-      problem:
-        'Small retailers close the month in a spreadsheet. The owner knows how much came in, but not how much profit each store made, which cost category grew, or whether the month will end in the black before it’s over. The data exists — it’s just loose, uncategorized.',
-      solution:
-        'A system that takes in the records, categorizes each cost automatically, consolidates results per unit and turns it into a dashboard with an end-of-month forecast, a cost ranking and alerts for anything out of the ordinary.',
-      challenges: [
-        { title: 'Categorizing free-text expenses, without ML.', text: 'A keyword rules engine that returns category, subcategory and a confidence level proportional to the recognized terms — with manual override when it gets it wrong. Predictable and explainable, unlike a trained classifier.' },
-        { title: 'A single calculation core.', text: 'The domain modules know nothing about FastAPI or Streamlit: they receive a session and return <code>dataclasses</code>. The same calculation feeds the API, the dashboard and the terminal report.' },
-        { title: 'Financial health index', text: 'weighted across margin, growth, cost control and results, turned into a single number the owner understands.' },
-      ],
-      role: 'The whole project: modeling, API, classification engine, financial calculations (results per store, forecast, Pareto, alerts) and the dashboard.',
-      result: 'API, dashboard and terminal report sharing the same business rules, with automatic database backup on every start and CSV import.',
-    },
-  },
   'pulso-verde': {
     type: 'Interactive map · Open data',
     summary: 'Interactive map of fires and deforestation in the Amazon, with data from NASA FIRMS and INPE.',
@@ -302,36 +235,5 @@ Prisma ORM ──→ PostgreSQL  (20 models: structures, quiz, progress, convers
         Tool Registry  ──→  the SAME domain functions the interface uses
               ↓
         Server Actions (Next.js) ──→ Prisma 7 ──→ SQLite (WAL, local)`,
-  'dental-report-ai': `Photo upload
-   │
-   ├─ Path A ──→ POST /api/extract ──→ Claude (vision) ──→ structured JSON
-   │                 (the API key stays on the server)
-   │
-   └─ Path B ──→ Tesseract.js in the client ──→ custom parser ──→ structured JSON
-                              │
-                              ↓
-        Editable forms (React Hook Form + Zod)  ← human review
-                              ↓
-        A4 preview ──→ html2canvas ──→ jsPDF ──→ PDF`,
-  'dpe-am': `priority = syllabus_weight   (0.30)
-         × weakness         (0.30)   ← real performance on questions
-         × urgency          (0.15)   ← days left until the exam
-         × review_overdue   (0.15)
-         × coverage_gap     (0.10)
-         × novelty_bonus
-         with a minimum floor, so a weak subject NEVER leaves the queue
-
-Pure functions: no I/O, no hidden clock — and therefore testable.`,
-  'kinga-finance-ai': `Dashboard (Streamlit + Plotly)
-        │  HTTP
-        ↓
-REST API (FastAPI)  ──  /sales · /costs · /stores · /report
-        │
-        ↓
-Domain modules — plain Python, no framework
-   classifier · results · costs · billing · factory · forecast · health · alerts
-        │
-        ↓
-SQLAlchemy 2 ──→ SQLite (default) or PostgreSQL`,
 };
 for (const [slug, text] of Object.entries(architecture)) projectsEn[slug].study.architecture = text;

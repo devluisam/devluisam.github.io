@@ -96,7 +96,7 @@ export const ui = {
     portraitAlt: 'Retrato de Luis Henrique Azevedo, de camiseta branca.',
     about: [
       'Sou Luis Henrique, tenho 18 anos e curso <strong>Engenharia de Software na Fametro</strong>, em Manaus. Comecei a programar por necessidade: queria resolver problemas que os aplicativos prontos não resolviam do jeito que eu precisava.',
-      'Desde então construí sistemas que uso todo dia e ferramentas para pessoas próximas — um sistema pessoal de organização com 19 módulos, uma plataforma de preparação para concurso com algoritmo de priorização próprio, um painel financeiro para um comércio da família e um gerador de relatórios que economiza horas de transcrição manual.',
+      'Desde então construí sistemas que uso todo dia e ferramentas para pessoas próximas — como um sistema pessoal de organização com 19 módulos e uma plataforma de estudo de anatomia com modelo 3D navegável.',
       'Gosto da parte que aparece pouco: <strong>modelar o banco</strong>, separar regra de negócio de entrada e saída para conseguir testar, e decidir o que <em>não</em> colocar no projeto. Escrevo documentação de arquitetura porque ela me obriga a justificar as escolhas — e porque quem chega depois precisa entender o sistema sem me perguntar.',
       'Aprendi as tecnologias que uso porque um projeto pediu, não porque estavam na ementa. É assim que pretendo continuar.',
     ],
@@ -230,7 +230,7 @@ export const ui = {
     portraitAlt: 'Portrait of Luis Henrique Azevedo wearing a white T-shirt.',
     about: [
       'I’m Luis Henrique, I’m 18 and I study <strong>Software Engineering at Fametro</strong>, in Manaus, Brazil. I started programming out of necessity: I wanted to solve problems that off-the-shelf apps didn’t solve the way I needed.',
-      'Since then I’ve built systems I use every day and tools for people close to me — a personal organization system with 19 modules, an exam-prep platform with its own prioritization algorithm, a financial dashboard for a family business and a report generator that saves hours of manual transcription.',
+      'Since then I’ve built systems I use every day and tools for people close to me — such as a personal organization system with 19 modules and an anatomy study platform with a navigable 3D model.',
       'I enjoy the part that rarely shows: <strong>modeling the database</strong>, separating business rules from input and output so they can be tested, and deciding what <em>not</em> to put in a project. I write architecture docs because they force me to justify my choices — and because whoever comes next should understand the system without having to ask me.',
       'I learned the technologies I use because a project needed them, not because they were on the syllabus. That’s how I intend to keep going.',
     ],
