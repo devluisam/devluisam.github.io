@@ -70,7 +70,7 @@ export const projects = [
       { file: '2-servicos', alt: 'Seção de serviços do BLACKWASH: cards de lavagem premium, higienização interna e polimento técnico, cada um com itens inclusos e botão de orçamento.', caption: 'Serviços — cada card abre o WhatsApp com o serviço já escrito.' },
       { file: '3-mobile', alt: 'BLACKWASH no celular: título, texto de apoio e botões de agendamento e serviços.', caption: 'Versão mobile.', device: 'mobile' },
     ],
-    links: {},
+    links: { live: 'https://blackwash-lavajato.vercel.app' },
     note: DEMO_NOTE,
   },
   {
@@ -124,7 +124,7 @@ export const projects = [
       { file: '2-catalogo', alt: 'Catálogo do Remanso: busca, categorias em pílulas, filtros de preço e material à esquerda e grade de produtos.', caption: 'Catálogo com busca, filtros e ordenação.' },
       { file: '3-mobile', alt: 'Remanso no celular: título, descrição e botões de catálogo e consultor.', caption: 'Versão mobile.', device: 'mobile' },
     ],
-    links: {},
+    links: { live: 'https://remanso-moveis.vercel.app' },
     note: DEMO_NOTE,
   },
   {
@@ -178,7 +178,7 @@ export const projects = [
       { file: '2-sobre', alt: 'Seção sobre da Forja: título "Evoluir todos os dias", quatro diferenciais numerados e fotos de treino.', caption: 'Sobre e diferenciais.' },
       { file: '3-mobile', alt: 'Forja no celular: título, texto e botões de treino e da academia.', caption: 'Versão mobile.', device: 'mobile' },
     ],
-    links: {},
+    links: { live: 'https://forja-academia-theta.vercel.app' },
     note: DEMO_NOTE,
   },
   {
@@ -205,7 +205,7 @@ export const projects = [
       { file: '2-servicos', alt: 'Serviços da Vetor Mecânica: grade com diagnóstico eletrônico, revisão preventiva, freios, suspensão, óleo, ar-condicionado, motor e sistema elétrico.', caption: 'Serviços com orçamento individual.' },
       { file: '3-mobile', alt: 'Vetor Mecânica no celular: título, texto e botões de agendamento e serviços.', caption: 'Versão mobile.', device: 'mobile' },
     ],
-    links: {},
+    links: { live: 'https://vetor-mecanica-oficina.vercel.app' },
     note: DEMO_NOTE,
   },
   {
